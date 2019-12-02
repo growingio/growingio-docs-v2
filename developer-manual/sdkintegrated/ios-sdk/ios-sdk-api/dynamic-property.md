@@ -1,6 +1,8 @@
 # 动态添加属性说明
 
-### SDK版本要求：iOS 无埋点SDK &gt;=2.x
+{% hint style="success" %}
+SDK版本要求：iOS 无埋点SDK &gt;=2.x
+{% endhint %}
 
 ### 1. UIView 增加属性
 

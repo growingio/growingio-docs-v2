@@ -20,11 +20,11 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
 
 | API | 默认值 | 说明 | 无埋点SDK版本支持 | 埋点SDK版本支持 |
 | :--- | :--- | :--- | :--- | :--- |
-| startWithAccountId:_**AccountId**_  | 无 | 初始化方法，_**AccountID**_为项目id，默认采样率为100%。 | ALL | ALL |
-| startWithAccountId:_**AccountId**_ withSampling:_**sampling**_ | 无 | 初始化方法，_**AccountID**_为项目id；_**sampling**_为采样率。 | ALL | ALL |
-| handleUrl | 无 | URL Scheme处理方法，通过参数不同区分圈选、MobileDebugger、DeepLink等。 | ALL | - |
+| startWithAccountId:_**AccountId**_  | 无 | 初始化方法，_**AccountID**_为项目id，默认采样率为100%。 | ✔️ | ✔️ |
+| startWithAccountId:_**AccountId**_ withSampling:_**sampling**_ | 无 | 初始化方法，_**AccountID**_为项目id；_**sampling**_为采样率。 | ✔️ | ✔️ |
+| handleUrl | 无 | URL Scheme处理方法，通过参数不同区分圈选、MobileDebugger、DeepLink等。 | ✔️ | - |
 
-SDK功能API
+### SDK功能API
 
 <table>
   <thead>
@@ -58,7 +58,7 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x83B7;&#x53D6;&#x91C7;&#x96C6;&#x65E5;&#x5FD7;&#x5F00;&#x5173;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3002;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -66,7 +66,7 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x6536;&#x96C6;&#x5E73;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x8BBE;&#x5907;&#x62A5;&#x6D3B;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -82,7 +82,7 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x67E5;&#x770B;&#x5E73;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -90,7 +90,7 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x540E;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -98,7 +98,7 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x540E;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -109,7 +109,7 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x540E;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -117,14 +117,14 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E; zone &#x4FE1;&#x606F;&#xFF0C;&#x5373;&#x65F6;&#x533A;&#x4FE1;&#x606F;&#x3002;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">getDeviceId</td>
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8BBE;&#x5907; ID&#x3002;</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -132,14 +132,14 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8BBF;&#x95EE;&#x7528;&#x6237;ID&#x3002;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">getSessionId</td>
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8BBF;&#x95EE;ID&#x3002;</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -170,7 +170,7 @@ SDK功能API
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x6A21;&#x5F0F;&#xFF0C;&#x6709;
         GrowingAspectModeSubClass &#x548C; GrowingAspectModeDynamicSwizzling &#x4E24;&#x79CD;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -180,7 +180,7 @@ SDK功能API
         <p>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x53D1;&#x9001;&#x57FA;&#x672C;&#x6027;&#x80FD;&#x8BCA;&#x65AD;&#x4FE1;&#x606F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F00;&#x3002;</p>
         <p>&#x57FA;&#x672C;&#x6027;&#x80FD;&#x6307;&#x53D1;&#x9001;&#x6210;&#x529F;&#x3001;&#x5931;&#x8D25;&#x3001;timeout&#x7B49;&#x4FE1;&#x606F;</p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -188,7 +188,7 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x5168;&#x5C40;&#x4E0D;&#x53D1;&#x9001;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -196,21 +196,21 @@ SDK功能API
       <td style="text-align:left">enable</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x91C7;&#x96C6; UIWebView / WKWebView
         &#x4FE1;&#x606F;</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">enableHybridHashTag</td>
       <td style="text-align:left">enable</td>
       <td style="text-align:left">&#x662F;&#x5426;&#x542F;&#x7528; HashTag</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">isTrackingWebView</td>
       <td style="text-align:left">true</td>
       <td style="text-align:left">&#x662F;&#x5426;&#x542F;&#x7528; trackingWebView</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -218,7 +218,7 @@ SDK功能API
       <td style="text-align:left">true</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x53D1;&#x9001;&#x5143;&#x7D20;&#x7684;&#x5C55;&#x73B0;&#x6B21;&#x6570;&#xFF08;&#x6D4F;&#x89C8;&#x91CF;&#x3001;&#x66DD;&#x5149;&#x91CF;&#xFF09;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -226,7 +226,7 @@ SDK功能API
       <td style="text-align:left">30s</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x3001;&#x83B7;&#x53D6;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;30&#x79D2;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -234,7 +234,7 @@ SDK功能API
       <td style="text-align:left">3M</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x6BCF;&#x5929;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x7F51;&#x7EDC;&#xFF08;2G&#x3001;3G&#x3001;4G&#xFF09;&#x4E0A;&#x4F20;&#x7684;&#x6570;&#x636E;&#x91CF;&#x7684;&#x4E0A;&#x9650;&#xFF08;&#x5355;&#x4F4D;&#x662F;
         KB&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 3 MB</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -242,21 +242,21 @@ SDK功能API
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x83B7;&#x53D6;&#x6BCF;&#x5929;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x7F51;&#x7EDC;&#xFF08;2G&#x3001;3G&#x3001;4G&#xFF09;&#x4E0A;&#x4F20;&#x7684;&#x6570;&#x636E;&#x91CF;&#x7684;&#x4E0A;&#x9650;&#xFF08;&#x5355;&#x4F4D;&#x662F;
         KB&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;3 MB</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">disableDataCollect</td>
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E; GDPR &#x751F;&#x6548;</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">enableDataCollect</td>
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E; GDPR &#x5931;&#x6548;</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -264,7 +264,7 @@ SDK功能API
       <td style="text-align:left">Yes</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x91C7;&#x96C6;push&#x63A8;&#x9001;&#x70B9;&#x51FB;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E0D;&#x91C7;&#x96C6;</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left"></td>
     </tr>
     <tr>
