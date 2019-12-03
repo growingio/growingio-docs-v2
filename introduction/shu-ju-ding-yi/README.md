@@ -10,7 +10,5 @@ GrowingIO做的是用户行为数据分析产品，顾名思义，核心问题�
 
 GrowingIO 提供了如下自定义数据。
 
-{% page-ref page="yong-hu-mo-xing-ji-yong-hu-bian-liang.md" %}
-
 {% page-ref page="./" %}
 

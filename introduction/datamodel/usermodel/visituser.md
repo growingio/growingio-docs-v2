@@ -12,7 +12,9 @@
 
 ## 访问用户ID生成机制
 
-### WEB JS SDK（Web页面与H5页面）
+### WEB JS SDK
+
+> 包括Web页面与H5页面
 
 GrowingIO会使用随机UUID的方法生成访问用户ID，并将之记录在浏览器的Cookie中
 
