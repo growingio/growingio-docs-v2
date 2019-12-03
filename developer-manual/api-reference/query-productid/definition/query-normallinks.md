@@ -164,7 +164,7 @@ GET
         "projectId": "4PYJMWoM",
         "productId": "LPdgKARN",
         "appId": "com.demo.app.androidsdkdemo_android",
-        "trackingUrl":"https://gio.ren/r3A5LOd",
+        "trackingUrl":"https://datayi.cn/r3A5LOd",
         "redirectUrl": null,
         "impressionUrl": null,
         "campaignId": "d4PYjoME",

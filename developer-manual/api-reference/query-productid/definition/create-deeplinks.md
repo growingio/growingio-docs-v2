@@ -167,7 +167,7 @@ POST
     "productNameIos": "RnTestiOS",
     "productIdAndroid": null,
     "productNameAndroid": null,
-    "trackingUrl": "https://gio.ren/d0B4MKe",
+    "trackingUrl": "https://datayi.cn/d0B4MKe",
     "downloadUrlIos": "http://www.growingio.com",
     "downloadUrlAndroid": null,
     "urlSchemaIos": "80310c35a53c9a45",

@@ -62,7 +62,7 @@ Response: Status Code: 200 OK
         "productNameIos": "TestAPP",
         "productIdAndroid": "j9yEwm9y",
         "productNameAndroid": "123测试编辑编辑",
-        "trackingUrl": "https://gio.ren/dGVr8e9",
+        "trackingUrl": "https://datayi.cn/dGVr8e9",
         "redirectUrl": "http://123.com",
         "campaignIdIos": "O4PKxoEb",
         "campaignNameIos": "321上线",

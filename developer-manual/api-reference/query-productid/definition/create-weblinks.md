@@ -190,7 +190,7 @@ POST
     "linkId": "xogvY0Pm",
     "name": "测试web8",
     "projectId": "4PYJMWoM",
-    "trackingUrl": "https://gio.ren/w/xogvY0Pm",
+    "trackingUrl": "https://datayi.cn/w/xogvY0Pm",
     "impTrackingUrl": null,
     "redirectUrl": "http://www.www.www",
     "campaignId": "xogjZQ2P",

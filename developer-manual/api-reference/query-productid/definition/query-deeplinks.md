@@ -195,7 +195,7 @@ GET
         "productNameIos": "TestAPP",
         "productIdAndroid": "LPdgKARN",
         "productNameAndroid": "Android SDK Demo",
-        "trackingUrl": "https://gio.ren/dGVr8e9",
+        "trackingUrl": "https://datayi.cn/dGVr8e9",
         "downloadUrlIos": "http://baidu.com",
         "downloadUrlAndroid": "http://growingio.com",
         "urlSchemaIos": "c35abef955cd913a",

@@ -167,7 +167,7 @@ POST
     "projectId": "4PYJMWoM",
     "productId": "LPdgKARN",
     "appId": "com.demo.app.androidsdkdemo_android",
-    "trackingUrl": "https://gio.ren/reJmomJ",
+    "trackingUrl": "https://datayi.cn/reJmomJ",
     "redirectUrl": "http://www.growingio.com",
     "impressionUrl": null,
     "campaignId": "G39l3o20",

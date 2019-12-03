@@ -190,7 +190,7 @@ POST
     "productNameIos": "RnTestiOS",
     "productIdAndroid": "LPdgKARN",
     "productNameAndroid": "Android SDK Demo",
-    "trackingUrl": "https://gio.ren/oBWXRgK",
+    "trackingUrl": "https://datayi/oBWXRgK",
     "redirectUrl": "http://www.download.com",
     "campaignIdIos": "4AovZoza",
     "campaignNameIos": "今日头条ios",
