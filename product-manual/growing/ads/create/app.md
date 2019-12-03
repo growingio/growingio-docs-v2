@@ -7,18 +7,6 @@
 * **增加 App 下载量**：适用于拉新场景，对于常见的 App 下载行为追踪，可选择该方式创建链接来追踪用户 App下载行为，方便您衡量广告推广效果。
 * **吸引用户直接打开App**：适用于促活、唤回场景，对于 App 已安装，希望通过广告推广促进用户打开 App 或是召回老客户，可通过该方式来创建深度链接（DeepLink）来促使用户回到您的 App 中。
 
-## 前提条件
-
-在正确集成 GrowingIO 提供的 SDK ，以及 URL Scheme 的配置后，即可开始使用 GrowingIO 提供的 DeepLink 深度链接功能。
-
-SDK 端配置：[iOS 端](../../../../developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk.md#7-deeplink-and-universal-link)、[Android 端​](../../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#15-deep-link-hui-tiao-can-shu-huo-qu)
-
-为获得更好的用户使用体验，GrowingIO 同时建议您在 iOS 下开启 Universal Links 、在 Android 下开启 App Links ，该两项技术为 Apple 与 Google 提供的原生方案，使用该技术将在其系统生态中将获得更流畅的跳转体验。
-
-Universal Links 配置：[配置方法​](../advance/deeplink.md#universal-links-pei-zhi)
-
-App Links 配置：[配置方法](../advance/deeplink.md#applinks-pei-zhi)
-
 ## SDK版本支持
 
 如果您需要跟踪 App（ iOS & Android）由推广带来的 App 下载，可以使用此功能。使用之前请确保您的 App 中加载了GrowingIO 的 SDK1.0.3 及以上版本。
@@ -72,7 +60,7 @@ App Links 配置：[配置方法](../advance/deeplink.md#applinks-pei-zhi)
     </tr>
     <tr>
       <td style="text-align:left">&#x5E94;&#x7528;&#x4E0B;&#x8F7D;&#x5730;&#x5740;</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x5E94;&#x7528;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#x3002;</td>
       <td style="text-align:left">-</td>
       <td style="text-align:left">&#x2714;&#xFE0F;</td>
     </tr>
@@ -135,4 +123,16 @@ App Links 配置：[配置方法](../advance/deeplink.md#applinks-pei-zhi)
 
 如果要使用该技术，请与活动页的开发人员确认页面 URI 参数信息以及 Key/Value 值，确认无误后请填入直达落地页参数输入框，该条深度链接将会跳转到 App 内的具体页面。
 {% endhint %}
+
+## \[吸引用户直接打开App\]相关配置
+
+在正确集成 GrowingIO 提供的 SDK ，以及 URL Scheme 的配置后，即可开始使用 GrowingIO 提供的 DeepLink 深度链接功能。
+
+SDK 端配置：[iOS 端](../../../../developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk.md#7-deeplink-and-universal-link)、[Android 端​](../../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#15-deep-link-hui-tiao-can-shu-huo-qu)
+
+为获得更好的用户使用体验，GrowingIO 同时建议您在 iOS 下开启 Universal Links 、在 Android 下开启 App Links ，该两项技术为 Apple 与 Google 提供的原生方案，使用该技术将在其系统生态中将获得更流畅的跳转体验。
+
+Universal Links 配置：[配置方法​](../advance/deeplink.md#universal-links-pei-zhi)
+
+App Links 配置：[配置方法](../advance/deeplink.md#applinks-pei-zhi)
 

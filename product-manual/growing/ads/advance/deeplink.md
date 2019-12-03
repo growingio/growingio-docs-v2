@@ -63,9 +63,15 @@ GrowingIO的域名：
 
 配置获取到的Team ID 并勾选“我已完成Xcode配置，开启Universal Link跳转”，同时确认您的 SDK 版本并进行确认。
 
+{% hint style="info" %}
+若以上配置完成后，且App端已经完成SDK集成，请勾选”我已完成Xcode配置，开启UniversalLink跳转“；如果SDK版本为2.8.4及以上，请勾选”已确认将iOS SDK升级至2.8.4或更高版本“将开启DeepLink 2.0方案，将获得更加使用体验。
+{% endhint %}
+
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtP41qSBliAk88VA3Xe-LtPKKsn2R69VKrS_DHfimage.png)
 
 ![](../../../../.gitbook/assets/image%20%28108%29.png)
+
+
 
 
 
