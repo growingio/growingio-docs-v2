@@ -31,7 +31,6 @@
   * [数据安全](introduction/shu-ju-an-quan.md)
   * [产品界面熟悉](introduction/chan-pin-jie-mian-shou-xi.md)
   * [角色权限说明](introduction/jiao-se-quan-xian-shuo-ming.md)
-  * [使用流程](introduction/untitled-4.md)
 * [开发者文档](developer-manual/README.md)
   * [SDK集成](developer-manual/sdkintegrated/README.md)
     * [SDK简介](developer-manual/sdkintegrated/overview.md)
