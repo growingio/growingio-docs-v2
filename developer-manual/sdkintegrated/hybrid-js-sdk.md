@@ -1,5 +1,5 @@
 ---
-description: 自动采集App内嵌H5的用户行为数据。
+description: 无埋点 SDK 自动注入此 SDK，无需集成。采集App内嵌H5的用户行为数据。
 ---
 
 # Hybrid JS SDK
@@ -87,8 +87,9 @@ gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 | value | String | 否 | 页面级变量的值 |
 | pageLevelVariables | JSON Object | 否 | 包含页面级变量的JSON对象，暨页面级别的信息 |
 
-```text
-// page.set API原型gio('page.set', key, value);gio('page.set', pageLevelVariables);// page.set API调用示例一gio('page.set', {'pageName': 'Home Page', 'author': 'Zhang San'});// page.set API调用示例二gio('page.set', 'author', 'Zhang San');
+```javascript
+// page.set API原型
+gio('page.set', key, value);gio('page.set', pageLevelVariables);// page.set API调用示例一gio('page.set', {'pageName': 'Home Page', 'author': 'Zhang San'});// page.set API调用示例二gio('page.set', 'author', 'Zhang San');
 ```
 
 ### 3. 设置转化变量（evar.set） <a id="3-she-zhi-zhuan-hua-bian-liang-evarset"></a>
@@ -101,8 +102,9 @@ gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 | Value | String | 否 | 转化变量的值 |
 | conversionVariables | JSON Object | 否 | 包含转化变量的JSON对象 |
 
-```text
-// evar.set API原型gio('evar.set', key, value);gio('evar.set', conversionVariables);// evar.set API调用示例一gio('evar.set', 'campaignId'，'1234567890');// evar.set API调用示例二gio('evar.set', {'campaignId': '1234567890', 'campaignOwner':'lisi'});
+```javascript
+// evar.set API原型
+gio('evar.set', key, value);gio('evar.set', conversionVariables);// evar.set API调用示例一gio('evar.set', 'campaignId'，'1234567890');// evar.set API调用示例二gio('evar.set', {'campaignId': '1234567890', 'campaignOwner':'lisi'});
 ```
 
 ### 4. 设置用户级变量（people.set） <a id="4-she-zhi-yong-hu-ji-bian-liang-peopleset"></a>
@@ -115,8 +117,9 @@ gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 | value | String | 否 | 用户变量的值 |
 | customerVariables | JSON Object | 否 | 包含用户变量的JSON对象 |
 
-```text
-// people.set API原型gio('people.set', key, value);gio('people.set', customerVariables);// people.set API调用示例一gio('people.set', 'gender', 'male');//people.set API调用示例二gio('people.set', {'gender':'male', 'age':'25'});
+```javascript
+// people.set API原型
+gio('people.set', key, value);gio('people.set', customerVariables);// people.set API调用示例一gio('people.set', 'gender', 'male');//people.set API调用示例二gio('people.set', {'gender':'male', 'age':'25'});
 ```
 
 ### 5. 设置用户id（hybridSetUserId） <a id="5-she-zhi-yong-hu-idhybridsetuserid"></a>
@@ -127,19 +130,22 @@ gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 | :--- | :--- | :--- | :--- |
 | customerVariables | String | 是 | 长度不可以大于1000,并且不可为Null |
 
-```text
-//调用示例gio('hybridSetUserId', '1234567890');
+```javascript
+//调用示例
+gio('hybridSetUserId', '1234567890');
 ```
 
 ### 6. 清除用户id（hybridClearUserId） <a id="6-qing-chu-yong-hu-idhybridclearuserid"></a>
 
-```text
-//调用示例gio('hybridClearUserId');
+```javascript
+//调用示例
+gio('hybridClearUserId');
 ```
 
 ### 7. 设置访问用户变量 <a id="7-she-zhi-fang-wen-yong-hu-bian-liang"></a>
 
-```text
-//调用示例gio('hybridSetVisitor',{'testkey': 'testValue', 'testNumKey': 2333});
+```javascript
+//调用示例
+gio('hybridSetVisitor',{'testkey': 'testValue', 'testNumKey': 2333});
 ```
 

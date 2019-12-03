@@ -6,7 +6,7 @@
 
 下面以查看GrowingIO官网热图为例来介绍功能使用：
 
-![](../../../.gitbook/assets/image%20%28127%29.png)
+![](../../../.gitbook/assets/image%20%28128%29.png)
 
 <table>
   <thead>

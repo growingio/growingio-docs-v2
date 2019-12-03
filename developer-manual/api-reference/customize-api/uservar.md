@@ -1,14 +1,14 @@
 # 用户变量上传
 
-{% tabs %}
-{% tab title="获取认证码" %}
+## 获取认证码
+
 为防止误传和恶意攻击， GrowingIO 服务器会对收到的每条数据做校验，因此需要在查询参数中提供校验码。
 
 校验码生成代码见下方示例，其中 keyArray 为 loginUserId，一次性上传多条时，使用逗号隔开，如接口定义示例中，第一条 keyArray 为 `1234`，第二条为 `1234,1235`。
 
-{% code title="Java" %}
+{% code title="java" %}
 ```java
-public String authToken(String projectKeyId, Strin
+javapublic String authToken(String projectKeyId, Strin
 g secretKey, String keyArray) throws Exception {
     String message = "ai="+projectKeyId+"&loginUserId="+keyArray;
     Mac hmac = Mac.getInstance("HmacSHA256");
@@ -20,7 +20,8 @@ g secretKey, String keyArray) throws Exception {
 {% endcode %}
 
 {% code title="Scala" %}
-```scala
+```java
+
 def authToken(projectKeyId: String, secretKey: String, keyArray: String): String = {
   val message = s"ai=$projectKeyId&loginUserId=$keyArray"
   val hmac: Mac = Mac.getInstance("HmacSHA256")
@@ -32,7 +33,7 @@ def authToken(projectKeyId: String, secretKey: String, keyArray: String): String
 {% endcode %}
 
 {% code title="python" %}
-```python
+```java
 #coding:utf-8 
 import hashlib
 import hmac
@@ -44,8 +45,8 @@ def authToken(projectKeyId,secretKey,keyArray):
 ```
 {% endcode %}
 
-{% code title="PHP" %}
-```php
+{% code title="php" %}
+```java
 function authToken($projectKeyId, $secretKey, $keyArray)
 {
    $message="ai=".$projectKeyId."&loginUserId=".$keyArray;
@@ -53,33 +54,29 @@ function authToken($projectKeyId, $secretKey, $keyArray)
 }
 ```
 {% endcode %}
-{% endtab %}
 
-{% tab title="接口定义" %}
-### URL
+## 接口定义
+
+#### URL
 
 https://data.growingio.com/{ai}/loginUserId
 
-### 请求类型
+#### 请求类型
 
 POST
 
-### 请求头参数
-
-| 名称 | 类型 | 是否必传 | 说明 |
+{% tabs %}
+{% tab title="请求参数" %}
+| 请求头参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 | Access-Token | string | 是 | 项目公钥 |
 | Content-Type | string | 是 | application/json |
 
-### 查询参数
-
-| 名称 | 类型 | 是否必传 | 说明 |
+| 查询参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 | auth | string | 是 | 认证码，针对每条数据独立生成的认证。使用独立的认证码，详细见本页获取认证码页签。 |
 
-### body参数
-
-| 名称 | 类型 | 是否必传 | 说明 |
+| body参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 | loginUserId | string | 是 | 登录用户ID。 |
 | userProperty1 | string | 否 | 在GrowingIO系统内定义的用户属性（如gender） |
@@ -88,12 +85,12 @@ POST
 {% hint style="success" %}
 **body内的userProperty1-N为您在GrowingIO系统内定义的用户属性的key，如gender、user\_name等。支持使用数组的方式一次上传多条数据，一次性最多上传100条，body大小的最大限制为2M。**
 {% endhint %}
+{% endtab %}
 
-### body示例
-
+{% tab title="body示例" %}
 * 一次上传一条：
 
-```text
+```java
 {
     "loginUserId":"1234",
     "user_name":"张三",
@@ -103,7 +100,7 @@ POST
 
 * 一次上传多条
 
-```text
+```java
 [
 {
     "loginUserId":"1234",

@@ -49,14 +49,6 @@ POST
 </table>
 {% endtab %}
 
-{% tab title="返回参数" %}
-| 名称 | 类型 | 说明 |
-| :--- | :--- | :--- |
-| id | string | 活动ID。 |
-| name | string | 活动名称。 |
-| productId | string | 对应App的ID。 |
-{% endtab %}
-
 {% tab title="body示例" %}
 ```text
 {
@@ -64,6 +56,14 @@ POST
   "name":"双十一推广"
 }
 ```
+{% endtab %}
+
+{% tab title="返回参数" %}
+| 名称 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| id | string | 活动ID。 |
+| name | string | 活动名称。 |
+| productId | string | 对应App的ID。 |
 {% endtab %}
 
 {% tab title="响应示例" %}

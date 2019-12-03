@@ -50,7 +50,6 @@ POST
         <p>&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x3002;</p>
         <ul>
           <li>counter&#xFF1A;&#x8BA1;&#x6570;&#x5668;</li>
-          <li>number&#xFF1A;&#x6570;&#x503C;</li>
         </ul>
       </td>
     </tr>

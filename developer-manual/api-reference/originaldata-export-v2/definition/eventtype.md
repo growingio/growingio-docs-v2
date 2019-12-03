@@ -49,6 +49,7 @@ GET
           <li>ads_track_click: &#x5E7F;&#x544A;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</li>
           <li>pvar:&#x9875;&#x9762;&#x7EA7;&#x53D8;&#x91CF;</li>
           <li>evar: &#x8F6C;&#x5316;&#x53D8;&#x91CF;</li>
+          <li>vstr&#xFF1A;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x53D8;&#x91CF;</li>
         </ul>
       </td>
     </tr>

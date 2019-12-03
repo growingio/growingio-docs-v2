@@ -1,4 +1,8 @@
-# Android SDK升级指导
+---
+description: 1.x 及其以下 SDK 升级 2.x 以上 SDK 需要遵循文档升级，有重大更新。
+---
+
+# 1.x Android SDK 升级指导
 
 {% hint style="danger" %}
 升级到SDK 2.x前，请务必联系客服协助您完成后台配置的升级。
@@ -20,7 +24,7 @@
 
 * CS1字段，会强制命名为“登陆用户ID”，并且上传接口与其他变量不同。
 * CS2-10字段，会迁移至“应用级变量”，应用级变量与CS字段的使用方式无任何区别。
-* CS11-20字段，会迁移至[用户变量]()。两者的区别主要在于：用户变量支持自定义的归因方式。
+* CS11-20字段，会迁移至[用户变量](android-sdk-api/customize-api.md#2-qing-chu-deng-lu-yong-hu-idclearuserid)。两者的区别主要在于：用户变量支持自定义的归因方式。
 
 ### 上传接口
 

@@ -126,7 +126,7 @@ TabHost.OnTabChangeListener listener = new TabHost.OnTabChangeListener() {
 </activity>
 ```
 
-
+多个  Intent Filter 不建议合并，强烈建议不要合并，除非经过严谨的测试，[Google 官方解释](https://developer.android.com/training/app-links/deep-linking#adding-filters)。
 
 
 

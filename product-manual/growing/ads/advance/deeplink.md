@@ -39,7 +39,7 @@ Universal Links 适用于 iOS 9 及以上的版本，当用户设备系统版本
 
 1、在您的 Xcode 中勾选 **Associated Domains** 功能。
 
-![](../../../../.gitbook/assets/image%20%2878%29.png)
+![](../../../../.gitbook/assets/image%20%2879%29.png)
 
 2. 添加 GrowingIO域名到 Xcode。
 
@@ -55,7 +55,7 @@ GrowingIO的域名：
 
 3. 在苹果开发者网站中找到 Team ID 与 Bundle ID，如下图。
 
-![](../../../../.gitbook/assets/image%20%28177%29.png)
+![](../../../../.gitbook/assets/image%20%28178%29.png)
 
 **二、 将 Team ID 配置到 GrowingIO 后台。**
 
@@ -69,7 +69,7 @@ GrowingIO的域名：
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtP41qSBliAk88VA3Xe-LtPKKsn2R69VKrS_DHfimage.png)
 
-![](../../../../.gitbook/assets/image%20%28108%29.png)
+![](../../../../.gitbook/assets/image%20%28109%29.png)
 
 
 

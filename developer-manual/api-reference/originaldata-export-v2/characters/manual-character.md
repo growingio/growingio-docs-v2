@@ -36,7 +36,7 @@
       <td style="text-align:left">bigint</td>
       <td style="text-align:left">
         <p>&lt;&#x65F6;&#x95F4;&#x6233;&gt;</p>
-        <p>&#x8BF7;&#x6C42;&#x5728;&#x7528;&#x6237;&#x7AEF;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
+        <p>&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;1520899220665</p>
       </td>
     </tr>
@@ -170,7 +170,7 @@
       <td style="text-align:left">bigint</td>
       <td style="text-align:left">
         <p>&lt;&#x65F6;&#x95F4;&#x6233;&gt;</p>
-        <p>&#x8BF7;&#x6C42;&#x5728;&#x7528;&#x6237;&#x7AEF;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
+        <p>&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;1520899220665</p>
       </td>
     </tr>
@@ -267,7 +267,7 @@
       <td style="text-align:left">bigint</td>
       <td style="text-align:left">
         <p>&lt;&#x65F6;&#x95F4;&#x6233;&gt;</p>
-        <p>&#x8BF7;&#x6C42;&#x5728;&#x7528;&#x6237;&#x7AEF;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
+        <p>&#x8BF7;&#x6C42;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;1520899220665</p>
       </td>
     </tr>
@@ -335,7 +335,7 @@
       <td style="text-align:left">bigint</td>
       <td style="text-align:left">
         <p>&lt;&#x65F6;&#x95F4;&#x6233;&gt;</p>
-        <p>&#x8BF7;&#x6C42;&#x5728;&#x7528;&#x6237;&#x7AEF;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
+        <p>&#x8BF7;&#x6C42;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;1520899220665</p>
       </td>
     </tr>

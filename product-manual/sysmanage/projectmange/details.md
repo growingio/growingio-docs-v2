@@ -11,7 +11,7 @@
 
 ### 查看项目基本信息
 
-![](../../../.gitbook/assets/image%20%28145%29.png)
+![](../../../.gitbook/assets/image%20%28146%29.png)
 
 ### 修改项目名称
 

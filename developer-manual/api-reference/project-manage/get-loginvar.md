@@ -6,7 +6,7 @@ description: 获得当前项目登录用户变量列表。
 
 ### URL
 
-https://www.growingio.com /v1/api/projects/_**project\_uid**_/vars/peoples
+https://www.growingio.com /v1/api/projects/{project\_uid}/vars/peoples
 
 ### 请求类型
 

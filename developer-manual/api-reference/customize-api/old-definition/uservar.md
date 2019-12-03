@@ -1,7 +1,7 @@
 # 用户变量上传
 
-{% tabs %}
-{% tab title="获取认证码" %}
+## 获取认证码
+
 旧版本上传接口使用 cs1-cs20 的方式上传用户属性，对应的签名计算中 keyArray 为1234,1235。加密 Message 为 `ai=$projectKeyId&cs=$keyArray`
 
 如 Java：
@@ -15,41 +15,37 @@ public String authToken(String projectKeyId, String secretKey, String keyArray) 
     return Hex.encodeHexString(signature);
 }
 ```
-{% endtab %}
 
-{% tab title="接口定义" %}
-### URL
+## 接口定义
+
+#### URL
 
 https://data.growingio.com/saas/{ai}/user
 
-### 请求类型
+#### 请求类型
 
 POST
 
-### 请求头参数
+#### 参数说明
 
-| 名称 | 类型 | 是否必传 | 说明 |
+{% tabs %}
+{% tab title="请求参数" %}
+| 请求头参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 | Access-Token | string | 是 | Public Key |
 
-### 路径参数
-
-| 名称 | 类型 | 是否必传 | 说明 |
+| 路径参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 | ai | string | 是 | 项目ID |
 
-### 查询参数
-
-| 名称 | 类型 | 是否必传 | 说明 |
+| 查询参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 | auth | string | 是 | 针对每条数据独立生成的认证，详细见本页面的获取认证码页签。 |
-
-### body参数
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x540D;&#x79F0;</th>
+      <th style="text-align:left">body&#x53C2;&#x6570;</th>
       <th style="text-align:left">&#x7C7B;&#x578B;</th>
       <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x4F20;</th>
       <th style="text-align:left">&#x8BF4;&#x660E;</th>

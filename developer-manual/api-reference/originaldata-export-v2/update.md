@@ -24,7 +24,7 @@ https://www.growingio.com/v2/insights/{export_type}/{data_type}/{ai}/{export_dat
 1.0 接口格式：
 
 ```text
-https://www.growingio.com/insights/:ai/:date.json
+https://www.growingio.com/insights/{ai}/{date}.json
 ```
 {% endtab %}
 

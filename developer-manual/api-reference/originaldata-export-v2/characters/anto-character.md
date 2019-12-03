@@ -58,7 +58,7 @@ description: 无埋点事件字段共分为4个事件类型。
         <p>&lt;&#x57DF;&#x540D;&gt;</p>
         <p>&#x8BBF;&#x95EE;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x5F53;&#x4E3A; iOS /
           Android &#x65F6;&#xFF0C;&#x4E3A; app &#x5305;&#x540D;&#x3002;</p>
-        <p>&#x793A;&#x4F8B;&#xFF1A;growingio.com</p>
+        <p>&#x793A;&#x4F8B;&#xFF1A;www.growingio.com</p>
       </td>
     </tr>
     <tr>
@@ -323,7 +323,7 @@ description: 无埋点事件字段共分为4个事件类型。
         <p>&lt;&#x57DF;&#x540D;&gt;</p>
         <p>&#x8BBF;&#x95EE;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x5F53;&#x4E3A; iOS /
           Android &#x65F6;&#xFF0C;&#x4E3A; app &#x5305;&#x540D;&#x3002;</p>
-        <p>&#x793A;&#x4F8B;&#xFF1A;growingio.com</p>
+        <p>&#x793A;&#x4F8B;&#xFF1A;www.growingio.com</p>
       </td>
     </tr>
     <tr>
@@ -577,7 +577,7 @@ description: 无埋点事件字段共分为4个事件类型。
       <td style="text-align:left">
         <p>&lt;&#x8BF7;&#x6C42;&#x7C7B;&#x578B;&gt;</p>
         <p>&#x6839;&#x636E;&#x8BF7;&#x6C42;&#x7684;&#x7C7B;&#x578B;&#x4E0D;&#x540C;&#xFF0C;&#x53EF;&#x80FD;&#x503C;&#x4E3A;&#xFF1A;clck(click),
-          chng(change)&#xFF0C;sbmt(submit)&#x4EE5;&#x53CA;imp(impression)&#xFF0C;change</p>
+          chng(change)&#xFF0C;sbmt(submit)</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;clck</p>
       </td>
     </tr>
@@ -588,7 +588,7 @@ description: 无埋点事件字段共分为4个事件类型。
         <p>&lt;&#x57DF;&#x540D;&gt;</p>
         <p>&#x8BBF;&#x95EE;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x5F53;&#x4E3A; iOS /
           Android &#x65F6;&#xFF0C;&#x4E3A; app &#x5305;&#x540D;&#x3002;</p>
-        <p>&#x793A;&#x4F8B;&#xFF1A;growingio.com</p>
+        <p>&#x793A;&#x4F8B;&#xFF1A;www.growingio.com</p>
       </td>
     </tr>
     <tr>
@@ -669,8 +669,8 @@ description: 无埋点事件字段共分为4个事件类型。
         <p>&lt;Action&#x8BF7;&#x6C42;&#x5185;&#x90E8;ID&gt;</p>
         <p>&#x7528;&#x4E8E;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;action&#x8BF7;&#x6C42;&#x7684;ID&#x3002;</p>
         <ul>
-          <li>Web&#x7684;action_id&#x4EE5;wa&#x5F00;&#x5934;</li>
-          <li>&#x79FB;&#x52A8;&#x7AEF;ction_id&#x4EE5;ma&#x5F00;&#x5934;</li>
+          <li>Web&#x4EE5;wa&#x5F00;&#x5934;</li>
+          <li>&#x79FB;&#x52A8;&#x7AEF;&#x4EE5;ma&#x5F00;&#x5934;</li>
         </ul>
       </td>
     </tr>

@@ -291,7 +291,7 @@ gio("identify", userid);
 2. 打开小程序详情/设置/开发设置
 3. 配置httpRequest接口请求域名白名单：https://wxapi.growingio.com
 
-![](../../../.gitbook/assets/image%20%2899%29.png)
+![](../../../.gitbook/assets/image%20%28100%29.png)
 
 ## 3. 支付宝小程序用户属性设置
 

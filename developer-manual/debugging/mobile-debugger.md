@@ -1,3 +1,7 @@
+---
+description: 此功能可以方便查看移动端 SDK 上传的数据信息。
+---
+
 # Mobile Debugger
 
 #### 启动Mobile Debugger <a id="qi-dong-mobile-debugger"></a>
@@ -6,7 +10,7 @@
 
 登录GrowingIO平台，在任意界面单机右上角 ![](../../.gitbook/assets/2019-10-10_18-59-32.png) 选择**Mobile Debugger**进入Mobile Debugger启动页。
 
-![Mobile Debugger&#x542F;&#x52A8;&#x9875;](../../.gitbook/assets/image%20%28176%29.png)
+![Mobile Debugger&#x542F;&#x52A8;&#x9875;](../../.gitbook/assets/image%20%28177%29.png)
 
 第二步、扫码唤起App
 
@@ -66,8 +70,7 @@
       <td style="text-align:left">
         <p>&#x5143;&#x7D20;&#x6D4F;&#x89C8;&#x6570;&#x636E;</p>
         <p>&#x6570;&#x636E;&#x91CF;&#x7EA7;&#x8FC7;&#x5927;&#xFF0C;&#x5F71;&#x54CD;Mobile
-          Debugger&#x6027;&#x80FD;&#xFF0C;Mobile Debugger&#x4E0D;&#x5C55;&#x793A;&#x8FD9;&#x90E8;&#x5206;&#x6570;&#x636E;&#x3002;
-          &#x1F34E;</p>
+          Debugger&#x6027;&#x80FD;&#xFF0C;Mobile Debugger&#x4E0D;&#x5C55;&#x793A;&#x8FD9;&#x90E8;&#x5206;&#x6570;&#x636E;</p>
       </td>
     </tr>
   </tbody>

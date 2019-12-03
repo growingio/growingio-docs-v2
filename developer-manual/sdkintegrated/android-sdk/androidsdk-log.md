@@ -16,6 +16,7 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.8.7</td>
       <td style="text-align:left">
+        <p>&#x4FEE;&#x590D; Bugs :</p>
         <ul>
           <li>&#x4FEE;&#x590D; Android 7.0 &#x4EE5;&#x4E0B;&#xFF0C;HTTP &#x8BF7;&#x6C42;&#x4F4E;&#x6982;&#x7387;&#x8017;&#x65F6;&#x8FC7;&#x957F;</li>
           <li>&#x4FEE;&#x590D; <code>setThrottle(true)</code> &#x63A5;&#x53E3;&#x548C; <code>setDisableImpression(true)</code> &#x540C;&#x65F6;&#x8C03;&#x7528;&#x4E0D;&#x80FD;&#x5173;&#x95ED;
@@ -29,7 +30,7 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.8.6</td>
       <td style="text-align:left">
-        <p></p>
+        <p>&#x4FEE;&#x590D; Bugs:</p>
         <ul>
           <li>SDK &#x6240;&#x6709; API &#x8C03;&#x7528;&#x5F3A;&#x5236;&#x5185;&#x90E8;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#xFF0C;&#x964D;&#x4F4E;&#x7528;&#x6237;&#x9519;&#x8BEF;&#x7684;&#x5728;&#x5B50;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#x9020;&#x6210;
             crash &#x200C;</li>

@@ -52,7 +52,7 @@ POST
 {% tab title="返回参数" %}
 | 名称 | 类型 | 备注 |
 | :--- | :--- | :--- |
-| id | string | ​？？？ |
+| id | string | 小程序码ID |
 | linkId | string | 监测链接ID |
 | name | string | 监测链接名字 |
 | projectId | string | 项目ID |

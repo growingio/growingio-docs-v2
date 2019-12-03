@@ -1,10 +1,10 @@
 # App内嵌H5页面常见问题
 
-## 1. H5页面需要继承SDK吗？
+## 1. H5页面需要集成SDK吗？
 
 如果您集成原生Android无埋点 SDK ， 则不需要单独集成 hybrid sdk ，无埋点 sdk 会将 hybrid sdk 自动注入，并且采集点击、浏览、文本输入等事件。
 
-## 2. H5页面说明情况需要继承Web JS SDK？
+## 2. H5页面说明情况需要集成Web JS SDK？
 
 如果您的页面，在移动端和网站同时投放，不考虑平台只关注这个页面的数据时，集成 web js sdk 。
 
@@ -16,7 +16,7 @@
 
 请参考：Web JS SDK埋点文档 和 Hybrid SDK埋点文档。 
 
-Web JS SDK API
+[Web JS SDK API](../../web-js-sdk/web-sdk-api/)
 
-Hybrid SDK API 
+[Hybrid SDK API ](../../hybrid-js-sdk.md#mai-dian-api)
 

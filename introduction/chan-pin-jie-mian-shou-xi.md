@@ -2,7 +2,7 @@
 
 GrowingIO平台的界面主要分为4个区域，如下图所示。
 
-![](../.gitbook/assets/image%20%28204%29.png)
+![](../.gitbook/assets/image%20%28205%29.png)
 
 <table>
   <thead>

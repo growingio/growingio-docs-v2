@@ -144,6 +144,7 @@ GET
     "status": "FINISHED",
     "downloadLinks": {
         "evar": [],
+        "vstr": [],
         "pvar": [],
         "action_tag": [],
         "custom_event": [],
