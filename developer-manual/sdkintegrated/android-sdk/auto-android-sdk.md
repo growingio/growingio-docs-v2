@@ -131,8 +131,17 @@ public class MyApplication extends Application {
 {% hint style="info" %}
 1. 请确保将代码添加在`Application`的`onCreate`方法中，添加到其他方法中可能导致数据不准确。
 2. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。 
-3. `trackAllFragments`方法用于把`Fragment`自动识别为页面，但一个界面中只能同时显示一个`Fragment`。
-4. `setChannel`方法的参数定义了“自定义App渠道”这个维度的值。
+3. `setChannel`方法的参数定义了“自定义App渠道”这个维度的值。
+{% endhint %}
+
+{% hint style="danger" %}
+`trackAllFragments`方法用于把`Fragment`自动识别为页面，但一个界面中只能同时显示一个`Fragment`。
+
+**注意事项**
+
+该方法如果在初始化时调用，会将activity中page事件强行归到Fragment对象，如果此时您在Activity中有自定义上传事件（常见于pvar事件），并且自定义上传事件的p识别为activity的对象，实际上activity的自定义上传事件并没有被发出，会导致上传事件无法被预置维度拆分或关联不到对应的页面。
+
+解决方法：晚于fragment的page事件之后再去activity中调用自定义上传事件。
 {% endhint %}
 
 ### 4. 代码混淆
