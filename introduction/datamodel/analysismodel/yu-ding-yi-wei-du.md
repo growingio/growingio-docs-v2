@@ -163,7 +163,7 @@ App 和小程序 的版本号‌
 
 在APP集成SDK的时候，针对安卓用户，设置分包渠道。‌
 
-在小程序中，则自动获取小程序打开的来源。目前支持微信中60多种统计场景，例如：二维码扫码，群聊中点击分享的小程序卡片等。详情请见[小程序概览-获客场景](https://growingio.gitbook.io/docs/dashboard/mina-overview#huo-ke-chang-jing)。‌
+在小程序中，则自动获取小程序打开的来源。目前支持微信中60多种统计场景，例如：二维码扫码，群聊中点击分享的小程序卡片等。
 
 **案例：**在「事件分析」横向柱图中添加不同的「维度」，可以查看不同访问来源下的页面浏览量情况。‌
 
@@ -248,23 +248,17 @@ UTM 渠道归因模式为非直接访问的最后一次访问。‌
     <tr>
       <td style="text-align:left">&#x5FAE;&#x4FE1;&#x7528;&#x6237;&#x6240;&#x5728;&#x57CE;&#x5E02;&#xFF08;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</td>
       <td
-      style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x7279;&#x6709;&#x7EF4;&#x5EA6;&#x3002;&#x8868;&#x793A;&#x7528;&#x6237;&#x5728;&#x5FAE;&#x4FE1;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#x6240;&#x5728;&#x57CE;&#x5E02;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x63D0;&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;SDK&#x83B7;&#x53D6;&#x5230;&#x5FAE;&#x4FE1;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x3002;&#x8BE6;&#x60C5;&#x8BF7;&#x89C1;
-        <a
-        href="https://growingio.gitbook.io/docs/sdk-integration/mina-sdk#sdk-wei-xin-yong-hu-shu-xing-she-zhi">&#x5C0F;&#x7A0B;&#x5E8F;SDK-&#x5FAE;&#x4FE1;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;</a>&#x3002;&#xFF1F;&#xFF1F;&#xFF1F;</td>
+      style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x7279;&#x6709;&#x7EF4;&#x5EA6;&#x3002;&#x8868;&#x793A;&#x7528;&#x6237;&#x5728;&#x5FAE;&#x4FE1;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#x6240;&#x5728;&#x57CE;&#x5E02;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x63D0;&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;SDK&#x83B7;&#x53D6;&#x5230;&#x5FAE;&#x4FE1;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x3002;</td>
     </tr>
     <tr>
       <td style="text-align:left">&#x5FAE;&#x4FE1;&#x7528;&#x6237;&#x6240;&#x5728;&#x7701;&#xFF08;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</td>
       <td
-      style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x7279;&#x6709;&#x7EF4;&#x5EA6;&#x3002;&#x8868;&#x793A;&#x7528;&#x6237;&#x5728;&#x5FAE;&#x4FE1;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#x6240;&#x5728;&#x7701;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x63D0;&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;SDK&#x83B7;&#x53D6;&#x5230;&#x5FAE;&#x4FE1;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x3002;&#x8BE6;&#x60C5;&#x8BF7;&#x89C1;
-        <a
-        href="https://growingio.gitbook.io/docs/sdk-integration/mina-sdk#sdk-wei-xin-yong-hu-shu-xing-she-zhi">&#x5C0F;&#x7A0B;&#x5E8F;SDK-&#x5FAE;&#x4FE1;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;</a>&#x3002;&#xFF1F;&#xFF1F;&#xFF1F;</td>
+      style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x7279;&#x6709;&#x7EF4;&#x5EA6;&#x3002;&#x8868;&#x793A;&#x7528;&#x6237;&#x5728;&#x5FAE;&#x4FE1;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#x6240;&#x5728;&#x7701;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x63D0;&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;SDK&#x83B7;&#x53D6;&#x5230;&#x5FAE;&#x4FE1;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x3002;</td>
     </tr>
     <tr>
       <td style="text-align:left">&#x5FAE;&#x4FE1;&#x7528;&#x6237;&#x6240;&#x5728;&#x56FD;&#x5BB6;&#xFF08;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</td>
       <td
-      style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x7279;&#x6709;&#x7EF4;&#x5EA6;&#x3002;&#x8868;&#x793A;&#x7528;&#x6237;&#x5728;&#x5FAE;&#x4FE1;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#x6240;&#x5728;&#x56FD;&#x5BB6;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x63D0;&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;SDK&#x83B7;&#x53D6;&#x5230;&#x5FAE;&#x4FE1;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x3002;&#x8BE6;&#x60C5;&#x8BF7;&#x89C1;
-        <a
-        href="https://growingio.gitbook.io/docs/sdk-integration/mina-sdk#sdk-wei-xin-yong-hu-shu-xing-she-zhi">&#x5C0F;&#x7A0B;&#x5E8F;SDK-&#x5FAE;&#x4FE1;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;</a>&#x3002;&#xFF1F;&#xFF1F;&#xFF1F;</td>
+      style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x7279;&#x6709;&#x7EF4;&#x5EA6;&#x3002;&#x8868;&#x793A;&#x7528;&#x6237;&#x5728;&#x5FAE;&#x4FE1;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#x6240;&#x5728;&#x56FD;&#x5BB6;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x63D0;&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;SDK&#x83B7;&#x53D6;&#x5230;&#x5FAE;&#x4FE1;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x3002;</td>
     </tr>
   </tbody>
 </table>
@@ -344,7 +338,7 @@ www.growingio.com 是这两个页面的域名。
 {% tab title="用户性别" %}
 #### 微信用户性别 （小程序） <a id="1-wei-xin-yong-hu-xing-bie-xiao-cheng-xu"></a>
 
-小程序特有维度。表示用户在微信端设置的性别。通常为男、女、未知（表示未设置性别信息）。使用前提是小程序SDK获取到微信访问用户属性。详情请见 [小程序SDK-微信用户属性设置](https://growingio.gitbook.io/docs/sdk-integration/mina-sdk#sdk-wei-xin-yong-hu-shu-xing-she-zhi)。？？？
+小程序特有维度。表示用户在微信端设置的性别。通常为男、女、未知（表示未设置性别信息）。使用前提是小程序SDK获取到微信访问用户属性。
 {% endtab %}
 {% endtabs %}
 
