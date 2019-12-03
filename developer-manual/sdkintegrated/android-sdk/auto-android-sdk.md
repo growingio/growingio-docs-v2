@@ -37,7 +37,7 @@ buildscript {
 }
 ```
 
-在module级别的build.gradle文件中添加com.growingio.android插件、vds-android-agent依赖和对应的资源。
+在 module 级别的 build.gradle 文件中添加`com.growingio.android`插件、`vds-android-agent`依赖和对应的资源。
 
 代码示例：
 
@@ -53,13 +53,13 @@ android {
 }
 dependencies {
     //GrowingIO 无埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:autotrack-2.8.7@aar'
+    implementation 'com.growingio.android:vds-android-agent:autotrack-2.8.7'
 }
 ```
 
 ### 2. 添加URL cheme和应用权限 
 
-URL Scheme是您在GrowingIO平台创建应用时生成的该应用的唯一标识。把URL Scheme 添加到您的项目，以便我们唤醒您的应用。
+URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目，以便我们唤醒您的应用。
 
 将应用的 URLScheme 和应用权限添加到你的 AndroidManifest.xml 中的 LAUNCHER Activity 下。
 
@@ -111,9 +111,9 @@ URL Scheme是您在GrowingIO平台创建应用时生成的该应用的唯一标�
 
 ### 3. SDK初始化配置
 
-SDK的初始化时机必须在Application的 onCreate方法中进行。
+SDK的初始化时机必须在 Application 的 onCreate 方法中进行。
 
-请将GrowingIO.startWithConfiguration加在您的Application 的 onCreate 方法中
+请将 GrowingIO.startWithConfiguration 加在您的 Application 的 onCreate 方法中
 
 ```javascript
 public class MyApplication extends Application {
@@ -146,7 +146,7 @@ public class MyApplication extends Application {
 
 ### 4. 代码混淆
 
-如果你启用了混淆，请在你的proguard-rules.pro中加入如下代码：
+如果你启用了混淆，请在你的 proguard-rules.pro 中加入如下代码：
 
 {% hint style="danger" %}
 **SDK 2.6.0 更新了混淆文件，前后混淆文件内容截然不同，请注意更新。**
@@ -175,7 +175,7 @@ public class MyApplication extends Application {
 }
 ```
 
-如果您使用了AndRestGuard，请在白名单里添加GrowingIO。
+如果您使用了 AndRestGuard，请在白名单里添加 GrowingIO。
 
 代码示例：
 
@@ -186,12 +186,12 @@ R.string.growingio*
 ### **5. lambda 表达式支持配置**
 
 {% hint style="info" %}
-Android 2.7.4及以上支持了lambda表达式（不包括retrolambda），不需要此配置项。
+Android 2.7.4 及以上支持了 lambda 表达式（不包括retrolambda），不需要此配置项。
 {% endhint %}
 
 ambda 表达式目前业界主流两种，分别为 retrolambda 和 AndroidStudio 支持的 lambda。
 
-GrowingIO的SDK 只支持 AndroidStudio 自带的 lambda 表达式，并且对于 `android.enableD8.desugaring = true` 未做兼容。 在com.android.tools.build:gradle:3.2.1 之后， Google默认开启desugaring特性， 暂时需要用户手动关闭。
+GrowingIO的SDK 只支持 AndroidStudio 自带的 lambda 表达式，并且对于 `android.enableD8.desugaring = true` 未做兼容。 在com.android.tools.build:gradle:3.2.1 之后， Google默认开启 `desugaring` 特性， 暂时需要用户手动关闭。
 
 在项目根目录中 gradle.properties 文件中增加以下配置：
 
@@ -239,12 +239,12 @@ public class FeedActivity extends Activity {
 {% hint style="info" %}
 1. 必须在该`Activity`的`onCreate`方法中完成该属性的赋值操作。
 2. 页面别名只能设置为字母、数字和下划线的组合。
-3. 为查看数据方便，请尽量对iOS和安卓的同功能页面取不同的名称。
+3. 为查看数据方便，请尽量对 iOS 和安卓的同功能页面取不同的名称。
 {% endhint %}
 
 ### 3. 设置界面元素内容
 
-SDK默认不会采集ImageView的内容，如果您需要区分不同的`ImageView`，可以使用contentDescription来标记，也可以调用下方的方法来设置：
+SDK 默认不会采集 `ImageView` 的内容，如果您需要区分不同的`ImageView`，可以使用 `contentDescription` 来标记，也可以调用下方的方法来设置：
 
 ```java
 GrowingIO.setViewContent(View view, String contentDescription);
@@ -252,20 +252,20 @@ GrowingIO.setViewContent(View view, String contentDescription);
 
 ### 4. 设置界面元素ID
 
-SDK会使用Layout文件中的ID来识别一个元素。
+SDK 会使用 Layout 文件中的 ID 来识别一个元素。
 
-如果部分元素在Layout文件中没有ID，建议在Layout文件中添加。
+如果部分元素在 Layout 文件中没有 ID，建议在 Layout 文件中添加。
 
-对于动态生成的元素，可以使用如下方法对它设置唯一的ID：
+对于动态生成的元素，可以使用如下方法对它设置唯一的 ID：
 
 ```java
 GrowingIO.setViewID(View view, String id);
 ```
 
 {% hint style="info" %}
-1. 如果在ViewGroup上设置ID的话，SDK会忽略他所有子元素的默认ID（就是写在xml文件里的）只会使用GrowingIO.setViewID设置的ID。
-2. ID只能设置为字母、数字和下划线的组合。
-3. 对于已经集成过旧版 SDK \(1.x\)并圈选过的应用，对某个元素设置ID后再圈选它，指标数值会从零开始计算，类似初次集成SDK后发版的效果，但不影响之前圈选的其它指标数据。如果不希望出现这种情况，请不要使用这个方法
+1. 如果在 ViewGroup 上设置ID的话，SDK 会忽略他所有子元素的默认 ID（就是写在xml文件里的）只会使用GrowingIO.setViewID 设置的 ID。
+2. ID 只能设置为字母、数字和下划线的组合。
+3. 对于已经集成过旧版 SDK \(1.x\) 并圈选过的应用，对某个元素设置 ID 后再圈选它，指标数值会从零开始计算，类似初次集成 SDK 后发版的效果，但不影响之前圈选的其它指标数据。如果不希望出现这种情况，请不要使用这个方法
 {% endhint %}
 
 ### 5. 忽略元素
@@ -304,9 +304,9 @@ GrowingIO.setViewInfo(view view, String info);
 
 ### 8. 设置Debug模式
 
-查看数据采集发送日志，能够在Android Studio中通过Logcat查看GrowingIO打印的数据发送日志。
+查看数据采集发送日志，能够在 Android Studio 中通过 Logcat 查看GrowingIO 打印的数据发送日志。
 
-在App的Application onCrate初始化SDK位置添加配置。
+在 App 的 Application onCrate 初始化 SDK 位置添加配置。
 
 ```java
 setDebugMode(boolean debugMode);
@@ -314,7 +314,7 @@ setDebugMode(boolean debugMode);
 
 **参数说明**
 
-| **参数** | 类型 | 是否必填 | 说明 |
+| **参数** | 类型 | 是否必填    | 说明 |
 | :--- | :--- | :--- | :--- |
 | debugMode | boolean | 是 | 开启GrowingIO日志，true开始，默认false |
 
@@ -328,9 +328,9 @@ GrowingIO.startWithConfiguration(this,new Configuration()
 
 ### 9. 设置Test模式
 
-实时发送数据，开启则不遵循移动网络状态下数据发送大小限制以及采集数据缓存30秒发送策略。为了方便开发者查看日志，一般和`setDebugMode`一起使用。
+实时发送数据，开启则不遵循移动网络状态下数据发送大小限制以及采集数据缓存 30 秒发送策略。为了方便开发者查看日志，一般和`setDebugMode`一起使用。
 
-在App的Application onCrate初始化SDK位置添加配置。
+在App的Application onCrate 初始化 SDK 位置添加配置。
 
 ```java
 setTestMode(boolean testMode);
@@ -354,7 +354,7 @@ GrowingIO.startWithConfiguration(this,new Configuration()
 
 采集`Banner`数据，应用的界面上方横向滚动的`Banner`广告。
 
-对于此类广告，如果您的应用通过ViewPager、AdapterView或者RecyclerView实现，请在Banner创建时（包括动态创建）调用此接口来采集数据。
+对于此类广告，如果您的应用通过 `ViewPager`、`AdapterView` 或者`RecyclerView` 实现，请在 Banner 创建时（包括动态创建）调用此接口来采集数据。
 
 ```java
 GrowingIO.getInstance().trackBanner(View banner,List<String> bannerDescriptions);
@@ -362,7 +362,7 @@ GrowingIO.getInstance().trackBanner(View banner,List<String> bannerDescriptions)
 
 **参数说明**
 
-| 参数 | 类型 | 是否必填 | 说明 |
+| 参数 | 类型 | 是否必填                     | 说明 |
 | :--- | :--- | :--- | :--- |
 | banner | view | 是 | ViewPager、AdapterView、RecyclerView 实现的 View |
 | bannerDescriptions | List&lt;string&gt; | 是 | 广告内容描述，顺序需要跟 banner view 顺序一致 |
@@ -378,7 +378,7 @@ GrowingIO.getInstance().trackBanner(View banner,List<String> bannerDescriptions)
 ```
 
 {% hint style="info" %}
-Banner描述和广告出现的顺序一致，通过调用Log查看或者MobileDebugger的方式检查配置是否正确。查看Banner imp事件e字段中的v字段是否为您设置的banner description。
+Banner 描述和广告出现的顺序一致，通过 Log 查看或者MobileDebugger 的方式检查配置是否正确。查看 Banner imp 事件 `e` 字段中的 `v` 字段是否为您设置的 banner description。
 {% endhint %}
 
 **检验数据发送日志示例**
