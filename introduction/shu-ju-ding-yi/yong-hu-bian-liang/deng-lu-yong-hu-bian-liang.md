@@ -1,22 +1,18 @@
 # 登录用户变量
 
-登录用户变量用来保存跟登录用户本身相关的信息，例如用户的姓名，性别，会员卡等级等等。不建议在登录用户变量中保存跟交互行为相关的信息，例如当前正在浏览的商品，当前正在查看的某一个 SaaS 项目。这些随着用户的交互行为会发生变化的信息 GrowingIO 建议使用[页面变量](https://docs.growingio.com/docs/data-definition/page-variable)和[转化变量](https://docs.growingio.com/docs/data-definition/custom-event/convert-variable)来保存。
+登录用户变量用来保存跟登录用户本身相关的信息，例如用户的姓名，性别，会员卡等级等等。不建议在登录用户变量中保存跟交互行为相关的信息，例如当前正在浏览的商品，当前正在查看的某一个 SaaS 项目。这些随着用户的交互行为会发生变化的信息 GrowingIO 建议使用**页面变量**和**转化变量**来保存。
 
 在某些情况下，某些特定的用户信息会发生变化。例如，某个用户在某天从银卡会员升级成了金卡会员。那么这位用户在银卡会员的时候发生的页面浏览，访问，购买等事件应该归属于银卡会员这个值还是金卡会员这个值呢？这个取决于登录用户变量的归因配置项。
 
 ## 登录用户简介 <a id="deng-lu-yong-hu-jian-jie"></a>
 
-##  <a id="deng-lu-yong-hu-jian-jie"></a>
-
 登录用户 ID：也就是注册用户 ID，当用户访问您的产品并发生注册/登录行为时，您可以通过 GrowingIO SDK 中的 API 将该用户的注册 ID（或与之对应的唯一标识，可以加密处理）上传给 GrowingIO。
 
 基于登录用户 ID，您可以进行跨平台分析，也可以在登录用户ID 的基础上，将更多的用户个人属性（如：性别、年龄段或您已经分析得出的用户标签）上传给 GrowingIO，从而实现更加高级的业务分析。
 
-更多内容请参考[登录用户模型文档](https://docs.growingio.com/docs/data-model/user-model/loginuser)。
+更多内容请参考[登录用户模型文档](../../datamodel/usermodel/#deng-lu-yong-hu)。
 
 ## 归因模型 <a id="gui-yin-mo-xing"></a>
-
-##  <a id="gui-yin-mo-xing"></a>
 
 当发生一个事件的时候，GrowingIO 会通过登录用户变量中配置的归因模型去计算应该将这个事件归到登录用户变量中的哪一个值上，登录用户变量支持两种归因模型：
 
@@ -30,52 +26,26 @@
 
 ## 配置和上传 <a id="pei-zhi-he-shang-chuan"></a>
 
-##  <a id="pei-zhi-he-shang-chuan"></a>
-
 ### **第一步：在 “事件和变量”中完成配置** <a id="di-yi-bu-zai-shi-jian-he-bian-liang-zhong-wan-cheng-pei-zhi"></a>
 
-梳理业务需求，确认需要上传的用户变量,请勿直接开始代码的部署,需要先到 GrowingIO 后台找到 【数据管理】-【事件和变量】- 【登录用户变量】功能，在其中完成对应的配置。
+具体的将自定义变量添加到网站或者移动应用上之前，GrowingIO 要求先在打点管理的界面上进行变量的声明操作，然后再开展具体的添加自定义变量的操作。
 
-#### 自定义变量规范 <a id="zi-ding-yi-bian-liang-gui-fan"></a>
-
-在具体的将自定义变量添加到网站或者移动应用上之前，GrowingIO 要求先在打点管理的界面上进行变量的声明操作，然后再开展具体的添加自定义变量的操作。在自定义变量的声明界面上需要输入下列对所有变量来说通用的信息：
-
-#### **标识符** <a id="biao-shi-fu"></a>
-
-* 标识符是代表某一个具体变量的一种具有**唯一性**要求的符号，标识符用来唯一的代表一个打点事件或者变量，即整个打点系统内部标识符在所有的变量和打点指标之间是唯一的。在新创建任何一种类型的变量的时候，这个新的变量的标识符不能跟任何一个已有变量和打点事件的标识符重复。在一个变量的标识符确定之后，在代码中就可以使用这个标识符来唯一代表该变量，请仔细检查确保声明的标识符和代码中使用标识符一致。如果出现了不一致的情况，GrowingIO 将视为没有收到声明了的变量的数据，而那个在代码中发送的跟声明中标识符不一样的变量的数据会被 GrowingIO 认为没有声明而丢弃。GrowingIO虽然支持标识符的修改，但是不建议频繁修改，因为每一次标识符的修改都需要在声明界面和代码上同时作出修改，以保证标识符的一致性。
-* 标识符的设置细节规则如下
-  * 自定义事件和所有自定义变量类型的标识符整体范围内不允许重名；
-  * 标识符仅允许大小写英文、数字、下划线、以及英文冒号，并且不能以数字和冒号开头；
-  * 标识符的长度限制在 50 个英文字符之内；
-
-#### **名称** <a id="ming-cheng"></a>
-
-* 名称是变量具体在使用的时候显示在报表上的一种变量的称呼。客户给变量一个名称，这个名称会出现在报表界面上用以指代当前所设置的变量对应的维度。名称允许客户经常改动，需要注意的是，名称修改以后，对应的报表界面上的维度名称也会跟着修改。
-* 名称的设置细节：名称允许重名，可以使用大小写英文、中文以及各种符号，长度限制在 30 个字符之内。
-
-#### **描述** <a id="miao-shu"></a>
-
-* 可以使用较长的一段文字来描述某一个变量设置的目的，意义。
-* 描述的设置细节规则：描述允许重复，可以使用大小写英文、中文以及各种符号，长度限制在 150 个字符之内。
-
-#### 归因配置 <a id="gui-yin-pei-zhi"></a>
-
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LIpFSFELv0pxS37pOCS-LIpJDKJ8Mns8un6Nb7kimage.png)归因配置
+配置方式参考[用户变量](../../../product-manual/datacenter/datamanage/variable/user.md)。
 
 ### **第二步：代码部署** <a id="di-er-bu-dai-ma-bu-shu"></a>
 
 完成了配置后，即可在代码中完成以上设计的 “自定义事件和变量” 的部署。具体的说，就是调用 GrowingIO 提供的 API 接口，上传数据。
 
-* ​[JS 接口文档](https://docs.growingio.com/docs/sdk-integration/web-js-sdk#3-web-js-sdk-2-1-api)​
-* ​[Android 接口文档](https://docs.growingio.com/docs/sdk-integration/android-sdk/android-sdk#2-android-sdk-api)​
-* ​[iOS 接口文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-sdk-2.x#ios-sdk-api)​
-* ​[小程序、小游戏以及内嵌页 SDK](https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk)​
+* ​[JS 接口文档​](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
+* ​[Android 接口文档​](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
+* ​[iOS 接口文档​](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
+* [​小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/other-sdk/customize-api.md)
 
 API中给出了登录用户变量的上传方式
 
 ### 第三步：数据校验 <a id="di-san-bu-shu-ju-xiao-yan"></a>
 
-在完成了【数据管理】-【事件与变量】-【登录用户变量】的配置，以及代码实施后，我们当然需要对数据是否成功上传进行校验。校验工作分为两步完成。
+在完成了GrowingIO平台的配置，以及代码实施后，我们当然需要对数据是否成功上传进行校验。校验工作分为两步完成。
 
 #### **数据校验第一步：本地开发环境校验** <a id="shu-ju-xiao-yan-di-yi-bu-ben-di-kai-fa-huan-jing-xiao-yan"></a>
 
@@ -88,8 +58,6 @@ GrowingIO 提供了 SDK debug 模式以及 debug 工具，来帮助您完成数�
 至此，您已经完成了 “自定义变量” 的上传，如您在配置或添加代码中有任何疑问，请联系您的客户成功经理咨询，或在工单系统中反馈问题。谢谢。
 
 ## **用户变量的持久性范围** <a id="yong-hu-bian-liang-de-chi-jiu-xing-fan-wei"></a>
-
-##  <a id="yong-hu-bian-liang-de-chi-jiu-xing-fan-wei"></a>
 
 登录用户变量默认的持久性范围是永远。当某个用户配置上某一个用户变量的某一个值时，如果后面没有再修改，那么这个用户在今后会一直保持这个值。也就是说，用户在之后不管多久的时间段内发生的各种各样的事件都可以归到这个登录用户变量的值上，除非之后显式的更改了这个登录用户变量的值。
 
