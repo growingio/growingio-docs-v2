@@ -2,7 +2,7 @@
 
 ### URL
 
-https://www.growingio.com/v2/projects/_**project\_uid**_/charts/_**chart\_id**_.json
+https://www.growingio.com/v2/projects/{project\_uid}/charts/{chart\_id}.json
 
 ### 请求类型
 

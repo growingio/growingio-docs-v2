@@ -22,7 +22,7 @@ public String authToken(String projectKeyId, String secretKey, String keyArray) 
 {% tab title="接口定义" %}
 ### URL
 
-https://data.growingio.com/saas/**ai**/company
+https://data.growingio.com/saas/{ai}/company
 
 ### 请求类型
 

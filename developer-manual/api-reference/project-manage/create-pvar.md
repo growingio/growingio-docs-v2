@@ -6,7 +6,7 @@ description: 创建页面级变量，目前仅支持创建，不支持修改，�
 
 ### URL
 
-https://www.growingio.com /v1/api/projects/_**project\_uid**_/vars/pages
+https://www.growingio.com /v1/api/projects/{project\_uid}/vars/pages
 
 ### 请求类型
 

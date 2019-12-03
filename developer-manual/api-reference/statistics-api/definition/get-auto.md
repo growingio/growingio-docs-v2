@@ -2,7 +2,7 @@
 
 ### URL
 
-https://www.growingio.com/projects/_**project\_uid**_/rules.csv
+https://www.growingio.com/projects/{project\_uid}/rules.csv
 
 ### 请求类型
 

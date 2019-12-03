@@ -2,7 +2,7 @@
 
 ### URL
 
-https://www.growingio.com/projects/_**project\_uid**_/segmentations/_**segmentation\_id**_/users.csv
+https://www.growingio.com/projects/{project\_uid}/segmentations/{segmentation\_id}/users.csv
 
 ### 请求类型
 

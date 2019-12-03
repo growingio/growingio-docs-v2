@@ -6,7 +6,7 @@ description: 创建事件级变量，目前仅支持创建，不支持修改，�
 
 ### URL
 
-https://www.growingio.com /v1/api/projects/_**project\_uid**_/vars/events
+https://www.growingio.com /v1/api/projects/{project\_uid}/vars/events
 
 ### 请求类型
 

@@ -2,7 +2,7 @@
 
 ### URL
 
-https://www.growingio.com/v2/projects/_**project\_uid**_/retentions/_**retention\_id**_.json
+https://www.growingio.com/v2/projects/{project\_uid}/retentions/{retention\_id}.json
 
 ### 请求类型
 

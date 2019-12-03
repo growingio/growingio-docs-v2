@@ -2,7 +2,7 @@
 
 ### URL
 
-https://www.growingio.com/projects/_**project\_uid**_/dashboards/_**dashboard\_id**_.json
+https://www.growingio.com/projects/{project\_uid}/dashboards/{dashboard\_id}.json
 
 ### 请求类型
 

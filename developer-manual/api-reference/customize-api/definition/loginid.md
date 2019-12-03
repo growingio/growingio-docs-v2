@@ -31,7 +31,7 @@ public String authToken(String projectKeyId, String secretKey, String keyArray) 
 {% tab title="接口定义" %}
 ### URL
 
-https://data.growingio.com/_**ai**_/user/exist
+https://data.growingio.com/{ai}/user/exist
 
 ### 请求类型
 

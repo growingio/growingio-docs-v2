@@ -2,7 +2,7 @@
 
 ### URL
 
-https://www.growingio.com/projects/_**project\_uid**_/activities.json
+https://www.growingio.com/projects/{project\_uid}/activities.json
 
 ### 请求方式
 

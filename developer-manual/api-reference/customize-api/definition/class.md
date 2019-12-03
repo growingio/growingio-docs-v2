@@ -21,7 +21,7 @@ public String authToken(String projectKeyId, String variableName, String secretK
 {% tab title="接口定义" %}
 ### URL
 
-https://data.growingio.com/_**ai**_/classification/_**variable\_name**_
+https://data.growingio.com/{ai}/classification/{variable\_name}
 
 ### 请求类型
 

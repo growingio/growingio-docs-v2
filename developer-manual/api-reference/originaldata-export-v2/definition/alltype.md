@@ -2,7 +2,7 @@
 
 ### URL
 
-https://www.growingio.com/v2/insights/_**export\_type**_/_**ai**_/_**export\_date**_.json?expire=_**minutes**_
+https://www.growingio.com/v2/insights/{export\_type}/{ai}/{export\_date}.json?expire={minutes}
 
 ### 请求类型
 

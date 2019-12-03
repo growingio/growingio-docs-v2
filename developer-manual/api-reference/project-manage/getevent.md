@@ -6,7 +6,7 @@ description: 返回当前项目打点事件，没有结果时返回空数组。
 
 ### URl
 
-https://www.growingio.com/v1/api/projects/_**project\_uid**_/dim/events
+https://www.growingio.com/v1/api/projects/{project\_uid}/dim/events
 
 ### 请求类型
 

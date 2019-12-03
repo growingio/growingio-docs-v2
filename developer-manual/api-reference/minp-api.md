@@ -12,7 +12,7 @@ GrowingIO在授权后，调用的是A和C接口分别创建小程序码和二维
 
 ### URL
 
-https://www.growingio.com/api/v1/projects/_**project\_uid**_/meta/minplinks
+https://www.growingio.com/api/v1/projects/{project\_uid}/meta/minplinks
 
 ### 请求类型
 

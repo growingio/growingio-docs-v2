@@ -2,7 +2,7 @@
 
 ### URL
 
-https://www.growingio.com/insights/_**ai**_/_**date**_.json
+https://www.growingio.com/insights/{ai}/{date}.json
 
 ### 请求类型
 
@@ -40,17 +40,26 @@ GET
         <p>&#x6570;&#x636E;&#x65E5;&#x671F;</p>
         <p>&#x5929;&#x7EA7;&#x522B;&#x793A;&#x4F8B;&#xFF1A;20160520</p>
         <p>&#x5C0F;&#x65F6;&#x7EA7;&#x522B;&#x793A;&#x4F8B;&#xFF1A;20160502008</p>
-        <p>&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x5417;&#xFF1F;&#xFF1F;&#xFF1F;</p>
       </td>
     </tr>
+  </tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">&#x67E5;&#x8BE2;&#x53C2;&#x6570;expire</td>
+      <th style="text-align:left">&#x67E5;&#x8BE2;&#x53C2;&#x6570;</th>
+      <th style="text-align:left">&#x7C7B;&#x578B;</th>
+      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x4F20;</th>
+      <th style="text-align:left">&#x8BF4;&#x660E;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">expire</td>
       <td style="text-align:left">integer</td>
       <td style="text-align:left">&#x5426;</td>
       <td style="text-align:left">
         <p>&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF0C;&#x4EE5;&#x5206;&#x4E3A;&#x5355;&#x4F4D;</p>
-        <p>&#x975E;&#x5FC5;&#x4F20;&#x7684;haul&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x591A;&#x5C11;
-          5&#x5417; &#xFF1F;</p>
+        <p>&#x9ED8;&#x8BA4;&#x503C;&#xFF1A; 5</p>
       </td>
     </tr>
   </tbody>

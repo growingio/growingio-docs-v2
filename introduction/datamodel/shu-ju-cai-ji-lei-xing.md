@@ -1,6 +1,6 @@
 # 数据采集类型
 
-GrowingIO会采集两种类型的时间类型。
+GrowingIO会采集两种类型的事件类型。
 
 #### 类型一：无埋点事件类型列表 <a id="lei-xing-yi-wu-mai-dian-shi-jian-lei-xing-lie-biao"></a>
 

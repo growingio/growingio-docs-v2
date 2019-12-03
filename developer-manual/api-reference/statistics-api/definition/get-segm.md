@@ -2,7 +2,7 @@
 
 ### URL
 
-https://www.growingio.com/projects/_**project\_uid**_/segmentations.json
+https://www.growingio.com/projects/{project\_uid}/segmentations.json
 
 ### 请求类型
 

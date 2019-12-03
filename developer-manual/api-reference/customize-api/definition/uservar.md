@@ -58,7 +58,7 @@ function authToken($projectKeyId, $secretKey, $keyArray)
 {% tab title="接口定义" %}
 ### URL
 
-https://data.growingio.com/_**ai**_/loginUserId
+https://data.growingio.com/{ai}/loginUserId
 
 ### 请求类型
 

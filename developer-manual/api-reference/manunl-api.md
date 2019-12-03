@@ -2,7 +2,7 @@
 
 ### url
 
-https://api.growingio.com/v3/_**ai**_/s2s/cstm?stm=**sendingTime**
+https://api.growingio.com/v3/{ai}/s2s/cstm?stm={sendingTime}
 
 ### 请求类型
 

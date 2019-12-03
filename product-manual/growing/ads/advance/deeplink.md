@@ -117,7 +117,7 @@ keytool -list -v -keystore my-release-key.keystore
 
 2. 进入您的安卓应用源码中的 manifest.xml 文件中，找到您的主页面，建议复制在主页，即为 Launcher Activity 中。
 
-3. 复制完成后，您的 manifest.xml 文件将类似这样：
+3. 复制完成后，您的 manifest.xml 文件将**类似**这样：
 
 ```markup
   <activity
@@ -129,6 +129,18 @@ keytool -list -v -keystore my-release-key.keystore
 ​
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            
+            <!-- GIO 集成配置，使用圈选和 Debugger 等功能用作唤醒 APP-->
+            <intent-filter>
+                <data android:scheme="growing.xxxxxxxxxxxxxx" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            
+            <!-- GIO APPLinks 配置，广告监测用途，APP 用户点击广告监测短链直接跳转 APP-->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
 ​
@@ -137,31 +149,27 @@ keytool -list -v -keystore my-release-key.keystore
 ​
                 <data
                     android:host="gio.ren"
-                    android:pathPattern="/v8aud.*"
+                    android:pathPattern="/xxxxx.*"
                     android:scheme="https" />
                 <data
                     android:host="gio.ren"
-                    android:pathPattern="/v8a.*id.*"
+                    android:pathPattern="/xxx.*xx.*"
                     android:scheme="https" />
-​
                 <data
                     android:host="gio.ren"
-                    android:pathPattern="/v8a.*td.*"
+                    android:pathPattern="/xxx.*xx.*"
                     android:scheme="https" />
                 <data
                     android:host="datayi.cn"
-                    android:pathPattern="/v8aud.*"
+                    android:pathPattern="/xxxxx.*"
                     android:scheme="https" />
-​
-​
                 <data
                     android:host="datayi.cn"
-                    android:pathPattern="/v8a.*id.*"
+                    android:pathPattern="/xxx.*xx.*"
                     android:scheme="https" />
-​
                 <data
                     android:host="datayi.cn"
-                    android:pathPattern="/v8a.*td.*"
+                    android:pathPattern="/xxx.*xx.*"
                     android:scheme="https" />
             </intent-filter>
 ​
@@ -170,7 +178,8 @@ keytool -list -v -keystore my-release-key.keystore
 
 {% hint style="danger" %}
 * GrowingIO 暂不支持自定义 App Links 的 host，请不要修改复制的代码块中的 host；
-* 不要尝试修改或者合并 GIO 的 intent filter ，[Google 官方解释](https://developer.android.com/training/app-links/deep-linking#adding-filters)。
+* 建议不要尝试修改或者合并 GIO 的 intent filter ，[Google 官方解释](https://developer.android.com/training/app-links/deep-linking#adding-filters)。
+* **Android 集成步骤中添加的 growing.xxxxxx 的 Intent Filter 不能与此处合并，请将两个 Intent Filter  分开写在 Launcher Activity 下。**
 {% endhint %}
 
 **三、测试并验证您的 App Links**

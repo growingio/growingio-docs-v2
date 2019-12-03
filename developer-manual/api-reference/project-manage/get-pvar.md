@@ -6,7 +6,7 @@ description: 返回当前项目的页面级变量列表。
 
 ### URL
 
-https://www.growingio.com /v1/api/projects/_**project\_uid**_/vars/pages
+https://www.growingio.com /v1/api/projects/{project\_uid}/vars/pages
 
 ### 请求类型
 

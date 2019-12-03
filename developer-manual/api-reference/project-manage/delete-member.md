@@ -6,7 +6,7 @@ description: 通过邮箱删除用户，用于清理项目内失效成员。
 
 ### URL
 
-https://www.growingio.com/api/v1/projects/_**project\_uid**_/accounts/delete
+https://www.growingio.com/api/v1/projects/{project\_uid}/accounts/delete
 
 ### 请求类型
 

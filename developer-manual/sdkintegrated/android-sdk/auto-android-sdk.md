@@ -1,3 +1,7 @@
+---
+description: 无埋点 SDK 具备自动采集基本的用户行为事件，比如访问和行为数据等。
+---
+
 # 无埋点 SDK集成
 
 ## 准备条件
@@ -29,7 +33,7 @@ buildscript {
         google()
     }
     dependencies {
-        //gradle建议版本
+        //gradle 建议版本
         classpath 'com.android.tools.build:gradle:3.2.1'
         //GrowingIO 无埋点 SDK
         classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.8.7'
@@ -43,7 +47,7 @@ buildscript {
 
 ```javascript
 apply plugin: 'com.android.application'
-//添加插件
+//添加 GrowingIO 插件
 apply plugin: 'com.growingio.android'
 android {
     defaultConfig {
@@ -57,7 +61,7 @@ dependencies {
 }
 ```
 
-### 2. 添加URL cheme和应用权限 
+### 2. 添加 URL Scheme 和应用权限 
 
 URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目，以便我们唤醒您的应用。
 
@@ -105,8 +109,10 @@ URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一�
 </manifest>
 ```
 
-{% hint style="info" %}
+{% hint style="danger" %}
 请添加一整个 intent-filter 区块，并确保其中只有一个 data 字段。
+
+建议不要尝试修改或者合并 GIO 的 intent filter ，[Google 官方解释](https://developer.android.com/training/app-links/deep-linking#adding-filters)。
 {% endhint %}
 
 ### 3. SDK初始化配置
@@ -122,6 +128,7 @@ public class MyApplication extends Application {
         super.onCreate();
         GrowingIO.startWithConfiguration(this, new Configuration()
             .trackAllFragments()
+            // 建议使用 BuildConfig 设置
             .setChannel("XXX应用商店")
         );
     }
@@ -132,16 +139,13 @@ public class MyApplication extends Application {
 1. 请确保将代码添加在`Application`的`onCreate`方法中，添加到其他方法中可能导致数据不准确。
 2. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。 
 3. `setChannel`方法的参数定义了“自定义App渠道”这个维度的值。
+4. `trackAllFragments`方法作用是将 APP 内部的所有`Fragment`标记认为可以代表一个页面。 常见于`Activity` 中包含多个 `Fragment`， 在业务场景上这里的每一个 Fragment 都可以代表一个页面。例如点击 Tab 切换页面。
 {% endhint %}
 
 {% hint style="danger" %}
-`trackAllFragments`方法用于把`Fragment`自动识别为页面，但一个界面中只能同时显示一个`Fragment`。
-
 **注意事项**
 
-该方法如果在初始化时调用，会将activity中page事件强行归到Fragment对象，如果此时您在Activity中有自定义上传事件（常见于pvar事件），并且自定义上传事件的p识别为activity的对象，实际上activity的自定义上传事件并没有被发出，会导致上传事件无法被预置维度拆分或关联不到对应的页面。
-
-解决方法：晚于fragment的page事件之后再去activity中调用自定义上传事件。
+`trackAllFragments`方法如果在初始化时调用，APP  内部的 Fragment 将代替 Activity 作为页面，一个 Activity 中包含多个 Fragment 时大概率会是面积最大的 Fragment 作为当前的页面事件\( Page \)。
 {% endhint %}
 
 ### 4. 代码混淆
@@ -165,13 +169,13 @@ public class MyApplication extends Application {
     *;
 }
 -keep class android.support.v4.view.ViewPager$**{
-	*;
+	  *;
 }
 -keep class androidx.viewpager.widget.ViewPager{
     *;
 }
 -keep class androidx.viewpager.widget.ViewPager$**{
-	*;
+	  *;
 }
 ```
 
@@ -189,9 +193,9 @@ R.string.growingio*
 Android 2.7.4 及以上支持了 lambda 表达式（不包括retrolambda），不需要此配置项。
 {% endhint %}
 
-ambda 表达式目前业界主流两种，分别为 retrolambda 和 AndroidStudio 支持的 lambda。
+lambda 表达式目前业界主流两种，分别为 retrolambda 和 AndroidStudio 支持的 lambda。
 
-GrowingIO的SDK 只支持 AndroidStudio 自带的 lambda 表达式，并且对于 `android.enableD8.desugaring = true` 未做兼容。 在com.android.tools.build:gradle:3.2.1 之后， Google默认开启 `desugaring` 特性， 暂时需要用户手动关闭。
+GrowingIO的SDK 只支持 AndroidStudio 自带的 lambda 表达式，并且对于 `android.enableD8.desugaring = true` 未做兼容。 在`com.android.tools.build:gradle:3.2.1` 之后， Google默认开启 `desugaring` 特性， 暂时需要用户手动关闭。
 
 在项目根目录中 gradle.properties 文件中增加以下配置：
 
@@ -205,7 +209,7 @@ android.enableD8.desugaring=false
 
 如果您有自定义的控件重写了`View`的`onTouchEvent`方法来判断和处理点击事件，那么必须调用它的`PerformClick`，并且设置相应的`onClickListener`。
 
-或者使用手动调用系统点击事件方法。 请参考[点击事件采集逻辑](faq/)。
+或者使用手动调用系统点击事件方法。 请参考[点击事件采集逻辑。](faq/class1.md#2-dian-ji-shi-jian-cai-ji-luo-ji-shi-shen-me)
 
 ### 2. 设置页面别名
 
@@ -263,14 +267,14 @@ GrowingIO.setViewID(View view, String id);
 ```
 
 {% hint style="info" %}
-1. 如果在 ViewGroup 上设置ID的话，SDK 会忽略他所有子元素的默认 ID（就是写在xml文件里的）只会使用GrowingIO.setViewID 设置的 ID。
+1. 如果在 ViewGroup 上设置 ID 的话，SDK 会忽略他所有子元素的默认 ID（就是写在 xml 文件里的）只会使用 GrowingIO.setViewID 设置的 ID。
 2. ID 只能设置为字母、数字和下划线的组合。
-3. 对于已经集成过旧版 SDK \(1.x\) 并圈选过的应用，对某个元素设置 ID 后再圈选它，指标数值会从零开始计算，类似初次集成 SDK 后发版的效果，但不影响之前圈选的其它指标数据。如果不希望出现这种情况，请不要使用这个方法
+3. 对于已经集成过旧版 SDK \(1.x\) 并圈选过的应用，对某个元素设置 ID 后再圈选它，指标数值会从零开始计算，类似初次集成 SDK 后发版的效果，但不影响之前圈选的其它指标数据。如果不希望出现这种情况，请不要使用这个方法。
 {% endhint %}
 
 ### 5. 忽略元素
 
-如果您需要忽略某些特殊内容，比如倒计时元素或涉及隐私的内容，可以使用该功能。
+如果您需要不采集某些元素，比如**倒计时元素**或**涉及隐私的内容**，可以使用此接口。另外如果想禁止 WebView 的数据采集，也可调用此接口。
 
 ```java
 GrowingIO.ignoreView(View view)
@@ -287,12 +291,12 @@ GrowingIO.setViewInfo(view view, String info);
 ```
 
 {% hint style="info" %}
-适用于原有v字段含义不大、只关注描述的场景，使用此接口后v字段将不采集。
+适用于原有元素内容含义不大，需要添加描述的场景。
 {% endhint %}
 
 ### 7. 用户浏览事件的半自动采集配置
 
-> SDK版本支持：&gt;=2.8.4
+> **SDK版本支持：&gt;=2.8.4**
 
 {% hint style="info" %}
 「用户浏览事件」半自动采集方案已经上线，详细配置请参考[Android半自动采集浏览事件](android-imp.md)。
@@ -306,7 +310,7 @@ GrowingIO.setViewInfo(view view, String info);
 
 查看数据采集发送日志，能够在 Android Studio 中通过 Logcat 查看GrowingIO 打印的数据发送日志。
 
-在 App 的 Application onCrate 初始化 SDK 位置添加配置。
+在 App 的 Application onCreate 初始化 SDK 位置添加配置。
 
 ```java
 setDebugMode(boolean debugMode);
@@ -463,7 +467,7 @@ GrowingIO.getInstance().trackEditText(editText);
 
 {% hint style="success" %}
 * 对于密码输入框，即便标记为需要采集，SDK也会忽略不进行采集。
-* 在输入框失去焦点的时候或者 onPause 时才会采集事件，如果输入完成，输入框光标仍然在闪动，则不会采集事件。为了保证数据准确性，请每次用户输入完成时，让输入框失去焦点，可使用editText.setFocusable\(false\);
+* 在**输入框失去焦点的时候或者 onPause 时才会采集事件**，如果输入完成，输入框光标仍然在闪动，则不会采集事件。为了保证数据准确性，请每次用户输入完成时，让输入框失去焦点，可使用editText.setFocusable\(false\);
 {% endhint %}
 
 ### 13. WebView锚点链接页面访问
@@ -554,10 +558,16 @@ GrowingIO.startWithConfiguration(this, new Configuration()
 
 ### 16. Deep Link回调参数获取
 
-​通过获取回调参数，GrowingIO SDK将会传递指定活动页面参数至您的App，请根据此参数和业务场景，执行相关的交互。
+​通过获取回调参数，GrowingIO SDK 将会传递指定活动页面参数至您的 App，请根据此参数和业务场景，执行相关的交互。
 
 {% hint style="info" %}
 **SDK 2.3.2** 开始提供 DeepLink Callback 接口，在 **SDK 2.8.4** 支持 App Links ，为了保证接收自定义参数并进行自定义跳转这一流程的完整性，App Links 沿用此接口，并新增一个参数，下文将详细解释。
+{% endhint %}
+
+{% hint style="success" %}
+此 Callback 只有在应用收到来自 GIO Intent 的时候才会触发，您需要先在广告监测新建监测链接，并使用监测链接唤醒 APP 时触发此 callback 。
+
+[点击了解新建监测链接。](../../api-reference/query-productid/definition/create-deeplinks.md)
 {% endhint %}
 
 在 GrowingIO SDK 代码初始化部分配置。
@@ -578,6 +588,7 @@ GrowingIO.startWithConfiguration(this, new Configuration()
                             @Override
                             public void onReceive(Map<String, String> params, int status, long appAwakePassedTime) { 
                             // 这里接收您的参数，匹配键值对，跳转指定 APP 内页面
+                            // appAwakePassedTime 这个新的参数用来判定 APP 是否已经打开了很久才收到自定义参数，进而判断是否再继续跳转指定页面
                             }
                         })
             );
@@ -668,7 +679,7 @@ public void onCreate() {
 ```
 
 {% hint style="info" %}
-SDK对通知的采集仅支持4.4及以上机型。
+SDK对通知的采集仅支持 4.4 及以上机型。
 {% endhint %}
 
 注意：
@@ -734,20 +745,20 @@ SDK对通知的采集仅支持4.4及以上机型。
 
 ### 18. 采集OAID【灰度中】
 
-在 Android 10 版本中，非系统应用无法获取 IMEI。加上以前 Android版本已经对 MAC ， AndroidID 的获取做了限制， 在 Android10 中缺少一种唯一标记设备的标识符。 在海外， Google 推荐使用 Google 的广告 ID 作为广告的唯一识别符，在国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID 的概念， 作为唯一广告标识符。
+在 Android 10 版本中，非系统应用无法获取 IMEI。加上以前 Android 版本已经对 MAC 地址， AndroidID 的获取做了限制， 在 Android10 中缺少一种唯一标记设备的标识符。 在海外， Google 推荐使用 Google 的广告 ID 作为广告的唯一识别符，在国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID 的概念， 作为唯一广告标识符。
 
 目前腾讯， 头条， 网易广告SDK已经要求使用 OAID， OAID 的准确性和覆盖率均满足广告场景的使用需求，Android SDK 提供采集 OAID 的能力。
 
 {% hint style="info" %}
 * 支持采集：**Android SDK 2.8.5** 及以上， 包含埋点包与无埋点包及对应插件版本；
 * 目前 2.8.5 SDK 测试的 OAID SDK 版本为miit\_mdid\_sdk\_v1.0.10, 在API不变更的情况下支持后续版本；
-* 目前仅在 **activate** （激活，用户首次安装并打开应用时发送）事件中包含 OAID
+* 目前仅在 **activate** 事件（激活，用户首次安装并打开应用时发送）中包含 OAID。
 {% endhint %}
 
 {% hint style="danger" %}
 注意:
 
- OAID为可选字段，在客户集成 MSA SDK 情况下根据配置可选采集。GrowingIO SDK不会初始化 MSA SDK，我们仅调用其接口获取 OAID 值， 需要客户自行初始化 MSA的 SDK。
+ OAID 为可选字段，在客户集成 MSA SDK 情况下根据配置可选采集。GrowingIO SDK不会初始化 MSA SDK，我们仅调用其接口获取 OAID 值， 需要客户自行初始化 MSA的 SDK。
 
 [点击查看 MSA 集成步骤](http://www.msa-alliance.cn/col.jsp?id=120)。
 {% endhint %}
@@ -782,7 +793,7 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 
-方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
+方式三：（**推荐**）[数据校验](../../../product-manual/datacenter/datacheck.md)  
 
 
 

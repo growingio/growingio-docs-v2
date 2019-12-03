@@ -6,7 +6,7 @@ description: 获取项目下打点维度列表。
 
 ### URL
 
-https://www.growingio.com/v1/api/projects/_**project\_uid**_/vars/events
+https://www.growingio.com/v1/api/projects/{project\_uid}/vars/events
 
 ### 请求类型
 

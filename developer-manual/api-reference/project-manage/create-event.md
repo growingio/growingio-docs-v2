@@ -8,7 +8,7 @@ description: >-
 
 ### URL
 
-https://www.growingio.com/v1/api/projects/_**project\_uid**_/dim/events
+https://www.growingio.com/v1/api/projects/{project\_uid}/dim/events
 
 ### 请求类型
 
