@@ -43,20 +43,6 @@
 
 API中给出了登录用户变量的上传方式
 
-### 第三步：数据校验 <a id="di-san-bu-shu-ju-xiao-yan"></a>
-
-在完成了GrowingIO平台的配置，以及代码实施后，我们当然需要对数据是否成功上传进行校验。校验工作分为两步完成。
-
-#### **数据校验第一步：本地开发环境校验** <a id="shu-ju-xiao-yan-di-yi-bu-ben-di-kai-fa-huan-jing-xiao-yan"></a>
-
-GrowingIO 提供了 SDK debug 模式以及 debug 工具，来帮助您完成数据的校验。具体请参考 [Debugger 最佳实践](https://docs.growingio.com/docs/sdk-integration/growingio-debugger/best-practice#ppl-yong-hu-bian-liang-shi-jian)。
-
-#### **数据校验第二步：GrowingIO 后台图表验证** <a id="shu-ju-xiao-yan-di-er-bu-growingio-hou-tai-tu-biao-yan-zheng"></a>
-
-在 GrowingIO 分析后台，找到 “分析” - “新建事件分析”，选择一个事件后，在 "维度" 中查看设置的登录用户变量是否有数据。当然，您需要首先确已经完成了登录用户变量的数据上传。
-
-至此，您已经完成了 “自定义变量” 的上传，如您在配置或添加代码中有任何疑问，请联系您的客户成功经理咨询，或在工单系统中反馈问题。谢谢。
-
 ## **用户变量的持久性范围** <a id="yong-hu-bian-liang-de-chi-jiu-xing-fan-wei"></a>
 
 登录用户变量默认的持久性范围是永远。当某个用户配置上某一个用户变量的某一个值时，如果后面没有再修改，那么这个用户在今后会一直保持这个值。也就是说，用户在之后不管多久的时间段内发生的各种各样的事件都可以归到这个登录用户变量的值上，除非之后显式的更改了这个登录用户变量的值。
