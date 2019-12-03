@@ -6,7 +6,7 @@ description: GrowingIO 根据付费版本设定不同的埋点事件和维度的
 
 ### URL
 
-https://www.growingio.com /v1/api/projects/_**project\_uid**_/vars/quotas
+https://www.growingio.com /v1/api/projects/{project\_uid}/vars/quotas
 
 ### 请求类型
 
