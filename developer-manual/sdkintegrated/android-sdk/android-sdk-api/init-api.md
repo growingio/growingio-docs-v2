@@ -1,3 +1,7 @@
+---
+description: 初始化 SDK 时配置项 API ，可以控制 SDK  的采集上报流程，另外还可接收来自 GIO 的 callback。
+---
+
 # 初始化配置项API
 
 初始化配置项均在`Application`的`onCreate`方法中 SDK 初始化代码块中设置，下面将分类并描述含义。
@@ -99,7 +103,7 @@ public class TestApplication extends Application {
   </tbody>
 </table>### SDK功能API
 
-| API | 默认值 | 说明 | 无埋点SDK版本支持 | 埋点SDK版本支持 |
+| API | 默认值                    | 说明 | 无埋点SDK版本支持 | 埋点SDK版本支持 |
 | :--- | :--- | :--- | :--- | :--- |
 | setDeeplinkCallback | 无 | DeepLink 回调接口，获得自定义参数以便跳转对应 APP页 面 | &gt;=2.3.2 | ALL  |
 | setTrackWebView | true | 是否采集全部的`WebView,`设置为`false`时不采所有`WebView`数据 | ALL | - |

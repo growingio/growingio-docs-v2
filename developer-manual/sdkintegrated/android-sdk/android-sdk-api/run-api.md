@@ -1,3 +1,7 @@
+---
+description: 运行时 API 可对 SDK 进行采集上报数据的控制。
+---
+
 # 运行时API
 
 GrowingIO为App提供运行时随意调用的API，使用方法如下：

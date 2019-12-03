@@ -1,5 +1,5 @@
 ---
-description: 使您的应用在编译时即可自定义。
+description: 应用在编译时的自定义配置API。
 ---
 
 # Gradle配置API
