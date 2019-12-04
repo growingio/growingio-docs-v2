@@ -338,11 +338,11 @@ GrowingIO 提供多种 API 接口，供您上传一些自定义的数据指标�
 
 ## 5. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 
-了解GrowingIO平台数据采集类型请参考[数据模型](https://help-1.gitbook.io/doc/introduction/datamodel)。
+了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 
 GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
-方式一：[Mobile Debugger](https://help-1.gitbook.io/doc/developer-manual/debugging/mobile-debugger)​
+方式一：[Mobile Debugger​](../../debugging/mobile-debugger.md)
 
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 
