@@ -64,10 +64,10 @@ GrowingIO 推荐设置一个页面级变量来保存页面的类型信息。我�
 
 完成了配置后，即可在代码中完成以上设计的 “自定义事件和变量” 的部署。具体的说，就是调用 GrowingIO 提供的 API 接口，上传数据。
 
-* ​[JS 接口文档](https://docs.growingio.com/docs/sdk-integration/web-js-sdk#3-web-js-sdk-2-1-api)​
-* ​[Android 接口文档](https://docs.growingio.com/docs/sdk-integration/android-sdk/android-sdk#2-android-sdk-api)​
-* ​[iOS 接口文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-sdk-2.x#ios-sdk-api)​
-* ​[小程序、小游戏以及内嵌页 SDK](https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk)​
+* [JS 接口文档​](../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
+* ​[Android 接口文档​](../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
+* ​[iOS 接口文档​](../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
+* [​小程序、小游戏以及内嵌页 SDK​](../../developer-manual/sdkintegrated/other-sdk/customize-api.md)
 
 API中给出了页面级变量的上传方式。
 
