@@ -114,7 +114,7 @@ val df = spark.read
 
 ## **md5进行文件完整性校验** <a id="md-5-jin-hang-wen-jian-wan-zheng-xing-xiao-yan"></a>
 
-用户如果对文件完整性有担心，可以对[原始数据导出 API](https://docs.growingio.com/docs/api/raw-data-api/)第三步下载时response的headers中x-amz-meta-md5-hash的value值（文件的md5）进行校验。若校验未通过，可重启第三步，轮询获取。
+用户如果对文件完整性有担心，可以对[原始数据导出 API](./)第三步下载时response的headers中x-amz-meta-md5-hash的value值（文件的md5）进行校验。若校验未通过，可重启第三步，轮询获取。
 
 eg: Headers信息如下
 
