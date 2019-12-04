@@ -24,13 +24,13 @@ Android SDK &gt; [埋点 SDK集成](../android-sdk/manunl-android-sdk.md)
 {% endtab %}
 
 {% tab title="iOS（Native部分）" %}
-Flutter 埋点插件是在iOS原生SDK上的扩展，请参考 iOS SDK &gt; [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)。 🍎 🍎 无埋点不可以吗？？？
+Flutter 埋点插件是在iOS原生SDK上的扩展，请参考 iOS SDK &gt; [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)。 
 {% endtab %}
 {% endtabs %}
 
 ## 常见问题
 
-### 1. iOS ：App Store 提供应用注意事项---- 🍎 这个注意事项是Flutter独有的吗？？？
+### 1. iOS ：App Store 提供应用注意事项
 
 如果您添加了库AdSupport.framework, GrowingIO则会启用IDFA，所以在向App Store 提交应用时，需要：
 
@@ -38,13 +38,13 @@ Flutter 埋点插件是在iOS原生SDK上的扩展，请参考 iOS SDK &gt; [埋
 * 对于选项Attribute this app installation to a previously served advertisement，打勾。
 * 对于选项Attribute an action taken within this app to a previously served advertisement，打勾。
 
-### 2. iOS：为什么GrowingIO使用IDFA？---- 🍎 同上
+### 2. iOS：为什么GrowingIO使用IDFA？
 
 GrowingIO 使用IDFA 来做来源管理激活设备的精确匹配，让你更好的衡量广告效果。如果你不希望跟踪这个信息，可以选择不引入AdSupport.framework
 
 ### 3. 初始化Android SDK时，GrowingIO类可能会报红色怎么处理？
 
-这个应该是Flutter项目结构的问题，并不影响运行，可以放心编译. 不过需要手动import。 🍎 🍎 本章节接口内容都有下面的这个import，API内容要提到公共节点，这个引入怎么在本文进行说明？？？
+这个应该是Flutter项目结构的问题，并不影响运行，可以放心编译. 不过需要手动import。 
 
 ```java
 import 'package:growingioflutter/growingio_track.dart';

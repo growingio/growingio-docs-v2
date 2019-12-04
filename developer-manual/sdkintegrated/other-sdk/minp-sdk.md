@@ -743,7 +743,7 @@ confirm 事件是对于 input 和 textarea 控件，当输入完成后触发的�
 
 ## 7. 验证SDK是否正常采集数据
 
-了解GrowingIO平台数据采集类型请参考[数据模型](https://help-1.gitbook.io/doc/introduction/datamodel)。
+了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 
 GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 

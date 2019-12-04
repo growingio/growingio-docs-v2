@@ -92,7 +92,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 请确保将代码添加在上述位置，添加到其他方法或异步block中可能导致数据不准确。
 {% endhint %}
 
-### 4.添加代码 🍎 
+### 4.添加代码
 
 {% hint style="warning" %}
 因为您代码的复杂程度以及iOS SDK的版本差异，有时候 \[Growing handleUrl:url\] 并没有被调用。请在各个平台上调试这段代码，确保当App被URL scheme唤醒之后，该函数能被调用到。
@@ -133,11 +133,11 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 ## 6. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 
-了解GrowingIO平台数据采集类型请参考[数据模型](https://help-1.gitbook.io/doc/introduction/datamodel)。
+了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 
 GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
-方式一：[Mobile Debugger](https://help-1.gitbook.io/doc/developer-manual/debugging/mobile-debugger)​
+方式一：[Mobile Debugger](../../debugging/mobile-debugger.md)​
 
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 

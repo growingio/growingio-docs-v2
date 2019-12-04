@@ -62,7 +62,7 @@ SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在
 
  从2018年10月3日开始，App Store Connect将要求所有新应用和应用更新版本时提供**隐私政策**，添加后才可以在App Store上提交或通过TestFlight外部测试进行分发。
 
-【苹果通知：As a reminder, in June the App Store Review Guidelines were updated to require a privacy policy for all new apps and app updates as part of the app review process. Starting October 3, 2018, App Store Connect will require a privacy policy for all new apps and app updates before they can be submitted for distribution on the App Store or through TestFlight external testing. In addition, your app’s privacy policy link or text will only be editable when you submit a new version of your app.（详情可参见：[https://developer.apple.com/news/?id=08312018a）。](https://developer.apple.com/news/?id=08312018a%EF%BC%89%E3%80%82) 】
+【苹果通知：As a reminder, in June the App Store Review Guidelines were updated to require a privacy policy for all new apps and app updates as part of the app review process. Starting October 3, 2018, App Store Connect will require a privacy policy for all new apps and app updates before they can be submitted for distribution on the App Store or through TestFlight external testing. In addition, your app’s privacy policy link or text will only be editable when you submit a new version of your app.（详情可参见：[https://developer.apple.com/news/?id=08312018a](https://developer.apple.com/news/?id=08312018a%EF%BC%89%E3%80%82) ）
 
 所以，在此提醒各位开发者：**提交App Store 审核前一定要准备自己的隐私权政策，并在app SafariViewContoller中弹出，否则会无法通过审核哦！如需要专业的法律意见，还请各位开发者小伙伴咨询您的律师或法律顾问哦！**
 
@@ -157,16 +157,5 @@ Cannot form weak reference to instance (0xXXXXX) of class NSKVONotifying_XXUIWeb
     [self grow_dealloc];
 }
 @end
-​
 ```
-
-## **问题公共**
-
-### **无法圈选**
-
-### **查看App SDK版本**
-
-### **为何不建议自定义设备ID**
-
-\*\*\*\*
 

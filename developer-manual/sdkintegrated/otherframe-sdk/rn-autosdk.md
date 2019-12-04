@@ -197,11 +197,9 @@ NativeModules.GrowingIO.onPagePrepare("pageName");
 NativeModules.GrowingIO.onPageShow("pageName");
 ```
 
-
-
 ## 4. 自定义数据上传
 
-自定义数据上传其实最终是通过 NativeModules.GrowingIO 调用的原生GrowingIO 无埋点的API，以上接口使用时，对应的参数限制条件对您很重要。请您注意遵守，并且[验证](https://docs.growingio.com/docs/sdk-integration/react-native-wu-mai-dian-sdk#yan-zheng-sdk-shi-fou-zheng-chang-gong-zuo)打点是否成功。
+自定义数据上传其实最终是通过 NativeModules.GrowingIO 调用的原生GrowingIO 无埋点的API，以上接口使用时，对应的参数限制条件对您很重要。
 
 [Android SDK 自定义数据上传API](../android-sdk/android-sdk-api/customize-api.md)
 
@@ -251,13 +249,13 @@ NativeModules.GrowingIO.setVisitor({ "age": 20, "gender": "male" });
 
 属性列表
 
-| 属性名称 | 参数限制 | 描述 | 功能对应于原生接口 |
-| :--- | :--- | :--- | :--- |
-| ignore | 仅接受 true | 忽略对应的元素，不采集点击事件和浏览事件 |  |
-| track | 仅接受 true | 采集输入框内容，默认采集输入框内容变化次数，不采集内容 |  |
-| id |  | 设置界面元素ID |  |
-| content |  | 设置界面元素内容 |  |
-| info |  | 设置元素对象 |  |
+| 属性名称 | 参数限制 | 描述 |
+| :--- | :--- | :--- |
+| ignore | 仅接受 true | 忽略对应的元素，不采集点击事件和浏览事件 |
+| track | 仅接受 true | 采集输入框内容，默认采集输入框内容变化次数，不采集内容 |
+| id | - | 设置界面元素ID |
+| content | - | 设置界面元素内容 |
+| info | - | 设置元素对象 |
 
 支持设置组件（Component）列表（包括但不限于）
 

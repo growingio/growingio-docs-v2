@@ -39,7 +39,7 @@
 
 ## 配置Java SDK
 
-在Java SDK的jar包中，包含了一个默认的配置文件。 🍎 下面的项目ID下一行还有\#  对吗？？？？？
+在Java SDK的jar包中，包含了一个默认的配置文件。 
 
 {% code title="gio\_default.properties" %}
 ```javascript
@@ -82,7 +82,7 @@ run.mode=test
 其中，开发者需要根据自己的情况修改配置参数，保存为 gio.properties ，并放置在自己Java程序的classpath之中。如
 
 {% code title="gio.properties" %}
-```text
+```java
 #项目采集端地址
 api.host=https://api.growingio.com
 ​
