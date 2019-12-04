@@ -4,7 +4,7 @@
 
 | 产品熟悉 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [数据模型](introduction/datamodel/) | [界面熟悉](introduction/chan-pin-jie-mian-shou-xi.md) | [角色权限](introduction/jiao-se-quan-xian-shuo-ming.md) | [工单管理](product-manual/sysmanage/tickets/) |
+| [数据模型](introduction/datamodel/) | [界面熟悉](introduction/productknow.md) | [角色权限](introduction/role-and-permission.md) | [工单管理](product-manual/sysmanage/tickets/) |
 
 | 开发者使用 |  |  |  |
 | :--- | :--- | :--- | :--- |

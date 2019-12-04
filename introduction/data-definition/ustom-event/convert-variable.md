@@ -6,19 +6,13 @@
 
 ## **转化变量的使用场景** <a id="zhuan-hua-bian-liang-de-shi-yong-chang-jing"></a>
 
-##  <a id="zhuan-hua-bian-liang-de-shi-yong-chang-jing"></a>
-
-转化变量可以用于回答下列业务问题，用户可以通过内部活动、搜索、导航等各个不同的入口访问到产品详情产生转化，那么，哪个入口的效果更好呢？使用不同的[归因方式](https://docs.growingio.com/docs/data-definition/custom-event/convert-variable#gui-yin-fang-shi)，得到的结论是不同的。
+转化变量可以用于回答下列业务问题，用户可以通过内部活动、搜索、导航等各个不同的入口访问到产品详情产生转化，那么，哪个入口的效果更好呢？使用不同的归因方式，得到的结论是不同的。
 
 * 使用最初归因模型，某个内部活动带来了多少注册，多少订单。
 * 使用线性归因模型，内部搜索的效果怎样，某个具体的搜索词带来了多少订单，营业收入。
 * 使用最近归因模型，同一个内部活动的不同入口分别带来了多少内部活动详情页面的浏览。
 
-![](https://docs.growingio.com/.gitbook/assets/zhuanhuabianliang.png)
-
 ## **归因方式** <a id="gui-yin-fang-shi"></a>
-
-##  <a id="gui-yin-fang-shi"></a>
 
 当发生一个事件的时候，GrowingIO 会通过转化变量中配置的归因模型，去计算应该将这个事件归到转化变量中的哪一个有效值上，转化变量目前支持以下三种归因模型：
 
@@ -70,8 +64,6 @@
 
 ## **失效时间** <a id="shi-xiao-shi-jian"></a>
 
-##  <a id="shi-xiao-shi-jian"></a>
-
 对于转换变量来讲，失效时间是一个配置项。GrowingIO 目前支持访问，一天，一周，一月这四种失效的配置项。这四种配置项的意义分别是：
 
 1. 访问：随着用户在一个访问中不断的交互操作，一些值会保存在转化变量中，如果这个转化变量的失效设置为访问。那么当访问结束时保存在转化变量中的值会失效，在之后发生的事件不会归到这些失效的值上。
@@ -88,46 +80,32 @@
 
 ## 转化变量的配置和上传 <a id="zi-ding-yi-bian-liang-de-pei-zhi-he-shang-chuan"></a>
 
-##  <a id="zi-ding-yi-bian-liang-de-pei-zhi-he-shang-chuan"></a>
-
 ### **第一步：配置 "归因方式" 和 "失效时间"** <a id="di-yi-bu-zai-shi-jian-he-bian-liang-zhong-wan-cheng-pei-zhi"></a>
 
-参考开始讲到的使用场景，配合梳理业务需求并完成“指标 + 维度”的设计，确认需要将哪些变量设置为页转化变量,请勿直接开始代码的部署,需要先到 GrowingIO 后台找到 【数据管理】-【事件和变量】-【转化变量】 功能，在界面中完成对应的配置。![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LIpN1HCC6EL7E2bd45l-LIpQKWoVcrLw0sEzd_Fimage.png)配置归因方式设置
+参考开始讲到的使用场景，配合梳理业务需求并完成“指标 + 维度”的设计，确认需要将哪些变量设置为页转化变量，请勿直接开始代码的部署,需要先到 GrowingIO 后台找到 数据管理 功能，在界面中完成对应的配置。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LIpN1HCC6EL7E2bd45l-LIpQT9o1knyyJLdSAj0image.png)配置失效时间
+配置方式请参考[转化变量](../../../product-manual/datacenter/datamanage/variable/conversion.md)。
 
 ### **第二步：代码部署** <a id="di-er-bu-dai-ma-bu-shu"></a>
 
 完成了配置后，即可在代码中完成以上设计的 “自定义事件和变量” 的部署。具体的说，就是调用 GrowingIO 提供的 API 接口，上传数据。
 
-* ​[JS 接口文档](https://docs.growingio.com/docs/sdk-integration/web-js-sdk#3-web-js-sdk-2-1-api)​
-* ​[Android 接口文档](https://docs.growingio.com/docs/sdk-integration/android-sdk/android-sdk#2-android-sdk-api)​
-* ​[iOS 接口文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-sdk-2.x#ios-sdk-api)​
-* ​[小程序、小游戏以及内嵌页 SDK](https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk)​
+* [JS 接口文档​](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
+* ​[Android 接口文档​](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
+* ​[iOS 接口文档​](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
+* [​小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/other-sdk/customize-api.md)
 
 API中给出了转化变量的上传方式
 
-### 第三步：数据校验 <a id="di-san-bu-shu-ju-xiao-yan"></a>
-
-在完成了【数据管理】-【事件与变量】-【转化变量】的配置，以及代码实施后，我们接下来需要对数据是否成功上传进行校验。校验工作分为两步完成。
-
-#### **数据校验第一步：本地开发环境校验** <a id="shu-ju-xiao-yan-di-yi-bu-ben-di-kai-fa-huan-jing-xiao-yan"></a>
-
-GrowingIO 提供了 SDK debug 模式以及 debug 工具，来帮助您完成数据的校验。具体请参考 [Debugger 最佳实践](https://docs.growingio.com/docs/sdk-integration/growingio-debugger/best-practice#evar-zhuan-hua-bian-liang-shi-jian)。
-
-#### **数据校验第二步：GrowingIO 后台图表验证** <a id="shu-ju-xiao-yan-di-er-bu-growingio-hou-tai-tu-biao-yan-zheng"></a>
-
-在 GrowingIO 分析后台，找到 “分析” - “新建事件分析”，然后在图表中选择您设计好的 “指标 + 维度”，转化变量即对应的 "维度"，查看是否有数据。当然，您需要首先确保转化变量确实有被触发。
-
-至此，您已经完成了 “自定义变量” 的上传，如您在配置或添加代码中有任何疑问，请联系您的客户成功经理咨询，或在工单系统中反馈问题。谢谢。
-
-#### 特别说明 <a id="te-bie-shuo-ming"></a>
+{% hint style="info" %}
+**特别说明**
 
 转化变量的归因计算是以自然天为单位的，也就是说当天发生的转化行为，需要第二天才能够在 GrowingIO 后台图表中进行分析。
+{% endhint %}
 
 ## 分析场景示例 <a id="fen-xi-chang-jing-shi-li"></a>
 
-##  <a id="fen-xi-chang-jing-shi-li"></a>
+在电商购物场景中，可将促使用户下单的前序行为如：活动页浏览、搜索、站内banner 点击等，定义为转化变量，用于分解下单行为。例如，我们在用户进行搜索时，通过转化变量上传其输入的搜索词，即可在 GrowingIO 后台按以下方式分解不同搜索词带来的下单转化：
 
-在电商购物场景中，可将促使用户下单的前序行为如：活动页浏览、搜索、站内banner 点击等，定义为转化变量，用于分解下单行为。例如，我们在用户进行搜索时，通过转化变量上传其输入的搜索词，即可在 GrowingIO 后台按以下方式分解不同搜索词带来的下单转化：![](https://docs.growingio.com/.gitbook/assets/zhuanhuabianliang.png)
+![](https://docs.growingio.com/.gitbook/assets/zhuanhuabianliang.png)
 

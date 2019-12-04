@@ -1,6 +1,6 @@
 # 页面级变量
 
-在开始用户变量配置与定义之前，推荐您阅读[页面事件及属性](../datamodel/eventmodel/wu-mai-dian-shi-jian/ye-mian-shi-jian-ji-shu-xing.md)文档，了解 GrowingIO 如何标记页面。
+在开始用户变量配置与定义之前，推荐您阅读[页面事件及属性](../datamodel/eventmodel/autotrack-event/page-events-and-properties.md)文档，了解 GrowingIO 如何标记页面。
 
 ## 页面级变量的持久性范围
 
@@ -69,29 +69,5 @@ GrowingIO 推荐设置一个页面级变量来保存页面的类型信息。我�
 * ​[iOS 接口文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-sdk-2.x#ios-sdk-api)​
 * ​[小程序、小游戏以及内嵌页 SDK](https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk)​
 
-API中给出了页面级变量的上传方式
-
-### 第三步：数据校验 <a id="di-san-bu-shu-ju-xiao-yan"></a>
-
-在完成了【数据管理】-【事件与变量】-【页面级变量】的配置，以及代码实施后，我们接下来需要对数据是否成功上传进行校验。校验工作分为两步完成。
-
-#### **数据校验第一步：本地开发环境校验** <a id="shu-ju-xiao-yan-di-yi-bu-ben-di-kai-fa-huan-jing-xiao-yan"></a>
-
-GrowingIO 提供了 SDK debug 模式以及 debug 工具，来帮助您完成数据的校验。具体请参考 [Debugger 最佳实践](https://docs.growingio.com/docs/sdk-integration/growingio-debugger/best-practice#pvar-ye-mian-ji-bian-liang-shi-jian)。
-
-#### **数据校验第二步：GrowingIO 后台图表验证** <a id="shu-ju-xiao-yan-di-er-bu-growingio-hou-tai-tu-biao-yan-zheng"></a>
-
-在 GrowingIO 分析后台，找到 “分析” - “新建事件分析”，然后在图表中选择您设计好的 “指标 + 维度”，页面级变量即对应的 "维度"，查看是否有数据。当然，您需要首先确保页面级变量确实有被触发。
-
-至此，您已经完成了 “自定义变量” 的上传，如您在配置或添加代码中有任何疑问，请联系您的客户成功经理咨询，或在工单系统中反馈问题。谢谢。
-
-
-
-
-
-
-
-
-
-
+API中给出了页面级变量的上传方式。
 
