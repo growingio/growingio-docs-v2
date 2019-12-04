@@ -6,7 +6,7 @@ GitHub Demo：[https://github.com/growingio/flutter-growingio-track/tree/develop
 App适配最低系统版本：iOS 8及以上、Android 4.2-10
 {% endhint %}
 
-## 集成
+## 1. 集成SDK
 
 ### 1. Flutter插件获取安装
 
@@ -27,6 +27,138 @@ Android SDK &gt; [埋点 SDK集成](../android-sdk/manunl-android-sdk.md)
 Flutter 埋点插件是在iOS原生SDK上的扩展，请参考 iOS SDK &gt; [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)。 
 {% endtab %}
 {% endtabs %}
+
+## 2. 自定义数据上传
+
+### 1. track
+
+> 发送自定义事件, 对应于cstm事件
+
+| **参数** | **是否必填** | **说明** |
+| :--- | :--- | :--- |
+| eventId | 是 | 事件Id |
+| variable | 否 | 变量, Map型 |
+
+调用示例:
+
+```dart
+import 'package:growingioflutter/growingio_track.dart';
+```
+
+```dart
+GrowingIO.track('eventId');
+GrowingIO.track('eventId', variable: {'testkey': 'testValue', 'testNumKey': 2333});
+```
+
+### 2. setEvar
+
+> 发送转化变量, 对应于evar事件
+
+   函数原型为: setEvar\(Map&lt;String, dynamic&gt; variable\), 调用示例:
+
+```dart
+import 'package:growingioflutter/growingio_track.dart';
+```
+
+```dart
+GrowingIO.setEvar({
+  'testKey': 'testValue', 'testNumKey': 2333.0
+});
+
+```
+
+### 3. setPeopleVariable
+
+> 发送用户变量, 对应于ppl事件
+
+  函数原型为: setPeopleVariable\(Map&lt;String, dynamic&gt; variable\)
+
+  调用示例:
+
+```dart
+import 'package:growingioflutter/growingio_track.dart';
+```
+
+```dart
+GrowingIO.setPeopleVariable({
+  'testKey': 'testValue', 'testNumKey': 2333.0
+});
+
+```
+
+### 4. setUserId
+
+> 设置登录用户ID, 对应于cs1字段
+
+| **参数** | **类型** | **描述** |
+| :--- | :--- | :--- |
+| userId | String | 登录用户Id |
+
+函数原型: setUserId\(String userId\)
+
+调用示例:
+
+```dart
+import 'package:growingioflutter/growingio_track.dart';
+```
+
+```dart
+GrowingIO.setUserId("testUserId");
+```
+
+### 5. clearUserId
+
+> 清除登录用户ID
+
+函数原型: clearUserId\(\)
+
+调用示例:
+
+```dart
+import 'package:growingioflutter/growingio_track.dart';
+```
+
+```dart
+GrowingIO.clearUserId();
+```
+
+### 6. setVisitor
+
+> 设置访问用户变量, 对应于vstr事件
+
+函数原型: setVisitor\(Map&lt;String, dynamic&gt; variable\)
+
+调用示例:
+
+```dart
+import 'package:growingioflutter/growingio_track.dart';
+```
+
+```dart
+GrowingIO.setVisitor({
+	  "visitorKey": 'key', "visitorValue": 34
+});
+```
+
+## 3. 创建应用
+
+{% hint style="danger" %}
+**添加代码之后，请先Clean项目，然后再进行编译，并在你的 App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
+{% endhint %}
+
+ 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+
+## 4. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
+
+了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
+
+GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
+
+方式一：[Mobile Debugger​​](../../debugging/mobile-debugger.md)
+
+方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
+
+方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
 
 ## 常见问题
 

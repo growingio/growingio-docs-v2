@@ -12,14 +12,12 @@ GitHub Demo：[https://github.com/growingio/ReactNativeDemo](https://github.com/
 * 兼容组件 react-native-navigation 版本：^1.1.486
 * App适配最低系统版本：iOS 8及以上、Android 4.2-10
 
-如果没有使用react-navigation或者react-native-navigation作为导航，请仔细阅读 **3.3 page设置API**。
+如果没有使用react-navigation或者react-native-navigation作为导航，请仔细阅读 **下文3.3 page设置API**。
 {% endhint %}
 
 ## 1. 预处理 JS 文件
 
 RN无埋点的实现原理是修改用户`React Native`，`React-navigation`， `React-Native-Navigation`的源码。所以需要预先处理`js`文件，[GitHub 开源 JS 脚本](https://github.com/growingio/GIORNHook)。
-
-### 
 
 #### 使用命令行进入项目根目录，执行下面操作（二者任选其一即可）：
 
@@ -201,9 +199,20 @@ NativeModules.GrowingIO.onPageShow("pageName");
 
 自定义数据上传其实最终是通过 NativeModules.GrowingIO 调用的原生GrowingIO 无埋点的API，以上接口使用时，对应的参数限制条件对您很重要。
 
-[Android SDK 自定义数据上传API](../android-sdk/android-sdk-api/customize-api.md)
+| 方法名 | 参数类型 | 说明                                      |
+| :--- | :--- | :--- |
+| track | \(String eventId, Object eventLevelVariable\(optional\)\) | 自定义事件 |
+| setEvar | \(Object conversionVariables\) | 设置转化变量 |
+| setPeopleVariable | \(Object peopleVariables\) | 设置用户变量 |
+| setUserId | \(String userId\) | 设置登录用户ID |
+| clearUserId | 无参数 | 清除登录用户ID |
+| setVisitor | \(Object visitor\) | 设置访问用户变量 |
 
-[iOS SDK 自定义数据上传API](../ios-sdk/ios-sdk-api/customize-api.md)
+{% hint style="warning" %}
+埋点接口其实最终是通过 NativeModules.GrowingIO 调用的原生GrowingIO 无埋点的API，参数限制与其一致。
+{% endhint %}
+
+**代码示例**
 
 GrowingIOPackage想RN提供了一个NativeModule，所有埋点接口都是由其实现，使用方法如下：
 
@@ -217,9 +226,6 @@ import {
 ​
 //track 设置自定义事件
 NativeModules.GrowingIO.track('testEventId', {'卖家Id': 'xxxxxx', '地点': '北京'});
-​
-//trackWithNumber 设置自定义事件
-NativeModules.GrowingIO.trackWithNumber('addCart',97,{"book":"EnglishBook"});
 ​
 //setPeopleVariable 设置用户变量
 NativeModules.GrowingIO.setPeopleVariable({ "name": "Danny", "Age": 20 });
@@ -241,7 +247,7 @@ NativeModules.GrowingIO.setVisitor({ "age": 20, "gender": "male" });
 
 开发者可以为 UI 元素添加 growingParams
 
-代码示例
+代码示例：
 
 ```java
 <Text growingParams={{id:"test",content:"test",info:"test",ignore:"true"}}>高级选项设置</Text>
@@ -270,6 +276,26 @@ NativeModules.GrowingIO.setVisitor({ "age": 20, "gender": "male" });
 | WebView |
 | RefreshControl |
 | ActivityIndicator |
+
+## 6. 创建应用
+
+{% hint style="danger" %}
+**添加代码之后，请先Clean项目，然后再进行编译，并在你的 App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
+{% endhint %}
+
+ 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+
+## 7. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
+
+了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
+
+GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
+
+方式一：[Mobile Debugger​​](../../debugging/mobile-debugger.md)
+
+方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
+
+方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
 
 ## 常见问题
 

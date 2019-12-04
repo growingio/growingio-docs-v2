@@ -11,7 +11,7 @@ React Native 埋点 SDK 仅自动采集设备信息和埋点数据，如果想�
 * App适配最低系统版本：iOS 8及以上、Android 4.2-10
 {% endhint %}
 
-## 集成SDK
+## 1. 集成SDK
 
 {% tabs %}
 {% tab title="Android" %}
@@ -102,5 +102,27 @@ pod 'GrowingReactNativeTrackKit', :path =&gt; '../node\_modules/react-native-gro
 {% endtab %}
 {% endtabs %}
 
+## 2. 自定义数据上传
 
+同[React Native 无埋点SDK 自定义数据上传](rn-autosdk.md#4-zi-ding-yi-shu-ju-shang-chuan)一致。
+
+## 3. 创建应用
+
+{% hint style="danger" %}
+**添加代码之后，请先Clean项目，然后再进行编译，并在你的 App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
+{% endhint %}
+
+ 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+
+## 4. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
+
+了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
+
+GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
+
+方式一：[Mobile Debugger​​](../../debugging/mobile-debugger.md)
+
+方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
+
+方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
 
