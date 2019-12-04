@@ -140,7 +140,24 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 下列内容为常用配置，更多属性及接口详细信息见 Growing.h
 {% endhint %}
 
-### 1. 设置界面元素ID
+### 1. 设置页面别名
+
+有些时候，对于完成某个功能的页面，统计时可能需要进一步细分。 比如，对于展示商品列表的页面，需要区分衣物类商品，以及食品类商品的两种列表的访问量。
+
+为处理这种场景，我们提供了取别名的方法来区分这两种情况下的页面，方法如下：
+
+```java
+//手动标识该页面的标题，必须在该UIViewController显示之前设置
+@property (nonatomic,copy) NSString* growingAttributesPageName;
+```
+
+{% hint style="info" %}
+1. 必须在该UIViewController显示之前设置。
+2. 页面别名建议设置为字母、数字、下划线的组合。
+3. 未查看数据方便，请尽量对不同端、不同页面的取不同的名称。
+{% endhint %}
+
+### 2. 设置界面元素ID
 
 当您的应用界面改版时，可能会导致无法准确地统计已经圈选的元素。因此，对于应用中的主要流程涉及到的界面元素，建议您为它们设置固定的唯一ID，以保证数据的一致性。
 
