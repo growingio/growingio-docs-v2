@@ -31,7 +31,9 @@
     </tr>
     <tr>
       <td style="text-align:left">&#x9879;&#x76EE;&#x89D2;&#x8272;</td>
-      <td style="text-align:left">&#x1F34E; &#x1F34E; &#x9879;&#x76EE;&#x6210;&#x5458;&#x7684;&#x89D2;&#x8272;&#x6743;&#x9650;&#x94FE;&#x63A5;&#x3002;</td>
+      <td style="text-align:left">&#x9879;&#x76EE;&#x6210;&#x5458;&#x7684;&#x89D2;&#x8272;&#x6743;&#x9650;&#x94FE;&#x63A5;&#x3002;&#x9879;&#x76EE;&#x89D2;&#x8272;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x53C2;&#x8003;
+        <a
+        href="../../../introduction/role-and-permission.md">&#x89D2;&#x8272;&#x6743;&#x9650;&#x8BF4;&#x660E;</a>&#x3002;</td>
     </tr>
   </tbody>
 </table>### 邀请成员（组织内）至项目
