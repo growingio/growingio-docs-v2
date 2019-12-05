@@ -308,7 +308,7 @@ description: Android SDK更新日志
       <td style="text-align:left">
         <p></p>
         <ol>
-          <li>&#x590D; <code>View</code> &#x7684; <code>Context</code> &#x662F; <code>Application</code> &#x65F6;&#xFF0C;&#x65E0;&#x6CD5;&#x91C7;&#x96C6;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#xFF1B;</li>
+          <li>&#x4FEE;&#x590D; <code>View</code> &#x7684; <code>Context</code> &#x662F; <code>Application</code> &#x65F6;&#xFF0C;&#x65E0;&#x6CD5;&#x91C7;&#x96C6;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#xFF1B;</li>
           <li>&#x4FEE;&#x590D; <code>Fragment</code> &#x5143;&#x7D20;&#x4E0D;&#x53EF;&#x89C1;&#x53D1;&#x9001; <code>imp</code> &#x4E8B;&#x4EF6;&#xFF1B;</li>
           <li>&#x4F18;&#x5316;&#x5143;&#x7D20;&#x5C55;&#x73B0;&#x4E8B;&#x4EF6;&#x548C;&#x6027;&#x80FD;&#xFF1B;</li>
           <li>&#x4FEE;&#x590D;&#x5728; vivo x20 plus &#x673A;&#x578B;&#x4E0A;&#xFF0C;&#x591A;&#x8FDB;&#x7A0B;&#x5708;&#x9009;&#x95EE;&#x9898;&#xFF1B;</li>
