@@ -20,7 +20,7 @@ curl --compressed https://assets.giocdn.com/gio-ming.js -o gio-ming.js
 
 #### 2. 将下载好的 gio-ming.js 文件放在微信小游戏项目里，比如 utils 目录下。下面会假设 SDK 文件放在 utils 目录下。
 
-#### 3. 在在微信小游戏项目根目录的 game.js 文件的顶部添加以下JS代码。
+#### 3. 在微信小游戏项目根目录的 game.js 文件的顶部添加以下JS代码。
 
 ```javascript
 var gio = require("utils/gio-ming.js");
