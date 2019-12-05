@@ -89,7 +89,11 @@ gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 
 ```javascript
 // page.set API原型
-gio('page.set', key, value);gio('page.set', pageLevelVariables);// page.set API调用示例一gio('page.set', {'pageName': 'Home Page', 'author': 'Zhang San'});// page.set API调用示例二gio('page.set', 'author', 'Zhang San');
+gio('page.set', key, value);gio('page.set', pageLevelVariables);
+// page.set API调用示例一
+gio('page.set', {'pageName': 'Home Page', 'author': 'Zhang San'});
+// page.set API调用示例二
+gio('page.set', 'author', 'Zhang San');
 ```
 
 ### 3. 设置转化变量（evar.set） <a id="3-she-zhi-zhuan-hua-bian-liang-evarset"></a>
@@ -104,7 +108,11 @@ gio('page.set', key, value);gio('page.set', pageLevelVariables);// page.set API�
 
 ```javascript
 // evar.set API原型
-gio('evar.set', key, value);gio('evar.set', conversionVariables);// evar.set API调用示例一gio('evar.set', 'campaignId'，'1234567890');// evar.set API调用示例二gio('evar.set', {'campaignId': '1234567890', 'campaignOwner':'lisi'});
+gio('evar.set', key, value);gio('evar.set', conversionVariables);
+// evar.set API调用示例一
+gio('evar.set', 'campaignId'，'1234567890');
+// evar.set API调用示例二
+gio('evar.set', {'campaignId': '1234567890', 'campaignOwner':'lisi'});
 ```
 
 ### 4. 设置用户级变量（people.set） <a id="4-she-zhi-yong-hu-ji-bian-liang-peopleset"></a>
@@ -119,7 +127,11 @@ gio('evar.set', key, value);gio('evar.set', conversionVariables);// evar.set API
 
 ```javascript
 // people.set API原型
-gio('people.set', key, value);gio('people.set', customerVariables);// people.set API调用示例一gio('people.set', 'gender', 'male');//people.set API调用示例二gio('people.set', {'gender':'male', 'age':'25'});
+gio('people.set', key, value);gio('people.set', customerVariables);
+// people.set API调用示例一
+gio('people.set', 'gender', 'male');
+//people.set API调用示例二
+gio('people.set', {'gender':'male', 'age':'25'});
 ```
 
 ### 5. 设置用户id（hybridSetUserId） <a id="5-she-zhi-yong-hu-idhybridsetuserid"></a>

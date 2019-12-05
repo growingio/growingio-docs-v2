@@ -181,7 +181,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 * 对于已经集成过旧版SDK并圈选过的应用，对某个元素设置ID后再圈选它，指标数值会从零开始计算，类似初次集成SDK后发版的效果，但不影响之前圈选的其它指标数据。如果不希望出现这种情况，请不要使用这个方法。
 {% endhint %}
 
-### 2. 设置元素内容
+### 3. 设置元素内容
 
 当您想采集一些可能没有文字的控件（比如UIImageView，UIView）时，也可以给属性growingAttributesValue 赋值作为文字，用来在圈选的时候区分不同的内容。
 
@@ -206,7 +206,7 @@ view2.growingAttributesValue = @"ad2";
 view3.growingAttributesValue = @"ad3";
 ```
 
-### 3. 采集输入框数据
+### 4. 采集输入框数据
 
 如果您需要采集应用内某个输入框内的文字（例如搜索框），请调用如下接口进行设置：
 
@@ -222,7 +222,7 @@ view代表要被采集的输入框。 当这个输入框失去焦点（包括应
 对于密码输入框，即便标记为需要采集，SDK也会忽略，不采集它的数据。
 {% endhint %}
 
-### 4. Facebook广告SDK
+### 5. Facebook广告SDK
 
 如果您使用了 Facebook 广告 SDK，请务必在 main 函数第一行调用以下代码来避免冲突，否则可能造成无法创建项目或者统计准确性问题。注意：APP启动后，将不允许修改采集模式。
 
@@ -230,11 +230,11 @@ view代表要被采集的输入框。 当这个输入框失去焦点（包括应
 [Growing setAspectMode:GrowingAspectModeDynamicSwizzling];
 ```
 
-### 5  采集WebView页面数据
+### 6  采集WebView页面数据
 
 SDK会自动采集H5页面的数据，不需要特殊配置。
 
-### 6. 采集GPS数据
+### 7. 采集GPS数据
 
 如果您的应用有相应的圈选，SDK将自动采集您的GPS数据。
 
@@ -245,7 +245,7 @@ SDK 2.8.6及以上版本支持手动关闭采集GPS数据。
  +(void)setEnableLocationTrack:(BOOL)enable;`
 {% endhint %}
 
-### 7. 启用Hashtag识别
+### 8. 启用Hashtag识别
 
 您可以在项目中添加以下方法以启用Hashtag识别：
 
@@ -254,7 +254,7 @@ SDK 2.8.6及以上版本支持手动关闭采集GPS数据。
 + (void)enableHybridHashTag:(BOOL)enable;
 ```
 
-### 8. GDPR数据采集开关
+### 9. GDPR数据采集开关
 
 {% hint style="warning" %}
 SDK 版本支持：2.3.2及以上。
@@ -270,7 +270,7 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 [Growing enableDataCollect];
 ```
 
-### 9. DeepLink & Universal Link
+### 10. DeepLink & Universal Link
 
 | DeepLink功能  | SDK版本 |
 | :--- | :--- |
@@ -325,7 +325,7 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 
 3. 添加Universal Link参数解析回调方法，此方法与DeepLink方法一致。
 
-### 10. App Store提交应用注意事项
+### 11. App Store提交应用注意事项
 
 如果您添加了库**AdSupport.framework**，GrowingIO则会启用 IDFA，所以在向 App Store 提交应用时，需要：
 
@@ -337,7 +337,7 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 >
 >  GrowingIO 使用 IDFA 来做来源管理激活设备的精确匹配，让你更好的衡量广告效果。如您不希望启用IDFA，可以选择不引入 AdSupport.framework
 
-### 11. 采集推送
+### 12. 采集推送
 
 在**IOS SDK 2.6.3** 版本， 支持采集用户**点击**本应用的通知的题和内容。此功能默认关闭，如需开启，请在 Application 初始化 GrowingIO 中设置，例如：
 
@@ -361,7 +361,7 @@ iOS SDK 不支持通知展现的事件采集，但是 Android SDK 支持。
 这里为了满足大部分客户都有 Android 和 iOS 两个应用的情况，创建的推送展示自定义事件的统计值为0。
 {% endhint %}
 
-### 12. 浏览事件的半自动采集配置
+### 13. 浏览事件的半自动采集配置
 
 > SDK版本支持：&gt;=2.8.4
 
