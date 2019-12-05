@@ -29,7 +29,7 @@ GrowingIO iOS SDK 2.8.7 包含以下组件SDK:
 
 {% tabs %}
 {% tab title="使用CocoaPods快速添加" %}
-1. 在您的Podfile中添加`pod 'GrowingTrackKit'`。
+1. 在您的Podfile中添加`pod 'GrowingCoreKit'`。
 2. 执行`pod install` 或 `pod update` 更新pod依赖库。
 3. （可选）GrowingIO推荐您添加 **AdSupport.framework** 依赖库，用于来源管理激活匹配,有利于您更好的分析数据 ,添加项目依赖库的位置在项目设置target -&gt; 选项卡General -&gt; Linked Frameworks and Libraries
 {% endtab %}
@@ -110,6 +110,26 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
  ...
 }
 ```
+
+{% hint style="warning" %}
+### 提醒：
+
+* 若您在 AppDelegate 中实现了以下一个或多个方法，请在已实现的函数中，调用`[Growing handleUrl:]`
+
+  ```objectivec
+  - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
+  - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+  - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options
+  ```
+
+* 若以上所有方法均未实现，请实现以下方法并调用`[Growing handleUrl:]`
+
+  ```objectivec
+  - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
+  ```
+
+* 实际情况可能很复杂，请在调试时确保函数`[Growing handleUrl:]`会被执行到
+{% endhint %}
 
 ## 3. App Store提交应用注意事项
 

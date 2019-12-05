@@ -64,7 +64,7 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 | libsqlite3.tbd | 存储日志 |
 | CoreLocation.framework | 用于读取地理位置信息（如果您的App有权限） |
 | JavaScriptCore.framework | Web圈选App交互 |
-| JavaScriptCore.framework | Web圈选 |
+| WebKit.framework | Web圈选 |
 
 添加编译参数，并注意大小写。
 

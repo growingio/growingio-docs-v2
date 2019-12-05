@@ -93,6 +93,6 @@ android {
 ```
 
 {% hint style="danger" %}
-如果您为移除，集成SDK后App将崩溃（Crash）。
+如果您未移除，集成SDK后App将崩溃（Crash）。
 {% endhint %}
 
