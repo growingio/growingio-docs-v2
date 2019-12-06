@@ -255,7 +255,7 @@
     * [活跃用户分析](product-manual/uesr-analysis/active-users/README.md)
       * [什么是活跃用户分析](product-manual/uesr-analysis/active-users/what.md)
       * [分析活跃用户](product-manual/uesr-analysis/active-users/ues.md)
-    * [微信应用用户分析](product-manual/uesr-analysis/wei-xin-ying-yong-yong-hu-fen-xi.md)
+    * [微信应用用户分析](product-manual/uesr-analysis/wx-user.md)
   * [用户运营](product-manual/yong-hu-yun-ying.md)
   * [获客分析](product-manual/growing/README.md)
     * [广告监测](product-manual/growing/ads/README.md)

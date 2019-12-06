@@ -189,19 +189,18 @@ R.string.growingio*
 
 ### **5. lambda 表达式支持配置**
 
-{% hint style="info" %}
-Android 2.7.4 及以上支持了 lambda 表达式（不包括retrolambda），不需要此配置项。
-{% endhint %}
-
 lambda 表达式目前业界主流两种，分别为 retrolambda 和 AndroidStudio 支持的 lambda。
 
-GrowingIO的SDK 只支持 AndroidStudio 自带的 lambda 表达式，并且对于 `android.enableD8.desugaring = true` 未做兼容。 在`com.android.tools.build:gradle:3.2.1` 之后， Google默认开启 `desugaring` 特性， 暂时需要用户手动关闭。
+GrowingIO 的SDK 只支持 AndroidStudio 自带的 lambda 表达式。
 
-在项目根目录中 gradle.properties 文件中增加以下配置：
+* 在SDK版本&lt;2.7.4时，对于 `android.enableD8.desugaring = true` 未做兼容。 在`com.android.tools.build:gradle:3.2.1` 之后， Google默认开启 `desugaring` 特性， 暂时需要用户手动关闭。
 
-```text
+```java
+//关闭方法：在项目根目录中 gradle.properties 文件中增加以下配置：
 android.enableD8.desugaring=false
 ```
+
+* 在SDK版本&gt;=2.7.4时，我们兼容了`android.enableD8.desugaring = true`，无需再做配置。
 
 ## 2. 重要配置
 

@@ -16,7 +16,7 @@
 
 | 用户分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [用户分群](product-manual/uesr-analysis/segmentations/) | [用户细查](product-manual/uesr-analysis/userinsights/) | [活跃用户](product-manual/uesr-analysis/active-users/) | [微信用户](product-manual/uesr-analysis/wei-xin-ying-yong-yong-hu-fen-xi.md) |
+| [用户分群](product-manual/uesr-analysis/segmentations/) | [用户细查](product-manual/uesr-analysis/userinsights/) | [活跃用户](product-manual/uesr-analysis/active-users/) | [微信用户](product-manual/uesr-analysis/wx-user.md) |
 
 | 获客分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
