@@ -104,7 +104,7 @@ const Page = global.GioPage;
 2. 将解压后的`gio-minp`目录放在小程序目录下（比如：/src/utils目录）。
 3. 添加代码：
 
-方式1：在根目录app.js文件的顶部添加跟踪代码：
+方式1：在根目录app.jsx文件的顶部添加跟踪代码：
 
 ```javascript
 import Taro from '@tarojs/taro';
@@ -142,7 +142,7 @@ gio('setConfig', gioConfig);
 
 方式1：
 
-在根目录app.js文件的顶部添加跟踪代码
+在根目录app.wpy文件的顶部添加跟踪代码
 
 ```javascript
 import Wepy from '@wepy/core';
@@ -181,7 +181,7 @@ gio('setConfig', gioConfig);
 
 方式1：
 
-在根目录 app.js 文件的顶部添加跟踪代码
+在根目录 app.wpy 文件的顶部添加跟踪代码
 
 ```java
 import Wepy from '@wepy/core';
@@ -219,7 +219,7 @@ gio('setConfig', gioConfig);
 2. 将解压后的`gio-minp`目录放在小程序目录下（比如：/src/utils目录）。
 3. 添加代码：
 
-方式1：在根目录app.js文件的顶部添加跟踪代码 
+方式1：在根目录main.js文件的顶部添加跟踪代码 
 
 ```javascript
 import Vue from 'vue';
@@ -419,7 +419,7 @@ App.mpType = 'app'
 
 方式1：
 
-在根目录 app.js 文件的顶部添加跟踪代码
+在根目录 app.cml 文件的顶部添加跟踪代码
 
 ```javascript
 import Cml from 'chameleon-runtime';

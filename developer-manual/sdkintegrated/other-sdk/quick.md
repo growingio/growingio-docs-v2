@@ -112,17 +112,17 @@ gio('clearUserId');
 gio('setUser', { id: user.id, name: user.name });
 ```
 
-## 6. 自定义数据上传API
+## 5. 自定义数据上传API
 
 自定义数据上传API，请参考[自定义数据上传API](customize-api.md)。
 
-## 7. 创建应用
+## 6. 创建应用
 
 请在添加了跟踪代码的支付宝小程序重新启动几次，发送数据给 GrowingIO。
 
 在GrowingIO平台的创建微信小游戏应用。创建应用请参考查看[创建应用](../../../product-manual/sysmanage/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
-## 8. 验证SDK是否正常采集数据
+## 7. 验证SDK是否正常采集数据
 
 方式一：[小程序&内嵌页Debugger](../../debugging/minpdebugger.md)
 
