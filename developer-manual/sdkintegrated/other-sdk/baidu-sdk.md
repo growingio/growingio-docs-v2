@@ -306,7 +306,7 @@ gio('setUser', { id: user.id, name: user.name });
 
 方式一：[小程序&内嵌页Debugger](../../debugging/minpdebugger.md)
 
-方式二：在SDK中设置了Debug模式后，在微信开发者工具中查看数据采集日志。
+方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
 方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
 

@@ -21,6 +21,7 @@ description: iOS SDK更新日志
           <li>fix&#x5F3A;&#x5F15;&#x7528;vc&#x5E26;&#x6765;&#x7279;&#x6B8A;&#x573A;&#x666F;&#x4E0B;crash&#x7684;&#x95EE;&#x9898;</li>
           <li>&#x89E3;&#x51B3;WKWebView&#x5185;&#x5B58;&#x6CC4;&#x6F0F;&#x7684;&#x95EE;&#x9898;</li>
         </ul>
+        <p>&#x1F4D4;&#x5982;&#x679C;&#x60A8;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x65E0;&#x57CB;&#x70B9;SDK&#x548C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#xFF0C;&#x5F53;&#x60A8;&#x5347;&#x7EA7;&#x5230;&#x6B64;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#x7248;&#x672C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x5347;&#x7EA7;&#x5230;1.1.0&#x53CA;&#x4EE5;&#x4E0A;&#x3002;</p>
       </td>
       <td style="text-align:left">2019-11-29</td>
     </tr>
