@@ -8,8 +8,7 @@
 
 {% code title="java" %}
 ```java
-javapublic String authToken(String projectKeyId, Strin
-g secretKey, String keyArray) throws Exception {
+javapublic String authToken(String projectKeyId, String secretKey, String keyArray) throws Exception {
     String message = "ai="+projectKeyId+"&loginUserId="+keyArray;
     Mac hmac = Mac.getInstance("HmacSHA256");
     hmac.init(new SecretKeySpec(secretKey.getBytes("UTF-8"), "HmacSHA256"));

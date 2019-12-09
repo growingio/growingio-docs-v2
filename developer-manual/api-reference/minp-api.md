@@ -177,7 +177,7 @@ POST
     "updaterName": "Dingding",
     "createdAt": 1557039138779,
     "updatedAt": 1557039138779
-}、
+}
 ```
 {% endcode %}
 {% endtab %}

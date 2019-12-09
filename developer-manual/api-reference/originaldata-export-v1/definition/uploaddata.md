@@ -79,7 +79,7 @@ GET
 
 响应中的 status 字段，状态值有： 1. FINISHED 任务完成； 2. RUNNING 任务正在跑； 3. NOT\_EXISTS 任务不存在，可能是任务还没跑或者请求日期格式不对。
 
-使用下载链接时，可以先检查 status 字段，为 FINISHED 时才拿 downlinks 进行下载。？？？status状态还没到finished时候，链接已经有了吗？？？
+使用下载链接时，可以先检查 status 字段，为 FINISHED 时才拿 downlinks 进行下载。
 {% endtab %}
 {% endtabs %}
 

@@ -40,7 +40,7 @@ GrowingIO 从集成代码后开始获取用户数据，因此在刚刚集成代�
 
 #### 1.7 访问用户量和新访问用户量，登录用户量和新登录用户量的区别？ <a id="8&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x91CF;&#x548C;&#x65B0;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x91CF;&#xFF0C;&#x767B;&#x5F55;&#x7528;&#x6237;&#x91CF;&#x548C;&#x65B0;&#x767B;&#x5F55;&#x7528;&#x6237;&#x91CF;&#x7684;&#x533A;&#x522B;&#xFF1F;"></a>
 
-什么是访问用户和登陆用户，看[这里](https://docs.growingio.com/docs/data-model/user-model)。新登陆用户和新访问用户的统计口径，看[这里](https://docs.growingio.com/docs/data-model/olap-model/predifined-metrics-dimensions#di-yi-bu-fen-yong-hu-ji-zhi-biao)。
+什么是访问用户和登陆用户，看[用户模型](../../introduction/datamodel/usermodel/)。新登陆用户和新访问用户的统计口径，看[用户变量](../../introduction/data-definition/uservar/)。
 
 注意：
 
@@ -70,19 +70,19 @@ GrowingIO 从集成代码后开始获取用户数据，因此在刚刚集成代�
 * **平均按钮点击量：**比如您想了解“购买按钮“的人均点击量。理论上人均应该点击一次购买按钮，但是因为 bug，或者流程设计不规范等原因，用户要点击多次按钮才能完成购买，您可以将分子定义为这个按钮的点击量，分母定义为这个按钮的点击人数。
 * **统计产品功能的活跃度：**比如您想了解用户使用某一功能的情况：用户要想完整的体验一个功能需要点击 ABC 三个按钮。这时候您只需要将这三个按钮的点击量相加即可。
 
-**复合指标制作请看**[**这里**](https://docs.growingio.com/docs/data-definition/circle/metric-management/complex)**。**
+**复合指标制作请看**[**自定义指标管理**](../datacenter/datamanage/complex/)**。**
 
 ### 2. 维度 <a id="2"></a>
 
 #### 2.1 访问来源和一级访问来源怎样使用？ <a id="1&#x8BBF;&#x95EE;&#x6765;&#x6E90;&#x548C;&#x4E00;&#x7EA7;&#x8BBF;&#x95EE;&#x6765;&#x6E90;&#x600E;&#x6837;&#x4F7F;&#x7528;&#xFF1F;"></a>
 
-​[访问来源](https://docs.growingio.com/docs/data-model/olap-model/predifined-metrics-dimensions#11-1)可以帮助您了解该网站流量来源，访问来源可以是百度，谷歌，优酷等站外渠道，也可能是直接访问该网站。您可以通过访问来源维度查看不同来源的流量质量；
+​访问来源可以帮助您了解该网站流量来源，访问来源可以是百度，谷歌，优酷等站外渠道，也可能是直接访问该网站。您可以通过访问来源维度查看不同来源的流量质量；
 
-而[一级访问来源](https://docs.growingio.com/docs/data-model/olap-model/predifined-metrics-dimensions#12-1)将访问来源进行了细分：一级访问来源将访问来源分为直接访问，搜索引擎，社交媒体，外部链接四大部分，方便您更方便地对来源归类，分析不同来源的流量效果。
+而一级访问来源将访问来源进行了细分：一级访问来源将访问来源分为直接访问，搜索引擎，社交媒体，外部链接四大部分，方便您更方便地对来源归类，分析不同来源的流量效果。
 
 #### 2.2 如果我想区分手机访问的用户和电脑访问的用户，我应该用哪个维度？ <a id="2&#x5982;&#x679C;&#x6211;&#x60F3;&#x533A;&#x5206;&#x624B;&#x673A;&#x8BBF;&#x95EE;&#x7684;&#x7528;&#x6237;&#x548C;&#x7535;&#x8111;&#x8BBF;&#x95EE;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x6211;&#x5E94;&#x8BE5;&#x7528;&#x54EA;&#x4E2A;&#x7EF4;&#x5EA6;&#xFF1F;"></a>
 
-您可以通过「[操作系统](https://docs.growingio.com/docs/data-model/olap-model/predifined-metrics-dimensions#33)」来区分。
+您可以通过「操作系统」来区分。
 
 #### 2.3 城市和地区的判断原理是什么？什么场景使用哪个维度？ <a id="3&#x57CE;&#x5E02;&#x548C;&#x5730;&#x533A;&#x7684;&#x5224;&#x65AD;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x4EC0;&#x4E48;&#x573A;&#x666F;&#x4F7F;&#x7528;&#x54EA;&#x4E2A;&#x7EF4;&#x5EA6;&#xFF1F;"></a>
 
@@ -92,7 +92,7 @@ GrowingIO 从集成代码后开始获取用户数据，因此在刚刚集成代�
 
 #### 2.4 监控付费推广（渠道来源）的 UTM，对应到维度这里是哪些，怎样使用？ <a id="4&#x76D1;&#x63A7;&#x4ED8;&#x8D39;&#x63A8;&#x5E7F;&#xFF08;&#x6E20;&#x9053;&#x6765;&#x6E90;&#xFF09;&#x7684;utm&#xFF0C;&#x5BF9;&#x5E94;&#x5230;&#x7EF4;&#x5EA6;&#x8FD9;&#x91CC;&#x662F;&#x54EA;&#x4E9B;&#xFF0C;&#x600E;&#x6837;&#x4F7F;&#x7528;&#xFF1F;"></a>
 
-**相关维度：** UTM 参数现在有，广告来源（utm\_source），广告媒介（utm\_medium ），广告关键字（utm\_term ），广告内容（utm\_content ）。您可以参考[如下文章](https://docs.growingio.com/docs/ads-tracking/xiang-guan-zhi-shi/utm-parameters)去配置 UTM 渠道追踪。我们建议你可以使用[广告监测](https://docs.growingio.com/docs/ads-tracking)功能。
+**相关维度：** UTM 参数现在有，广告来源（utm\_source），广告媒介（utm\_medium ），广告关键字（utm\_term ），广告内容（utm\_content ）。您可以参考[UTM参数使用指南](../growing/ads/info/utm-use.md)去配置 UTM 渠道追踪。我们建议你可以使用[广告监测](../growing/ads/)功能。
 
 **使用场景：** UTM 广告系列参数对着陆页面的 URL 进行标注，可以区别衡量各种营销渠道所带来的访客价值。在这里渠道归因采取的是非直接访问的最后点击模型。 比如，访客于 9:30 访问网站。我们进行渠道归因时，会统计在 10:00 点开始，回溯 30 天时间，其最后一次通过外站（非直接流量）进来时的 UTM 参数，关键词和 refer URL。举个例子，访客 A 通过百度推广进入网站，然后通过新浪的 banner 再次进入网站，最后一次通过直接输入 URL 进入网站完成购买，我们会认为这次转化由新浪 banner 贡献。
 
@@ -109,7 +109,9 @@ GrowingIO 从集成代码后开始获取用户数据，因此在刚刚集成代�
 
 #### 2.7 “超出维度行数上限”是什么意思？ <a id="27-chao-chu-wei-du-hang-shu-shang-xian-shi-shi-mo-yi-si"></a>
 
-我们使用维度和指标来进行数据分析。维度用来决定一个分析的角度，指标用来展现这个角度的数据。例如，我们可以使用“网站/手机应用”作为维度，页面浏览量作为指标，在 GrowingIO 中制作出下面这张表：![](http://growing.cn-bj.ufileos.com/ccc1.png)此处输入图片的描述
+我们使用维度和指标来进行数据分析。维度用来决定一个分析的角度，指标用来展现这个角度的数据。例如，我们可以使用“网站/手机应用”作为维度，页面浏览量作为指标，在 GrowingIO 中制作出下面这张表：
+
+![](http://growing.cn-bj.ufileos.com/ccc1.png)
 
 “网站/手机应用”维度一共有四个值，分别是：Web、iOS、Android、minP，右边的这几行数值分别代表这四个平台的访问量指标。
 
