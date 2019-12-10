@@ -60,7 +60,7 @@ https://www.growingio.com/insights/{ai}/{date}.json
 ```
 {% endtab %}
 
-{% tab title="获取方式和组织" %}
+{% tab title="数据文件导出形式" %}
  2.0 提供的事件类型：
 
 visit、page、action、action\_tag、custom\_event（原custom\_attr）、ads\_track\_click、ads\_track\_activation、pvar（新增）、evar（新增）、vstr（新增）一共10种类型的事件
