@@ -39,11 +39,11 @@ Universal Links 适用于 iOS 9 及以上的版本，当用户设备系统版本
 
 1、在您的 Xcode 中勾选 **Associated Domains** 功能。
 
-![](../../../../.gitbook/assets/image%20%2879%29.png)
+![](../../../../.gitbook/assets/image%20%2881%29.png)
 
 2. 添加 GrowingIO域名到 Xcode。
 
-![](../../../../.gitbook/assets/image%20%2811%29.png)
+![](../../../../.gitbook/assets/image%20%2812%29.png)
 
 {% hint style="info" %}
 GrowingIO的域名：
@@ -55,7 +55,7 @@ GrowingIO的域名：
 
 3. 在苹果开发者网站中找到 Team ID 与 Bundle ID，如下图。
 
-![](../../../../.gitbook/assets/image%20%28179%29.png)
+![](../../../../.gitbook/assets/image%20%28181%29.png)
 
 **二、 将 Team ID 配置到 GrowingIO 后台。**
 
@@ -69,7 +69,7 @@ GrowingIO的域名：
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtP41qSBliAk88VA3Xe-LtPKKsn2R69VKrS_DHfimage.png)
 
-![](../../../../.gitbook/assets/image%20%28109%29.png)
+![](../../../../.gitbook/assets/image%20%28111%29.png)
 
 
 
@@ -226,7 +226,7 @@ GrowingIO 提供跳转到应用宝微下载的功能，应用宝微下载为腾�
 
 
 
-![](../../../../.gitbook/assets/image%20%2860%29.png)
+![](../../../../.gitbook/assets/image%20%2862%29.png)
 
 当您认为 GrowingIO 提供的默认下载引导页风格无法满足您的需求时，您可以对 DeepLink 中的下载引导页面进行定制，使其更符合您产品的风格，其中将提供两种方式对下载页面进行定制，简易布局和自由布局。
 

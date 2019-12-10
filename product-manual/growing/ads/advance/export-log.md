@@ -8,11 +8,11 @@ description: 导出移动端应用监测链接的日志。
 
 二. 在左侧导航栏选择“**高级设置 &gt; 日志导出”**，进入日志导出任务列表页面。
 
-![](../../../../.gitbook/assets/image%20%28187%29.png)
+![](../../../../.gitbook/assets/image%20%28189%29.png)
 
 三. 单击页面上方的新建导出任务，弹出新建导出界面。
 
-![](../../../../.gitbook/assets/image%20%28159%29.png)
+![](../../../../.gitbook/assets/image%20%28161%29.png)
 
 <table>
   <thead>

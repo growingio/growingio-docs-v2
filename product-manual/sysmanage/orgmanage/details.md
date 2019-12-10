@@ -10,7 +10,7 @@
 
 ### 查看组织基本信息
 
-![](../../../.gitbook/assets/image%20%2872%29.png)
+![](../../../.gitbook/assets/image%20%2874%29.png)
 
 ### 修改组织名称
 

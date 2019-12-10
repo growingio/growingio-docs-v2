@@ -8,11 +8,11 @@
 
 一. 在顶部导航栏选择“**获客分析 &gt; 活动分析”**，进入活动管理页面。
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2834%29.png)
 
 二. 单击**创建活动分析**，进入**新建活动分析**页面。
 
-![](../../.gitbook/assets/image%20%2875%29.png)
+![](../../.gitbook/assets/image%20%2877%29.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -35,7 +35,7 @@
 
 ## **各模块介绍**
 
-![](../../.gitbook/assets/image%20%2856%29.png)
+![](../../.gitbook/assets/image%20%2858%29.png)
 
 <table>
   <thead>

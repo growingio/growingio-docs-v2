@@ -12,11 +12,11 @@ description: 在GrowingIO平台对转化变量进行声明和管理。
 
 二. 在左侧导航栏选择“**变量 &gt; 转化变量”**，进入转化变量管理页面。
 
-![](../../../../.gitbook/assets/image%20%28142%29.png)
+![](../../../../.gitbook/assets/image%20%28144%29.png)
 
 三. 单击变量列表上方的创建转化变量，弹出新建转化变量页面。
 
-![](../../../../.gitbook/assets/image%20%28126%29.png)
+![](../../../../.gitbook/assets/image%20%28128%29.png)
 
 <table>
   <thead>

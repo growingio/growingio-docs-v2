@@ -61,7 +61,7 @@ GrowingIO iOS SDK 2.8.7 包含以下组件SDK:
 
 4. 添加编译参数，并注意大小写。
 
-![](../../../.gitbook/assets/image%20%2884%29.png)
+![](../../../.gitbook/assets/image%20%2886%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -69,7 +69,7 @@ GrowingIO iOS SDK 2.8.7 包含以下组件SDK:
 
 添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
 
-![](../../../.gitbook/assets/image%20%2873%29.png)
+![](../../../.gitbook/assets/image%20%2875%29.png)
 
 ### 3. 初始化配置
 

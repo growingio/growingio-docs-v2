@@ -1,6 +1,6 @@
 # SDK集成
 
-![](../../.gitbook/assets/image%20%2865%29.png)
+![](../../.gitbook/assets/image%20%2867%29.png)
 
 GrowingIO 使用自主研发的 SDK 实现数据采集功能。添加 GrowingIO 的跟踪代码即可完成 SDK 的集成，为数据采集和分析做好准备。
 

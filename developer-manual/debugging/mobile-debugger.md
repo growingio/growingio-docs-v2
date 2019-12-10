@@ -10,7 +10,7 @@ description: 此功能可以方便查看移动端 SDK 上传的数据信息。
 
 登录GrowingIO平台，在任意界面单机右上角 ![](../../.gitbook/assets/2019-10-10_18-59-32.png) 选择**Mobile Debugger**进入Mobile Debugger启动页。
 
-![Mobile Debugger&#x542F;&#x52A8;&#x9875;](../../.gitbook/assets/image%20%28178%29.png)
+![Mobile Debugger&#x542F;&#x52A8;&#x9875;](../../.gitbook/assets/image%20%28180%29.png)
 
 第二步、扫码唤起App
 

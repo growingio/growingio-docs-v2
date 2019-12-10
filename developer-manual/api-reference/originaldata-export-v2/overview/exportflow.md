@@ -2,7 +2,7 @@
 
 原始数据导出包括鉴权、获取链接、下载三个过程。
 
-![](../../../../.gitbook/assets/image%20%2864%29.png)
+![](../../../../.gitbook/assets/image%20%2866%29.png)
 
 鉴权：获取Authorization，参考[认证](../../authenticate/)章节。
 

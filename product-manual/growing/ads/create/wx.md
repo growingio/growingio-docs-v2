@@ -22,7 +22,7 @@ GrowingIO的小程序推广广告链接，可以支持如上的投放形式。
 
 二. 单击左上角的**新建监测链接**，选择推广小程序。
 
-![](../../../../.gitbook/assets/image%20%2825%29.png)
+![](../../../../.gitbook/assets/image%20%2826%29.png)
 
 <table>
   <thead>

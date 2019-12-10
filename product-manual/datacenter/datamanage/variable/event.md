@@ -16,11 +16,11 @@ description: 在GrowingIO平台对埋点事件变量进行声明和管理。
 事件变量分为事件级变量和页面级变量，需在各自页签进行配置。
 {% endhint %}
 
-![](../../../../.gitbook/assets/image%20%28134%29.png)
+![](../../../../.gitbook/assets/image%20%28136%29.png)
 
 三. 单击变量列表上方的**创建事件/页面级变量**，弹出新建事件/页面级变量页面。
 
-![](../../../../.gitbook/assets/image%20%2826%29.png)
+![](../../../../.gitbook/assets/image%20%2827%29.png)
 
 <table>
   <thead>
