@@ -147,7 +147,7 @@ gio('setConfig', gioConfig);
 在根目录app.wpy文件的顶部添加跟踪代码
 
 ```javascript
-import Wepy from '@wepy/core';
+import Vue from 'vue';
 var gio = require("utils/gio-minp/index.js").default;
 gio('init','你的 GrowingIO 项目ID', '你的小程序AppID', { version: '小程序版本', vue: Vue });
 ```
@@ -157,7 +157,7 @@ gio('init','你的 GrowingIO 项目ID', '你的小程序AppID', { version: '小�
 新建一个 gioConfig.js 文件，并且配置 gioConfig.js 文件中的 必要 配置参数
 
 ```javascript
-import Wepy from '@wepy/core';
+import Vue from 'vue';
 export default {
     projectId: '你的 GrowingIO 项目ID',
     appId: '你的小程序AppID',
@@ -216,14 +216,14 @@ gio('setConfig', gioConfig);
 2. 将解压后的`gio-minp`目录放在小程序目录下（比如：/src/utils目录）。
 3. 添加代码：
 
-#### WePy 1.x
+#### WePY 1.x
 
 方式1：
 
 在根目录app.wpy文件的顶部添加跟踪代码
 
 ```javascript
-import Wepy from '@wepy/core';
+import Vue from 'vue';
 var gio = require("utils/gio-minp/index.js").default;
 gio('init','你的 GrowingIO 项目ID', '你的小程序AppID', { version: '小程序版本', vue: Vue });
 ```
@@ -233,11 +233,12 @@ gio('init','你的 GrowingIO 项目ID', '你的小程序AppID', { version: '小�
 新建一个 gioConfig.js 文件，并且配置 gioConfig.js 文件中的 必要 配置参数
 
 ```javascript
-import Wepy from '@wepy/core';
+import Vue from 'vue';
 export default {
     projectId: '你的 GrowingIO 项目ID',
     appId: '你的小程序AppID',
     version: '小程序版本',
+    usePlugin: true,
     vue: Vue,
     // ...
 }
