@@ -140,6 +140,43 @@ gio('setConfig', gioConfig);
 2. 将解压后的`gio-minp`目录放在小程序目录下（比如：/src/utils目录）。
 3. 添加代码：
 
+#### WePY 1.x
+
+方式1：
+
+在根目录app.wpy文件的顶部添加跟踪代码
+
+```javascript
+import Wepy from '@wepy/core';
+var gio = require("utils/gio-minp/index.js").default;
+gio('init','你的 GrowingIO 项目ID', '你的小程序AppID', { version: '小程序版本', vue: Vue });
+```
+
+方式2：
+
+新建一个 gioConfig.js 文件，并且配置 gioConfig.js 文件中的 必要 配置参数
+
+```javascript
+import Wepy from '@wepy/core';
+export default {
+    projectId: '你的 GrowingIO 项目ID',
+    appId: '你的小程序AppID',
+    version: '小程序版本',
+    vue: Vue,
+    // ...
+}
+```
+
+在根目录 app.wpy文件的顶部添加跟踪代码
+
+```javascript
+var gio = require("utils/gio-minp/index.js").default;
+var gioConfig = require("你的 gioConfig.js 文件地址").default;
+gio('setConfig', gioConfig);
+```
+
+#### WePY 2.x
+
 方式1：
 
 在根目录app.wpy文件的顶部添加跟踪代码
@@ -178,6 +215,43 @@ gio('setConfig', gioConfig);
 1. 下载微信小程序SDK，并解压。下载地址：[https://assets.giocdn.com/sdk/gio-minp.esm.zip](https://assets.giocdn.com/sdk/gio-minp.esm.zip)
 2. 将解压后的`gio-minp`目录放在小程序目录下（比如：/src/utils目录）。
 3. 添加代码：
+
+#### WePy 1.x
+
+方式1：
+
+在根目录app.wpy文件的顶部添加跟踪代码
+
+```javascript
+import Wepy from '@wepy/core';
+var gio = require("utils/gio-minp/index.js").default;
+gio('init','你的 GrowingIO 项目ID', '你的小程序AppID', { version: '小程序版本', vue: Vue });
+```
+
+方式2：
+
+新建一个 gioConfig.js 文件，并且配置 gioConfig.js 文件中的 必要 配置参数
+
+```javascript
+import Wepy from '@wepy/core';
+export default {
+    projectId: '你的 GrowingIO 项目ID',
+    appId: '你的小程序AppID',
+    version: '小程序版本',
+    vue: Vue,
+    // ...
+}
+```
+
+在根目录 app.wpy文件的顶部添加跟踪代码
+
+```javascript
+var gio = require("utils/gio-minp/index.js").default;
+var gioConfig = require("你的 gioConfig.js 文件地址").default;
+gio('setConfig', gioConfig);
+```
+
+#### WePY 2.x
 
 方式1：
 
