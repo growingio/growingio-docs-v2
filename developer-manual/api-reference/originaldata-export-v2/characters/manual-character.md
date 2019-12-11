@@ -96,15 +96,6 @@
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">eventNumber</td>
-      <td style="text-align:left">double</td>
-      <td style="text-align:left">
-        <p>&lt;&#x4E8B;&#x4EF6;&#x6570;&#x503C;&gt;</p>
-        <p>&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x7684;&#x503C;&#x3002;</p>
-        <p>&#x793A;&#x4F8B;&#xFF1A;99.99</p>
-      </td>
-    </tr>
-    <tr>
       <td style="text-align:left">eventVariable</td>
       <td style="text-align:left">map&lt;string,string&gt;</td>
       <td style="text-align:left">
