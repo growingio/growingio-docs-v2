@@ -21,7 +21,7 @@ description: 此功能可以方便查看移动端 SDK 上传的数据信息。
 
 在唤起Debug的APP后，该APP采集的行为数据以及当前页面截图就会出现在网页上，测试同学可以根据数据看数据的采集以及发送情况，对数据进行测试。
 
-![Debugger &#x5DE5;&#x4F5C;&#x53F0;](../../.gitbook/assets/image-5.png)
+![](../../.gitbook/assets/image%20%28207%29.png)
 
 在此概览中可能出现的数据日志含义分别有：
 
