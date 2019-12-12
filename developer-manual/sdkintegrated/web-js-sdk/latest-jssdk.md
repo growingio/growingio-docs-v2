@@ -84,7 +84,7 @@ GrowingIO默认视button或a标签为可圈选容器。同时，默认可以圈�
 </div>
 ```
 
-由于数据采集准确性的原因，默认不支持以id="1"的div作为容器进行圈选。你可以为期望的容器元素添加data-growing-container 属性，圈选时即可圈到这个容器。
+由于数据采集准确性的原因，默认不支持以id="1"的div作为容器进行圈选。您可以为期望的容器元素添加data-growing-container 属性，圈选时即可圈到这个容器。
 
 ### 2. 设置采集文本信息（data-growing-title）
 
@@ -124,7 +124,9 @@ LI 标签、TR 标签、DL 标签，会被自动识别为列表元素，列表�
 ```
 
 {% hint style="warning" %}
-由于index必须是数字类型，Web JS SDK 在采集数据时，只会截取 data-growing-idx 中的数字部分，自动忽略其他字符串。
+data-growing-idx属性需要赋值，建议传不为0的纯数字。
+
+由于index必须是数字类型，Web JS SDK 在采集数据时，只会截取 data-growing-idx 中的数字部分（不包括单值为0时），自动忽略其他字符串，所以建议您传不为0的纯数字。
 
 举例：`<div data-growing-idx="123abc">test</div>`// SDK 采集的index是 123
 {% endhint %}
