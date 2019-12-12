@@ -29,7 +29,7 @@
 <!-- End GrowingIO Analytics code version: 2.1 -->
 ```
 
-## 3. 配置系统变量
+## 2. 配置系统变量
 
 设置系统变量的代码请插入上述追踪代码的 custom page code 部分，在 init 和 send 中间。
 
@@ -60,7 +60,7 @@ gio('init', 'your projectId', {
 });
 ```
 
-## 4. 高级设置
+## 3. 高级设置
 
 高级设置可以帮助你更自如地进行圈选操作，请将高级设置插入你Web应用的HTML代码中。
 
@@ -68,7 +68,11 @@ gio('init', 'your projectId', {
 
 GrowingIO默认视button或a标签为可圈选容器。同时，默认可以圈选页面dom上所有叶子结点和叶子结点的上一级父节点。
 
+当您想以button和a标签以外的标签作为容器进行圈选时您可以为期望圈选的容器标签添加data-growing-container 属性，圈选时即可圈到这个容器。容器内子标签的点击都会汇总到容器中。
+
 代码示例：
+
+div作为容器标签时，以id=1的div作为容器进行圈选的代码示例：
 
 ```aspnet
 <div id="1" data-growing-container>
@@ -84,7 +88,7 @@ GrowingIO默认视button或a标签为可圈选容器。同时，默认可以圈�
 </div>
 ```
 
-由于数据采集准确性的原因，默认不支持以id="1"的div作为容器进行圈选。您可以为期望的容器元素添加data-growing-container 属性，圈选时即可圈到这个容器。
+更多容器信息规则，请参考第三节：[容器规则](https://sishen.gitbooks.io/gio-js-book/5/3.html)。
 
 ### 2. 设置采集文本信息（data-growing-title）
 
@@ -153,17 +157,17 @@ data-growing-idx属性需要赋值，建议传不为0的纯数字。
 <input type='text' growing-track='true' />
 ```
 
-## 5. 自定义数据上传
+## 4. 自定义数据上传
 
 您的网页在集成了 GrowingIO 的 SDK 之后，它将会自动地为你采集一系列用户行为数据，并在 GrowingIO 分析后台供你制成数据分析报表。
 
 除上述的用户行为数据（无埋点数据）之外，GrowingIO 还提供了多种 API 接口，供您上传一些自定义的数据指标及维度，请参考[API 2.x](web-sdk-api/websdk-apiv2.md) 。90% 以上的用户都会_上传登录用户 ID_，以便分析登录用户的数据情况。
 
-## 6. 创建应用
+## 5. 创建应用
 
 在GrowingIO平台的创建相应的Web应用。创建应用请参考查看[创建应用](../../../product-manual/sysmanage/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
-## 7. 验证SDK是否正常采集数据
+## 6. 验证SDK是否正常采集数据
 
 {% hint style="info" %}
 了解GrowingIO平台数据类型请参考[数据模型](../../../introduction/datamodel/)。
