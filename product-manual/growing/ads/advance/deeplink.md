@@ -208,7 +208,7 @@ Domains 为 manifest.xml 文件中配置 Intent filter 中的 host , GIO 可能�
 
 在上文中，建议各位开发者将 GIO Intent Filter 代码块配置在 Launcher Activity 下，在用户点击短链后打开 App ，系统将自动跳转到 Launcher Activity ，此时 GIO DeepLink Callback 则会返回您在 GIO 官网广告监测中配置的自定义参数，此时您需要接收您的自定义参数，跳转到指定页面。
 
-详见 [Android DeepLink CallBack 接收参数](https://docs.growingio.com/docs/sdk-integration/android-sdk/android-sdk#deep-link-hui-tiao-can-shu-huo-qu)文档。
+详见 [Android DeepLink CallBack 接收参数](../../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#16-deep-link-hui-tiao-can-shu-huo-qu)文档。
 
 #### 配置应用宝微下载 <a id="pei-zhi-ying-yong-bao-wei-xia-zai"></a>
 

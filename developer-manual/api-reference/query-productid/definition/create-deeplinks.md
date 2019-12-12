@@ -135,7 +135,7 @@ POST
 | androidParams | string | Android 唤醒参数 |
 | urlSchemaIos | string | iOS URL Schema |
 | urlSchemaAndroid | string | Android URL Scheme |
-| status | string | 状态？？？ |
+| status | string | 状态 |
 | creatorId | string | 创建人ID |
 | creatorName | string | 创建人名称 |
 | updaterId | string | 最后更新人ID |
