@@ -214,7 +214,7 @@ NativeModules.GrowingIO.onPageShow("pageName");
 
 **代码示例**
 
-GrowingIOPackage想RN提供了一个NativeModule，所有埋点接口都是由其实现，使用方法如下：
+GrowingIOPackage 向 RN 提供了一个 NativeModule ，所有埋点接口都是由其实现，使用方法如下：
 
 ```java
 //在使用 GrowingIO 埋点功能的文件中导入 NativeModules
