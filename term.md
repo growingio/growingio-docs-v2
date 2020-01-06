@@ -46,7 +46,7 @@
     </tr>
     <tr>
       <td style="text-align:left">AARRR</td>
-      <td style="text-align:left">&#x7528;&#x6237;&#x5206;&#x6790;&#x7684;&#x7ECF;&#x5178;&#x6A21;&#x578B;&#xFF0C;&#x662F;&#x5F15;&#x6D41;&#xFF08;Acquisition&#xFF09;&#x3001;&#x6FC0;&#x6D3B;&#xFF08;Activation&#xFF09;&#x3001;&#x7559;&#x5B58;&#xFF08;Retention&#xFF09;&#x3001;&#x8F6C;&#x5316;&#xFF08;Revenue&#xFF09;&#x3001;&#x81EA;&#x4F20;&#x64AD;&#xFF08;Refer&#xFF09;&#x65E0;&#x4E94;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x4EE3;&#x8868;&#x4E86;&#x7528;&#x6237;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x7684;&#x4E94;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x4E5F;&#x662F;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x7684;&#x5E94;&#x7528;&#x7406;&#x8BBA;&#x6307;&#x5BFC;&#x3002;</td>
+      <td style="text-align:left">&#x7528;&#x6237;&#x5206;&#x6790;&#x7684;&#x7ECF;&#x5178;&#x6A21;&#x578B;&#xFF0C;&#x662F;&#x5F15;&#x6D41;&#xFF08;Acquisition&#xFF09;&#x3001;&#x6FC0;&#x6D3B;&#xFF08;Activation&#xFF09;&#x3001;&#x7559;&#x5B58;&#xFF08;Retention&#xFF09;&#x3001;&#x8F6C;&#x5316;&#xFF08;Revenue&#xFF09;&#x3001;&#x81EA;&#x4F20;&#x64AD;&#xFF08;Refer&#xFF09;&#x4E94;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x4EE3;&#x8868;&#x4E86;&#x7528;&#x6237;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x7684;&#x4E94;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x4E5F;&#x662F;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x7684;&#x5E94;&#x7528;&#x7406;&#x8BBA;&#x6307;&#x5BFC;&#x3002;</td>
     </tr>
     <tr>
       <td style="text-align:left">KOL</td>
