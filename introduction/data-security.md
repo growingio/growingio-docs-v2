@@ -41,37 +41,37 @@ GrowingIO 提供的是数据分析的产品，方法论和最佳实践，不做�
 
 {% tabs %}
 {% tab title="Android" %}
-* 全局配置项
+初始化配置中关闭数据采集：
 
-```java
-.disableDataCollect() 
+```text
+disableDataCollect() 
 ```
 
-* 关闭或开启全局数据采集
+关闭或开启全局数据采集：
 
 ```java
-// 不采集数据 
+// 停止采集数据 
 GrowingIO.getInstance().disableDataCollect(); 
-// 收集数据 
+// 开始采集数据 （默认）
 GrowingIO.getInstance().enableDataCollect();
 ```
 
-* 获取访问用户ID
+获取访问用户ID：
 
-```java
+```text
 GrowingIO.getInstance().getVisitUserId(); 
 ```
 
-* 样例
+样例：
 
 ```java
 GrowingIO.startWithConfiguration(this, new Configuration() 
-.disableDataCollect() // 开启GDPR， 不采集数据。 默认采集 
+.disableDataCollect() // 停止采集数据
 .useID() 
 .trackAllFragments()); 
-// 不采集数据 
+// 停止采集数据 
 GrowingIO.getInstance().disableDataCollect(); 
-// 收集数据 
+// 采集数据 
 GrowingIO.getInstance().enableDataCollect(); 
 // 获取访问用户ID 
 GrowingIO.getInstance().getVisitUserId(); 
@@ -79,68 +79,74 @@ GrowingIO.getInstance().getVisitUserId();
 {% endtab %}
 
 {% tab title="iOS" %}
-* 全局配置项（无）
-* 关闭或开启全局数据采集
+初始化配置项：无
 
-```objectivec
-disableDataCollect 
+关闭或开启全局数据采集：
+
+```java
+// 停止采集数据
+disableDataCollect  
+// 开始采集数据 
 enableDataCollect 
 ```
 
-* 获取访问用户ID
+获取访问用户ID：
 
-```objectivec
+```text
 getVisitUserId 
 ```
 
-* 样例
+样例：
 
-```objectivec
-// 开启GDPR 
+```java
+// 停止采集数据
 [Growing disableDataCollect]; 
-// 关闭GDPR 
+// 开始采集数据 （默认）
 [Growing enableDataCollect]; 
 // 获取设备ID 
 NSString *viId = [Growing getVisitUserId]; 
 ```
 {% endtab %}
 
-{% tab title="JS" %}
-* 全局配置项 （无）
-* 关闭或开启全局数据采集
+{% tab title="Web JS" %}
+初始化配置项：无
 
-```javascript
-// 停止采集数据
-window.gio('config',{"dataCollect": true}); // 全局配置, 可以放到send之后
-// 采集数据 (默认)
+关闭或开启全局数据采集：
+
+```java
+// 停止采集数据，全局配置, 可以放到send之后
+window.gio('config',{"dataCollect": true}); 
+// 采集数据 (默认)，全局配置, 可以放到send之后
 window.gio('config',{"dataCollect": false}); 
 ```
 
-* 获取访问用户 ID
+获取访问用ID：
 
-```javascript
+```java
 window.gio('getVisitUserId'); // 放在send之后
 ```
 
-* 样例
+样例：
 
-```javascript
-// 停止采集数据
-window.gio('config',{"dataCollect": true}); // 全局配置, 可以放到send之后
-// 采集数据 (默认)
+```java
+// 停止采集数据，全局配置, 可以放到send之后
+window.gio('config',{"dataCollect": true}); 
+// 采集数据 (默认)，放在send之后
 window.gio('config',{"dataCollect": false}); 
-// 获取访问用户ID 
+// 获取访问用户ID ，放在send之后
 window.gio('getVisitUserId'); // 放在send之后
 ```
 {% endtab %}
 
 {% tab title="小程序" %}
-全局配置, 可以放到send之后，关闭或开启全局数据采集：
+初始化配置项：无
+
+关闭或开启全局数据采集：
 
 ```java
-//停止采集数据 
+//停止采集数据，可以放到send之后
 gio('setConfig',{"dataCollect": false}); 
-// 采集数据 (默认) 
+//采集数据 (默认) ，可以放到send之后
 gio('setConfig',{"dataCollect": true});
 ```
 
