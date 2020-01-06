@@ -14,6 +14,25 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.9</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
+        <ul>
+          <li>&#x4F7F;&#x7528;&#x4E86;&#x7701;&#x7535;&#x7CBE;&#x7075;&#x7684;&#x534E;&#x4E3A;&#x624B;&#x673A;&#x4F1A;&#x5BFC;&#x81F4;&#x5708;&#x9009;&#x4F4E;&#x6982;&#x7387;&#x5D29;&#x6E83;&#x95EE;&#x9898;</li>
+          <li>&#x652F;&#x6301;Context&#x4E3A;Application&#x7684;WebView web&#x5708;App</li>
+          <li>RN&#x7684;navigation&#x56DE;&#x8C03;&#x672A;&#x89E6;&#x53D1;&#x5BFC;&#x81F4;&#x5708;&#x9009;&#x622A;&#x56FE;&#x548C;page&#x5F02;&#x5E38;</li>
+        </ul>
+        <p>&#x4F18;&#x5316;&#xFF1A;</p>
+        <ul>
+          <li>&#x517C;&#x5BB9;ASM7.0&#x4E0E;gradle 3.6.0&#x4EE5;&#x4E0A;&#x7248;&#x672C;</li>
+          <li>&#x66F4;&#x65B0;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#x91CC;&#x7684;&#x5E2E;&#x52A9;&#x6587;&#x6863;URL</li>
+          <li>&#x5E94;&#x7528;&#x5728;&#x540E;&#x53F0;&#x8C03;&#x7528;setLocation&#x65B9;&#x6CD5;&#x65F6;&#x4E0D;&#x53D1;&#x9001;visit&#xFF0C;&#x5728;&#x4E0B;&#x6B21;&#x6253;&#x5F00;App&#x65F6;&#x53D1;&#x751F;visit</li>
+        </ul>
+        <p></p>
+      </td>
+      <td style="text-align:left">2019-01-04</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.7</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D; Bugs :</p>
