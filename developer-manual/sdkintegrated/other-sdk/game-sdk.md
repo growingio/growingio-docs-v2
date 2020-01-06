@@ -175,7 +175,7 @@ gio('init', '你的 GrowingIO 项目ID', '你的微信小程序的 AppID', { ver
 
 下面介绍专门针对用户的接口：
 
-#### 绑定微信用户ID（identity）
+#### 绑定微信用户ID（identify）
 
 当用户在你的小程序上登录获取到 OpeniID后，可以用过 `identify` 接口绑定微信用户ID，后续在 GrowingIO 中获取更准确的微信访问用户量。
 
@@ -247,7 +247,7 @@ gio('setUser', { id: user.id, name: user.name });
 2. 打开开发设置，到服务器域名配置部分。
 3. 在`request合法域名`中添加：https://wxapi.growingio.com
 
-![](../../../.gitbook/assets/image%20%28205%29.png)
+![](../../../.gitbook/assets/image%20%28223%29.png)
 
 ## 4. 自定义数据上传API
 

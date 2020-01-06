@@ -30,8 +30,12 @@ POST
 {% tab title="请求参数" %}
 | 请求头参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
-| Access-Token | string | 是 | 项目ID。 |
+| Access-Token | string | 是 | Public Key，项目公钥。 |
 | Content-Type | string | 是 | application/json |
+
+| 路径参数 | 类型 | 是否必传 | 说明 |
+| :--- | :--- | :--- | :--- |
+| ai | string | 是 | 项目 ID。 |
 
 | 查询参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |

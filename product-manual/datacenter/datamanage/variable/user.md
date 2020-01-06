@@ -16,7 +16,7 @@ description: 在GrowingIO平台对用户变量进行声明和管理。
 用户变量分为登录用户变量和访问用户变量，需在各自页签进行配置。
 {% endhint %}
 
-![](../../../../.gitbook/assets/image%20%28139%29.png)
+![](../../../../.gitbook/assets/image%20%28152%29.png)
 
 {% hint style="info" %}
 登录用户ID：当您在代码中上传了登录用户ID时，请在此处打开登录用户ID。 
@@ -24,7 +24,7 @@ description: 在GrowingIO平台对用户变量进行声明和管理。
 
 三. 单击变量列表上方的**创建登录/访问用户变量**，弹出新建登录/访问用户变量页面。
 
-![](../../../../.gitbook/assets/image%20%2884%29.png)
+![](../../../../.gitbook/assets/image%20%28196%29.png)
 
 <table>
   <thead>
@@ -49,6 +49,18 @@ description: 在GrowingIO平台对用户变量进行声明和管理。
       <td
       style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left">&#x2714;&#xFE0F;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x5B57;&#x6BB5;&#x7C7B;&#x578B;</td>
+      <td style="text-align:left">
+        <ul>
+          <li>&#x5B57;&#x7B26;&#x4E32;</li>
+          <li>&#x65E5;&#x671F;</li>
+        </ul>
+        <p>&#x65E5;&#x671F;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x5FC5;&#x987B;&#x7528;YYYYMMDD&#x7684;&#x6837;&#x5F0F;&#x4E0A;&#x4F20;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6CD5;&#x751F;&#x6548;&#x3002;</p>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">&#x5F52;&#x56E0;</td>

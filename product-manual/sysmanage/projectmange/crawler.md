@@ -10,11 +10,11 @@
 
 打开开关。
 
-![](../../../.gitbook/assets/image%20%28159%29.png)
+![](../../../.gitbook/assets/image%20%28173%29.png)
 
 单击开关右侧的**查看预定义爬虫规则详情**，查看系统预定义的爬虫规则。
 
-![](../../../.gitbook/assets/image%20%2836%29.png)
+![](../../../.gitbook/assets/image%20%2840%29.png)
 
 ## 对数据分析的影响
 

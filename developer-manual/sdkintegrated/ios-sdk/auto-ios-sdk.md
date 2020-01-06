@@ -40,7 +40,7 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 {% endtab %}
 
 {% tab title="手动添加" %}
-1. 下载iOS SDK以下包：[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.8.7.zip) ，[GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.8.7.zip)，[GrowingAutoTrackKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-AutoTrackKit-2.8.7.zip)，并解压。
+1. 下载iOS SDK以下包：[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.8.9.zip) ，[GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.8.9.zip)，[GrowingAutoTrackKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-AutoTrackKit-2.8.9.zip)，并解压。
 2. 将`Growing.h`、`GrowingCoreKit.framework`、`GrowingAutoTrackKit.framework`添加到iOS工程中。
 
 {% hint style="info" %}
@@ -68,13 +68,13 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 
 添加编译参数，并注意大小写。
 
-![](../../../.gitbook/assets/image%20%2886%29.png)
+![](../../../.gitbook/assets/image%20%2892%29.png)
 
 ### 2. 添加 URL Scheme
 
 添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
 
-![](../../../.gitbook/assets/image%20%2875%29.png)
+![](../../../.gitbook/assets/image%20%2881%29.png)
 
 ### 3. 初始化配置
 

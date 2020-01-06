@@ -405,3 +405,22 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 [Growing track:@"loanAmount" withNumber:@800000 andVariable:@{@"loanType":@"houseMortgage", @"province":@"Zhejiang"}];
 ```
 
+### 设置SDK异常上传开关 <a id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+
+SDK会收集SDK内部异常上报服务端，方便开发更好的追踪SDK的问题，和完善SDK的功能。如果您不想帮助我们产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
+
+{% hint style="info" %}
+请在 startWithAccountId: 或 startWithAccountId: withSampling: 接口之前设置 \(SDK2.8.9以后\)
+{% endhint %}
+
++ \(**void**\)setUploadExceptionEnable:\(**BOOL**\)uploadExceptionEnable;
+
+```objectivec
+// sdk crash 收集
+[Growing setUploadExceptionEnable:YES];
+[Growing startWithAccountId:@"aaaa"];
+
+```
+
+###  <a id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+

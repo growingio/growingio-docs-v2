@@ -660,7 +660,7 @@ forceLogin: true,      //是否强制要求用户登陆微信获取 openid。默
 
 下面介绍专门针对用户的接口
 
-#### 绑定微信用户ID（identity）
+#### 绑定微信用户ID（identify）
 
 当用户在你的小程序上登录获取到 OpeniID后，可以通过 `identify` 接口绑定微信用户ID，后续在 GrowingIO 中获取更准确的微信访问用户量。
 
@@ -732,7 +732,7 @@ gio('setUser', { id: user.id, name: user.name });
 2. 打开开发设置，到服务器域名配置部分。
 3. 在`request合法域名`中添加：https://wxapi.growingio.com
 
-![](../../../.gitbook/assets/image%20%28103%29.png)
+![](../../../.gitbook/assets/image%20%28110%29.png)
 
 ## 4. 无埋点采集事件逻辑和高级配置
 

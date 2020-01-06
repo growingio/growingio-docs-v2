@@ -6,7 +6,7 @@ description: 此接口仅提供应用ID的查询，新建应用请在GIO后台�
 
 ### URL
 
-https://www.growingio.com/api/v1/projects/_**project\_uid**_/meta/products
+https://www.growingio.com/api/v1/projects/{project\_uid}/meta/products
 
 ### 请求类型
 
@@ -14,7 +14,7 @@ GET
 
 ### 请求头参数
 
-请参考[认证](../../authenticate/)&gt;[公共请求参数](../../authenticate/head-parameter.md)获取。
+公共头部请参考[公共请求头参数](../../authenticate.md)。
 
 ### 参数说明与示例
 

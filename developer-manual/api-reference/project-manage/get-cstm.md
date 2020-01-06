@@ -1,8 +1,6 @@
----
-description: 获取项目下打点维度列表。
----
-
 # 获取事件级变量
+
+> 获取项目下打点维度列表。
 
 ### URL
 
@@ -14,7 +12,7 @@ GET
 
 ### 请求头参数
 
-请参考[认证](../authenticate/)&gt;[公共请求参数](../authenticate/head-parameter.md)获取。
+公共头部请参考[公共请求头参数](../authenticate.md)。
 
 ### 请求参数与示例
 
@@ -22,7 +20,7 @@ GET
 {% tab title="请求参数" %}
 | 路径参数类型 | 类型 | 是否必传 | 书名 |
 | :--- | :--- | :--- | :--- |
-| peojext\_id | string | 是 | 项目UID。 |
+| peojext\_uid | string | 是 | 项目UID。 |
 {% endtab %}
 
 {% tab title="返回示例" %}

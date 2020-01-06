@@ -8,13 +8,13 @@ description: 应用即区分不同软件行为数据存储的单元，一个应�
 
 1. 在界面右上角单击 ![](../../../.gitbook/assets/2019-10-10_18-59-32%20%281%29.png) 选择项目概览，默认进入项目管理界面的项目概览页签。选择**应用管理**页签。
 
-![](../../../.gitbook/assets/image%20%2831%29.png)
+![](../../../.gitbook/assets/image%20%2835%29.png)
 
 2. 单击新建应用，弹出新建应用流程。
 
 3.选择应用开发平台，输入应用名称。小程序需要需要输入小程序的唯一标识AppID。
 
-![](../../../.gitbook/assets/image%20%28141%29.png)
+![](../../../.gitbook/assets/image%20%28154%29.png)
 
 4. 添加跟踪代码：请参考[SDK接入](../../../developer-manual/sdkintegrated/)
 
@@ -28,7 +28,7 @@ description: 应用即区分不同软件行为数据存储的单元，一个应�
 | :--- | :--- | :--- |
 | 上传图标 | 支持JPEG、PNG、GIF格式，图片大小不超过200KB，宽高比1：1。 | iOS、Android |
 | 应用名称 | 修改GrowingIO平台上的应用名称。 | ALL |
-| 应用显示名称 | 修改唤起应用时的应用名称。 | ISO、Android |
+| 应用显示名称 | 修改唤起应用时的应用名称。 | iOS、Android |
 | 应用下载地址 | 填写应用的下载地址。 | iOS、Android |
 | 应用包名、Web UL | 可查看、不支持修改。 | ALL |
 

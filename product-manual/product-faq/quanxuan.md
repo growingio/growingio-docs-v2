@@ -128,6 +128,12 @@ Content-Security-Policy: frame-ancestors 'self' http://www.growingio.com https:/
 2. 可能是该网站禁止了 iframe 的加载，请联系工程师修改配置（参见第 3 点）；
 3. 可能是工程师加载 JS 代码时的项目 ID 填写有误（项目 ID 没有空格）。
 
+### 7. 圈选时提示目前无法使用圈选及热图
+
+说明这个页面中加载的JS代码中的项目ID与当前圈选所在项目的ID不一致，您需要现在GrowingIO平台将项目切换至集成此应用的项目下再进行圈选。
+
+![](../../.gitbook/assets/image%20%2819%29.png)
+
 ## 移动端圈选 <a id="yi-dong-duan-quan-xuan"></a>
 
 ### **1. App 上页面的定义是什么？** <a id="1-app-shang-ye-mian-de-ding-yi-shi-shi-mo"></a>

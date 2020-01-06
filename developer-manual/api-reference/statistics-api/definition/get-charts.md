@@ -10,7 +10,7 @@ GET
 
 ### 请求头部
 
-请参考[认证](../../authenticate/)&gt;[公共请求参数](../../authenticate/head-parameter.md)获取。
+公共头部请参考[公共请求头参数](../../authenticate.md)。
 
 ### 参数说明与示例
 

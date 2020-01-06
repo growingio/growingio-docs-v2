@@ -32,7 +32,7 @@ POST
 {% tab title="请求参数" %}
 | 请求头参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
-| Access-Token | string | 是 | Public Key |
+| Access-Token | string | 是 | Public Key，项目公钥 |
 
 | 路径参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |

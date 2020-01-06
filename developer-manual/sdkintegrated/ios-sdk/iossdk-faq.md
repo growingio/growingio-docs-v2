@@ -1,6 +1,6 @@
 # 常见问题
 
-### GrowingIO SDK无埋点采集的原理是什么？
+### 1. GrowingIO SDK无埋点采集的原理是什么？
 
 实现原理：[Method Swizzling](http://nshipster.cn/method-swizzling/) \( method swizzling 作用为替换或者修改系统方法\)，可理解为以下 5 个步骤。
 
@@ -10,51 +10,65 @@
 4. 生成待发送事件并缓存
 5. 发送事件到服务器，完成采集
 
-### GrowingIO SDK 支持哪些iOS系统？
+### 2. GrowingIO SDK 支持哪些iOS系统？
 
-目前支持iOS 7-iOS 13。
+目前支持iOS 8-iOS 13。
 
-### 如果动态添加UIView、删除UIView或者修改UIView在父视图中的位置，会有什么影响？
+### 3. 如果动态添加UIView、删除UIView或者修改UIView在父视图中的位置，会有什么影响？
 
 SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在 viewDidLoad 里加载所有可能的 UIView 节点，添加或删除可以通过设置 hidden 属性来实现，把不需要显示的设置 hidden 属性为 YES，把需要显示的设置 hidden 属性为 NO。在 UIView 已经显示之后，不要调用 -bringSubviewToFront:方法， -sendSubviewToBack:方法或 -insertSubview: 方法。
 
-### 子线程操作UI引起的问题如何处理？
+### 4. 子线程操作UI引起的问题如何处理？
 
  答：GIO SDK 会在主线程中遍历找寻某个subView，如果此时在子线程中删除了该subView，就会造成错乱甚至 crash。此外，Apple 不建议用户在子线程更新 UI。建议客户在 Xcode 中打开 "Main Thread Checker" 检测线程使用是否合理。参考：[Main Thread Checker](https://developer.apple.com/documentation/code_diagnostics/main_thread_checker?language=objc)
 
-### 圈选时，来自不同VC的元素显示的VC名称相同？
+### 5. 圈选时，来自不同VC的元素显示的VC名称相同？
 
 这种情况，一般是因为父 VC 添加子 VC 方式不正确引起的，请客户排查子VC的生命周期是否完整。
 
-### 是否允许何止view的growingAttributesValue为的那个的数字或者字母？
+### 6. 是否允许何止view的growingAttributesValue为的那个的数字或者字母？
 
 不允许这种设置。出于安全考虑，金融类 App 会自定义键盘（默认键盘容易被黑），如果 SDK 允许采集 V 值为单个数字或字母的点击事件，则有可能会记录用户输入的账号或密码。由于上述原因， SDK 不会发送V 值为单个字母或数字的点击事件，如果用户违反约定，则会导致某个元素只有浏览量而没有点击量。
 
-### 埋点为什么也要在主线程调用？
+### 7. 埋点为什么也要在主线程调用？
 
 埋点采集UI操作，建议在UI线程（主线程）中调用。
 
-### 是否支持在开启热图的时候圈选？
+### 8. 是否支持在开启热图的时候圈选？
 
 不支持，开启热图可能会导致被圈选元素的 x 值发生变化。
 
-### 是否支持用UITouch事件的点击事件？
+### 9. 是否支持用UITouch事件的点击事件？
 
 不支持，建议使用 UITapGestureRecognizer
 
-### GIO SDK是否支持Swift项目？
+### 10. GIO SDK是否支持Swift项目？
 
 支持
 
-### App做了Buttom防重复点击，集成SDK后发现按钮无法点击？
+### 11. App做了Button防重复点击，集成SDK后发现按钮无法点击？
 
-请使用GrowingIO提供的方重复点击解决方式：[DJRepeatClickFilter](https://github.com/sishen/DJRepeatClickFilter/blob/master/TestClickQuickly/UIView%2BDJRepeatClickFilter.m)。
+请使用GrowingIO提供的防重复点击解决方式：[DJRepeatClickFilter](https://github.com/sishen/DJRepeatClickFilter/blob/master/TestClickQuickly/UIView%2BDJRepeatClickFilter.m)。
 
-### 如果项目中使用了Firebase SDK，需要注意什么？
+### 12. 如果项目中使用了Firebase SDK，需要注意什么？
 
 如果您的iOS项目中集成了Firebase SDK，请确保使用的Firebase SDK版本在4.8.1及以上，否则会造成数据采集不到的情况。
 
-### 关于苹果隐私政策相关事宜的公告
+当您的Firebase SDK版本符合要求，但是没有发送vst事件时，请将采集模式改为hook模式。
+
+修改方法：
+
+Object-C：修改main.m文件：
+
+![](../../../.gitbook/assets/image%20%2863%29.png)
+
+Swift：修改AppDelegate.swift，并手动创建main.swift文件。
+
+![](../../../.gitbook/assets/image%20%28191%29.png)
+
+![](../../../.gitbook/assets/image%20%287%29.png)
+
+### 13. 关于苹果隐私政策相关事宜的公告
 
 亲爱的客户：
 
@@ -66,7 +80,7 @@ SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在
 
 所以，在此提醒各位开发者：**提交App Store 审核前一定要准备自己的隐私权政策，并在app SafariViewContoller中弹出，否则会无法通过审核哦！如需要专业的法律意见，还请各位开发者小伙伴咨询您的律师或法律顾问哦！**
 
-### **Webview crash**
+### **14. Webview crash**
 
 **如果遇到此类崩溃:`Cannot form weak reference to instance (xxxxx) of class xxxxxx. It is possible that this object was over-released, or is in the process of deallocation`** **或者程序卡死通过 bt 打印出的堆栈含有`weak_register_no_lock`并且错误是关于`UIWebView+Growing`的。** 解释如下: 由于业务需要我们会 hook `UIWebView` 的 `setDelegate` 方法 拿到传入的对象从而进行对`UIWebViewDelegate` 一系列方法的监听，并且对传入的对象实现 `weak` 处理,这样做是为了保证不影响客户对象的引用计数； 由于苹果 api 的不完善 `UIWebViewDelegate` 的声明至今为`assign，`所以`delegate`对象在释放后不会被置为`nil`;由此可能会造成的后果是`setDelegate`方法调用时，如果传入的是一个`over-released`, or is in the process of deallocation 的对象而我们 SDK 又对此对象进行了 `weak` 处理,从而导致崩溃；
 

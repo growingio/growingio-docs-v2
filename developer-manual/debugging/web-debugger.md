@@ -20,7 +20,7 @@ Chrome网上应用店一键安装（自动更新）：[https://chrome.google.com
 
 在添加了GrowingIO Web SDK的页面上，在空白处点击右键-&gt;检查打开Chrome浏览器的Dev Tool，可以看到出现了一个新的Tab为：GIO Web Debugger。实施技术顾问就可以在这个Tab页面上进行添加代码后的质量验证工作了。如下图
 
-![](../../.gitbook/assets/image%20%2845%29.png)
+![](../../.gitbook/assets/image%20%2849%29.png)
 
 在此概览中可能出现的数据日志含义分别有：
 

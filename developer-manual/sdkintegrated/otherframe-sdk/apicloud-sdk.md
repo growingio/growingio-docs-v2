@@ -1,11 +1,11 @@
 # API Cloud埋点SDK
 
-{% hint style="success" %}
+{% hint style="info" %}
 GitHub Demo： [https://github.com/growingio/APICloud-growingio/tree/master/android/app](https://github.com/growingio/APICloud-growingio/tree/master/android/app%20%20)
 
-API Cloud 全版本支持
-
-App适配最低系统版本：iOS 8及以上、Android 4.2-10
+* API Cloud 全版本支持
+* App适配最低系统版本：iOS 8及以上、Android 4.2-10
+* 不支持使用 Mobile Debugger ，请在配置文件中设置 debug 模式后查看日志
 {% endhint %}
 
 ## 1. 配置config.xml文件
@@ -14,7 +14,7 @@ App适配最低系统版本：iOS 8及以上、Android 4.2-10
 
 必要参数：accountId、URL Scheme
 
-可选参数：trackerHost、reportHost、dataHost、gtaHost、wsHost、zone
+可选参数：trackerHost、reportHost、dataHost、gtaHost、wsHost、zone、channel、debug。
 
 ```markup
 <feature name="GrowingIO">
@@ -55,7 +55,7 @@ API Cloud的debug模式只支持静态配置，不支持动态配置。
 * 在自动定义模块中上传了压缩包，保存成功后。一定要点击添加模块后面的“+”，否则不是真正添加成功。添加成功后，去已添加模块中能看到刚刚添加的模块。
 {% endhint %}
 
-![](../../../.gitbook/assets/image%20%28194%29.png)
+![](../../../.gitbook/assets/image%20%28211%29.png)
 
 ## 3. Android的额外操作
 
@@ -67,11 +67,11 @@ Android云编译Loader为AppLoader， 使用自定义模块时需要编译Androi
 
 在自定义loader页签下勾选**使用升级环境编译**。
 
-![](../../../.gitbook/assets/image%20%28176%29.png)
+![](../../../.gitbook/assets/image%20%28192%29.png)
 
 2. 云编译时，请勾选**使用升级环境编译。**
 
-![](../../../.gitbook/assets/image%20%2869%29.png)
+![](../../../.gitbook/assets/image%20%2875%29.png)
 
 ## 4. 插件API
 
@@ -111,6 +111,8 @@ gio.setGeoLocation(param);
 
 ### 采集自定义事件
 
+发送一个自定义事件。在添加所需要发送的事件代码之前，需要在打点管理用户界面配置事件以及事件级变量。
+
 ```javascript
 gio.track(event, callback);
 ```
@@ -130,9 +132,15 @@ gio.track(event, callback);
       <td style="text-align:left">object</td>
       <td style="text-align:left">&#x662F;</td>
       <td style="text-align:left">
-        <p>key:eventId(string&#x7C7B;&#x578B;,&#x5FC5;&#x8981;key) value:(string&#x7C7B;&#x578B;)</p>
+        <p>key:eventId(string&#x7C7B;&#x578B;,&#x5FC5;&#x8981;key) value:(string&#x7C7B;&#x578B;)
+          &#xFF0C;&#x4E8B;&#x4EF6;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+        <p>eventID &#x53C2;&#x6570;&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF1B;SDK
+          2.4.0&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x4E0D;&#x652F;&#x6301;&#x4E2D;&#x6587;&#xFF0C;&#x4EC5;&#x652F;&#x6301;0~9&#x3001;a~z&#x4EE5;&#x53CA;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x4EE5;&#x6570;&#x5B57;&#x5F00;&#x5934;&#x3002;</p>
         <p>key:eventLevelVariable(string&#x7C7B;&#x578B;,&#x975E;&#x5FC5;&#x8981;key)
-          value:(object&#x7C7B;&#x578B;)</p>
+          value:(object&#x7C7B;&#x578B;) &#x3002;</p>
+        <p>&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6240;&#x4F34;&#x968F;&#x7684;&#x7EF4;&#x5EA6;&#x4FE1;&#x606F;&#x3002;</p>
+        <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;eventLevelVariable.length()&lt;=100&#xFF09;&#xFF1B;eventLevelVariable&#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;JSONObject&#x6216;&#x8005;JSONArray&#xFF1B;</p>
+        <p>key&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;value&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x201C;&#x201D;&#x3002;</p>
       </td>
     </tr>
     <tr>
@@ -140,7 +148,7 @@ gio.track(event, callback);
       <td style="text-align:left">&#x51FD;&#x6570;</td>
       <td style="text-align:left">&#x5426;</td>
       <td style="text-align:left">
-        <p>allback {function (ret)}&#xFF1A;&#x6267;&#x884C;&#x5B8C;&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x540E;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+        <p>callback {function (ret)}&#xFF1A;&#x6267;&#x884C;&#x5B8C;&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x540E;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
         <p>ret &#x4E3A; callback &#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x6709;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;:</p>
         <p>status:&#x7ED3;&#x679C;2&#x79CD; true, false &#x90FD;&#x4E3A;&#x5E03;&#x5C14;&#x7C7B;&#x578B;</p>
         <p>msg:&#x7ED3;&#x679C;string&#x7C7B;&#x578B;</p>
@@ -158,7 +166,11 @@ gio.track({
 });
 ```
 
+
+
 ### 设置转化变量
+
+发送一个转化信息用于高级归因分析，在添加代码之前必须在打点管理界面上声明转化变量。
 
 ```javascript
 gio.setEvar(conversionVariables,callback);
@@ -178,7 +190,12 @@ gio.setEvar(conversionVariables,callback);
       <td style="text-align:left">conversionVariables</td>
       <td style="text-align:left">object</td>
       <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x9AD8;&#x7EA7;&#x5F52;&#x56E0;&#x5206;&#x6790;</p>
+        <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>conversionVariables.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
+        <p><code>conversionVariables</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray</code>&#xFF1B;</p>
+        <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">callback</td>
@@ -207,6 +224,8 @@ gio.setEvar({
 
 ### 设置登录用户变量
 
+发送用户信息用于用户信息相关分析，在添加代码之前必须在打点管理界面上声明用户变量。
+
 ```javascript
 gio.setPeopleVariable(peopleVariables,callback);
 ```
@@ -225,7 +244,12 @@ gio.setPeopleVariable(peopleVariables,callback);
       <td style="text-align:left">peopleVariables</td>
       <td style="text-align:left">object</td>
       <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x767B;&#x5F55;&#x7528;&#x6237;&#x53D8;&#x91CF;</td>
+      <td style="text-align:left">
+        <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x76F8;&#x5173;&#x7684;&#x5206;&#x6790;&#x3002;</p>
+        <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>peopleVariables.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
+        <p><code>peopleVariables</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray</code>&#xFF1B;</p>
+        <p><code>key</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">callback</td>
@@ -250,7 +274,11 @@ gio.setPeopleVariable({
   });
 ```
 
+### 
+
 ### 设置登录用户ID
+
+当用户登录之后调用setUserId API，设置登录用户ID。
 
 ```javascript
 gio.setUserId(userIdObject,callback);

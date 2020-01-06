@@ -8,11 +8,11 @@
 
 一. 在顶部导航栏选择“**获客分析 &gt; 活动分析”**，进入活动管理页面。
 
-![](../../.gitbook/assets/image%20%2834%29.png)
+![](../../.gitbook/assets/image%20%2838%29.png)
 
 二. 单击**创建活动分析**，进入**新建活动分析**页面。
 
-![](../../.gitbook/assets/image%20%2877%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -35,7 +35,7 @@
 
 ## **各模块介绍**
 
-![](../../.gitbook/assets/image%20%2858%29.png)
+![](../../.gitbook/assets/image%20%2864%29.png)
 
 <table>
   <thead>
@@ -57,7 +57,7 @@
       <td style="text-align:left">3-&#x5FEB;&#x901F;&#x4E0A;&#x624B;&#x5F15;&#x5BFC;</td>
       <td style="text-align:left">
         <p>&#x521B;&#x5EFA;&#x5B8C;&#x5206;&#x6790;&#x9875;&#x9762;&#x540E;&#x7684;&#x5F15;&#x5BFC;&#x4E8B;&#x9879;&#x3002;</p>
-        <p>&#x64CD;&#x4F5C;&#x7B80;&#x5355;&#xFF0C;&#x8DDF;&#x7740;&#x4E00;&#x8D77;&#x505A;&#x4E00;&#x505A;&#xFF0C;&#x5FEB;&#x901F;&#x4E86;&#x89E3;&#x843D;&#x5730;&#x9875;&#x57FA;&#x672C;&#x60C5;&#x51B5;&#x3002;</p>
+        <p>&#x64CD;&#x4F5C;&#x7B80;&#x5355;&#xFF0C;&#x8DDF;&#x7740;&#x4E00;&#x8D77;&#x505A;&#x4E00;&#x505A;&#xFF0C;&#x5FEB;&#x901F;&#x4E86;&#x89E3;&#x6D3B;&#x52A8;&#x9875;&#x57FA;&#x672C;&#x60C5;&#x51B5;&#x3002;</p>
       </td>
     </tr>
     <tr>

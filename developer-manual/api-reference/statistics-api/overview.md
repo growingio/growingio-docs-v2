@@ -70,13 +70,12 @@
   </tbody>
 </table>## 注意事项
 
-* 本章节中API 的 project\_id（项目UID）、dashboard\_id（看板ID）、chart\_id（事件分析单图ID）、funnel\_id（漏斗分析单图ID）、retention\_id（留存分析单图ID） 字段，均可在项目页面url中找到，如："https://www.growingio.com/admin/projects/nxog09md/dashboard/YoX28w7R" 中的 "nxog09md" 和 "YoX28w7R" 分别是 project\_id 和dashboard\_id。
+* 本章节中API 的 project\_id（项目UID）、dashboard\_id（看板ID）、chart\_id（事件分析单图ID）、funnel\_id（漏斗分析单图ID）、retention\_id（留存分析单图ID）、segmentation\_id（分群ID） 字段，均可在项目页面url中找到，如："https://www.growingio.com/admin/projects/nxog09md/dashboard/YoX28w7R" 中的 "nxog09md" 和 "YoX28w7R" 分别是 project\_id 和dashboard\_id。
   * dashboard\_id获取方式
     * 在项目URL中获取；
     * 通过[获取看板列表](definition/get-charts.md)API根据project\_id获取所有看板信息。
   * chart\_id、funnel\_id、retention\_id的获取方式
     * 在项目URL中获取；
     * 通过[获取看板中的图表信息](definition/get-chartinfo.md)API，根据dashboard\_id获取当前看板的所有图表信息，返回的信息中会包含图表ID，图表类型等信息。
-* 在进行导出之前，请务必参考[认证](../authenticate/)，完成接口认证获取认证码 。
 * 统计数据导出的延迟一般为 30 分钟，比如导出早上 8 点到 9 点之间的数据时，一般需要 9:30 才能统计完毕。另外，每天凌晨因为需要运行天级别的统计任务，此时前一天的统计数据大概有 3-4 小时的延迟，建议在早上6点后进行导出任务。
 

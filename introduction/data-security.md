@@ -133,5 +133,22 @@ window.gio('config',{"dataCollect": false});
 window.gio('getVisitUserId'); // 放在send之后
 ```
 {% endtab %}
+
+{% tab title="小程序" %}
+全局配置, 可以放到send之后，关闭或开启全局数据采集：
+
+```java
+//停止采集数据 
+gio('setConfig',{"dataCollect": false}); 
+// 采集数据 (默认) 
+gio('setConfig',{"dataCollect": true});
+```
+
+获取访问用ID：
+
+```java
+window.gio('getVisitUserId'); // 放在send之后
+```
+{% endtab %}
 {% endtabs %}
 

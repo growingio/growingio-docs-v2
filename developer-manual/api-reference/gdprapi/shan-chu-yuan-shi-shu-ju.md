@@ -1,8 +1,6 @@
----
-description: 为符合 GDPR 规范，GrowingIO 提供删除用户原始数据的功能。
----
-
 # 删除原始数据
+
+为符合 GDPR 规范，GrowingIO 提供删除用户原始数据的功能。
 
 {% hint style="info" %}
 * visitUserId 是 GrowingIO SDK 生成的 cookie，您可以从导出的原始数据中获得。
@@ -45,7 +43,7 @@ POST
 {% tab title="参数说明" %}
 | 请求头参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
-| Access-Token | string | 是 | Public Key |
+| Access-Token | string | 是 | Public Key，项目公钥 |
 | Content-Type | string | 否 | application/json |
 
 | 路径参数 | 类型 | 是否必传 | 说明 |

@@ -2,7 +2,7 @@
 
 ### URL
 
-https://www.growingio.com/api/v1/projects/_**project\_uid**_/meta/normallinks
+https://www.growingio.com/api/v1/projects/{project\_uid}/meta/normallinks
 
 ### 请求类型
 
@@ -10,7 +10,7 @@ GET
 
 ### 请求头参数
 
-请参考[认证](../../authenticate/)&gt;[公共请求参数](../../authenticate/head-parameter.md)获取。
+公共头部请参考[公共请求头参数](../../authenticate.md)。
 
 ### 参数说明与示例
 

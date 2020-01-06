@@ -1,12 +1,10 @@
----
-description: 创建登录用户变量，目前仅支持创建，不支持修改，如需修改请到 GrowingIO 平台管理界面修改。
----
-
 # 创建登录用户变量
+
+> 创建登录用户变量，目前仅支持创建，不支持修改，如需修改请到 GrowingIO 平台管理界面修改。
 
 ### URL
 
-https://www.growingio.com /v1/api/projects/{project\_uid}/vars/peoples
+https://www.growingio.com/v1/api/projects/{project\_uid}/vars/peoples
 
 ### 请求类型
 
@@ -14,7 +12,7 @@ POST
 
 ### 请求头参数
 
-请参考[认证](../authenticate/)&gt;[公共请求参数](../authenticate/head-parameter.md)获取。
+公共头部请参考[公共请求头参数](../authenticate.md)。
 
 ### 参数说明与示例
 
@@ -22,7 +20,7 @@ POST
 {% tab title="参数说明" %}
 | 路径参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
-| project\_id | string | 是 | 项目UID。 |
+| project\_uid | string | 是 | 项目UID。 |
 
 <table>
   <thead>

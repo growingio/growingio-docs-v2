@@ -8,6 +8,8 @@ GrowingIO在授权后，调用的是A和C接口分别创建小程序码和二维
 
 {% hint style="info" %}
 如使用此接口生成小程序码，只能生成已发布的小程序的码。
+
+调用频率限制：每秒最多10次。
 {% endhint %}
 
 ### URL
@@ -20,9 +22,11 @@ POST
 
 ### 请求头参数
 
-请参考[认证](authenticate/)&gt;[公共请求参数](authenticate/head-parameter.md)获取。
+公共头部请参考[公共请求头参数](authenticate.md)。
 
-| 名称 | 类型 | 是否必传 | 说明 |
+名称
+
+| 类型 | 是否必传 | 说明 |  |
 | :--- | :--- | :--- | :--- |
 | Content | string | 是 | application/json |
 

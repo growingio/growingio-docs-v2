@@ -15,11 +15,11 @@
 
 一. 在顶部导航栏选择“**获客分析 &gt; 落地页分析”**，进入落地页管理页面。
 
-![](../../.gitbook/assets/image%20%2878%29.png)
+![](../../.gitbook/assets/image%20%2884%29.png)
 
 二. 单击**创建落地页分析**，进入**新建落地页分析**页面。
 
-![](../../.gitbook/assets/image%20%28146%29.png)
+![](../../.gitbook/assets/image%20%28159%29.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -50,7 +50,7 @@
 
 ## 各模块介绍
 
-![](../../.gitbook/assets/image%20%28151%29.png)
+![](../../.gitbook/assets/image%20%28164%29.png)
 
 <table>
   <thead>
