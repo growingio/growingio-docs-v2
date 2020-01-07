@@ -64,7 +64,7 @@ Object-C：修改main.m文件：
 
 Swift：修改AppDelegate.swift，并手动创建main.swift文件。
 
-![](../../../.gitbook/assets/image%20%28191%29.png)
+![](../../../.gitbook/assets/image%20%28192%29.png)
 
 ![](../../../.gitbook/assets/image%20%287%29.png)
 

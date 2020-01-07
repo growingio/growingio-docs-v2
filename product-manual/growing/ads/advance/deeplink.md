@@ -55,7 +55,7 @@ GrowingIO的域名：
 
 3. 在苹果开发者网站中找到 Team ID 与 Bundle ID，如下图。
 
-![](../../../../.gitbook/assets/image%20%28198%29.png)
+![](../../../../.gitbook/assets/image%20%28199%29.png)
 
 #### **2.2.2 将 Team ID 配置到 GrowingIO 后台。**
 

@@ -32,7 +32,7 @@ KPI看板可以帮助业务负责人在 GrowingIO 平台上监控 KPI 数据，�
 
 三. 单击**添加KPI**，弹出**创建KPI指标**页面。
 
-![](../../.gitbook/assets/image%20%28213%29.png)
+![](../../.gitbook/assets/image%20%28214%29.png)
 
 <table>
   <thead>

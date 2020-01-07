@@ -24,7 +24,7 @@ description: 在GrowingIO平台对用户变量进行声明和管理。
 
 三. 单击变量列表上方的**创建登录/访问用户变量**，弹出新建登录/访问用户变量页面。
 
-![](../../../../.gitbook/assets/image%20%28196%29.png)
+![](../../../../.gitbook/assets/image%20%28197%29.png)
 
 <table>
   <thead>
