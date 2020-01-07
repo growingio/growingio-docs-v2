@@ -407,15 +407,11 @@ gio.setVisitor({"gender":"male","age":21});
 
 只能真机测试
 
-### 3. 如何查看发送的数据？
-
-您可以使用GrowingIO官网提供的 [Mobile Debugger](../../debugging/mobile-debugger.md) 工具来查看。
-
-### 4. 此模块是否含有IDFA？
+### 3. 此模块是否含有IDFA？
 
 包含IDFA，GrowingIO 使用IDFA 来做来源管理激活设备的精确匹配，让您更好的衡量广告效果。
 
-### 5. 官网Web提示未检测到SDK？
+### 4. 官网Web提示未检测到SDK？
 
 请使用正式版包来操作几次。  
 
