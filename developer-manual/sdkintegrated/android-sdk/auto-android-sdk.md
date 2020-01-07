@@ -241,9 +241,9 @@ GrowingIO.startWithConfig(this, new GTouchConfig()
 
 对于安卓应用，页面指的是`Activity`或者`Fragment`。
 
-有些时候，对于完成某个功能的页面，统计时可能需要进一步细分。 比如，对于展示商品列表的页面，需要区分衣物类商品，以及食品类商品的两种列表的访问量。
+有些时候，当您代码中的原有页面标题不足以支持业务人员对页面进行识别时，您可以使用此接口设置一个容易识别的页面名称来替换页面标题字段。
 
-为处理这种场景，我们提供了取别名的方法来区分这两种情况下的页面，方法如下：
+为处理这种场景，我们提供了取别名的方法，方法如下：
 
 ```java
 GrowingIO.setPageName(Activity activity, String name)
@@ -268,7 +268,7 @@ public class FeedActivity extends Activity {
 
 {% hint style="info" %}
 1. 必须在该`Activity`的`onCreate`方法中完成该属性的赋值操作。
-2. 页面别名建议设置为字母、数字和下划线的组合。
+2. 页面别名建议设置为汉字、字母、数字和下划线的组合。
 3. 为查看数据方便，请尽量对 iOS 和安卓的同功能页面取不同的名称。
 {% endhint %}
 
