@@ -22,7 +22,7 @@
 
 如果公众号已认证，请在微信公众号后台「公众号设置」-「账号详情」查看主体情况；如果小程序已认证，请在微信小程序后台「设置」-「基本设置」中查看主体情况。
 
-#### 查询公众号、小程序员是否绑定微信开放平台 <a id="cha-xun-gong-zhong-hao-xiao-cheng-xu-yuan-shi-fou-bang-ding-wei-xin-kai-fang-ping-tai"></a>
+#### 查询公众号、小程序是否绑定微信开放平台 <a id="cha-xun-gong-zhong-hao-xiao-cheng-xu-yuan-shi-fou-bang-ding-wei-xin-kai-fang-ping-tai"></a>
 
 微信订阅号和服务号，如果想要获取统一的 unionid，需要进行**微信开放平台**的绑定，同时为了保证主体统一的小程序也获取到统一的 unionid，也请进行开放凭平台的绑定。
 
