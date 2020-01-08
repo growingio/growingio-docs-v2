@@ -171,6 +171,12 @@ description: 广告相关事件字段共分为2个事件类型。
         <p>&#x793A;&#x4F8B;&#xFF1A;{&quot;city&quot;-&gt;&quot;beijing&quot;}&#x3002;</p>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left">OAID</td>
+      <td style="text-align:left">string&#xFF08;64&#xFF09;</td>
+      <td style="text-align:left">&lt;&#x533F;&#x540D;&#x8BBE;&#x5907;&#x6807;&#x8BC6;&#x7B26;&gt;Android&#x5E73;&#x53F0;&#x7528;&#x4E8E;&#x5E7F;&#x544A;&#x76D1;&#x6D4B;&#x7684;ID&#x3002;2020/01/07
+        &#x5F00;&#x59CB;&#x751F;&#x6548;&#x3002;</td>
+    </tr>
   </tbody>
 </table>
 {% endtab %}
@@ -324,6 +330,12 @@ description: 广告相关事件字段共分为2个事件类型。
         <p>2018/8/7 &#x5F00;&#x59CB;&#x751F;&#x6548;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;{&quot;city&quot;-&gt;&quot;beijing&quot;}</p>
       </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">OAID</td>
+      <td style="text-align:left">string&#xFF08;64&#xFF09;</td>
+      <td style="text-align:left">&lt;&#x533F;&#x540D;&#x8BBE;&#x5907;&#x6807;&#x8BC6;&#x7B26;&gt;Android&#x5E73;&#x53F0;&#x7528;&#x4E8E;&#x5E7F;&#x544A;&#x76D1;&#x6D4B;&#x7684;ID&#x3002;2020/01/07
+        &#x5F00;&#x59CB;&#x751F;&#x6548;&#x3002;</td>
     </tr>
   </tbody>
 </table>
