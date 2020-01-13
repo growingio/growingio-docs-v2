@@ -39,7 +39,7 @@ GET
   <tbody>
     <tr>
       <td style="text-align:left">range</td>
-      <td style="text-align:left">integer</td>
+      <td style="text-align:left">string</td>
       <td style="text-align:left">&#x5426;</td>
       <td style="text-align:left">
         <p>&#x4E8B;&#x4EF6;&#x8303;&#x56F4;&#x3002;</p>
