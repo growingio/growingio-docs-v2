@@ -219,7 +219,7 @@ gio('track', eventId, eventLevelVariables);
 | 参数名称 | 类型 | 是否必须 | 说明 |
 | :--- | :--- | :--- | :--- |
 | eventId | string | 是 | 事件标识符 |
-| eventLevelVariables | JSON Object | 否 | 包含事件级变量的JSON对象，暨事件发生时所伴随的维度信息。 |
+| eventLevelVariables | JSON Object | 否 | 包含事件级变量的JSON对象，暨事件发生时所伴随的维度信息。限制：非空，长度限制小于等于100（eventLevelVariable.length\(\)&lt;=100）；eventLevelVariable内部不允许含有JSONObject或者JSONArray； key长度限制小于等于50，value长度限制小于等于200，值不能为空字符串，也就是“”。 |
 
 **代码示例：**
 
