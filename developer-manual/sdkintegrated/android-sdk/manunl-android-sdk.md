@@ -38,7 +38,7 @@ android {
 }
 dependencies {
     //GrowingIO 埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:track-2.8.9@aar'
+    implementation 'com.growingio.android:vds-android-agent:track-2.8.9'
 }
 ```
 
@@ -268,7 +268,7 @@ GrowingIO.getInstance().setGeoLocation(39.9046900000,116.4071700000);
 ```
 
 {% hint style="info" %}
-对应的清楚地理位置的方法为 clearGeoLocation（）；
+对应的清除地理位置的方法为 clearGeoLocation（）；
 {% endhint %}
 
 ### 4. 多进程支持（setMutiprocess）
