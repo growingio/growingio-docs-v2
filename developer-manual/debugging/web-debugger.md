@@ -2,7 +2,7 @@
 
 ## Web Debugger 安装
 
-GrowingIO Web Debugger 是基于Chrome浏览器的一个插件，用户需要按照标准Chrome浏览器插件的步骤和方式来按照。具体的步骤如下：
+GrowingIO Web Debugger 是基于Chrome浏览器的一个插件，用户需要按照标准Chrome浏览器插件的步骤和方式来安装。具体的步骤如下：
 
 Chrome网上应用店一键安装（自动更新）：[https://chrome.google.com/webstore/detail/growingio-web-debugger/dppgbjgcmniofikknglpdinggofoiddj](https://chrome.google.com/webstore/detail/growingio-web-debugger/dppgbjgcmniofikknglpdinggofoiddj)​
 
