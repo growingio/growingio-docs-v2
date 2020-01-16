@@ -42,6 +42,8 @@ description: Android SDK更新日志
             IMP &#x4E8B;&#x4EF6;</li>
           <li>&#x4FEE;&#x590D; <code>gioenable</code> &#x8BBE;&#x7F6E;&#x4E3A; <code>false</code> &#x65F6;&#x5982;&#x679C;&#x5728;
             build.gradle &#x4E2D;&#x914D;&#x7F6E;&#x4E86; <code>growingio</code> &#x63D2;&#x4EF6;&#x62A5;&#x9519;</li>
+          <li>&#x5347;&#x7EA7;&#x5230;2.8.7&#x53CA;&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#xFF0C;&#x96C6;&#x6210;SDK&#x4E2D;&#x6DFB;&#x52A0;&#x4F9D;&#x8D56;&#x65F6;&#xFF0C;&#x9700;&#x5C06;module&#x7EA7;&#x522B;&#x7684;GrowingIO
+            SDK&#x7684;&#x5F15;&#x7528;&#x540E;&#x7F00;@aar&#x53BB;&#x9664;&#x3002;</li>
         </ul>
       </td>
       <td style="text-align:left">2019-11-26</td>
