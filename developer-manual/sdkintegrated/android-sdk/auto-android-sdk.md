@@ -408,7 +408,7 @@ GrowingIO.getInstance().trackBanner(View banner,List<String> bannerDescriptions)
 ```
 
 {% hint style="info" %}
-Banner 描述和广告出现的顺序一致，通过 Log 查看或者MobileDebugger 的方式检查配置是否正确。查看 Banner imp 事件 `e` 字段中的 `v` 字段是否为您设置的 banner description。
+Banner 描述和广告出现的顺序一致，通过 Log 查看或者MobileDebugger 的方式检查配置是否正确。查看 Banner clck 事件 `e` 字段中的 `v` 字段是否为您设置的 banner description。
 {% endhint %}
 
 **检验数据发送日志示例**
@@ -417,7 +417,7 @@ Banner 描述和广告出现的顺序一致，通过 Log 查看或者MobileDebug
 {
     "s":"02015456-079b-49cc-8b42-a5cc6136f0ec",
     // t 为事件类型 type
-    "t":"imp", 
+    "t":"clck", 
     "tm":1531990474178,
     "d":"com.growingio.android.test",
     "p":"ConvenientBannerActivity",
@@ -769,7 +769,7 @@ SDK对通知的采集仅支持 4.4 及以上机型。
 
 ![](../../../.gitbook/assets/image%20%2897%29.png)
 
-### 18. 采集OAID【灰度中】
+### 18. 采集OAID
 
 在 Android 10 版本中，非系统应用无法获取 IMEI。加上以前 Android 版本已经对 MAC 地址， AndroidID 的获取做了限制， 在 Android10 中缺少一种唯一标记设备的标识符。 在海外， Google 推荐使用 Google 的广告 ID 作为广告的唯一识别符，在国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID 的概念， 作为唯一广告标识符。
 
