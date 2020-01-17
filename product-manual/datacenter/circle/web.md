@@ -381,7 +381,7 @@ GrowingIO 互联网金融解决方案落地页 **https://www.growingio.com**​*
 
 ## 插件圈选
 
-GrowingIO 提供支持 eb 圈选的 Chrome 扩展程序。
+GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 
 **使用场景**
 
