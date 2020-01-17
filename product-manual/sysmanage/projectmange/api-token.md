@@ -6,7 +6,7 @@ API Token管理功能可直接由系统利用项目的公钥和私钥自动生�
 
 一. 界面右上角单击 ![](https://docs.growingio.com/.gitbook/assets/-Lo08UtW7H58ehFKeZ4g-Lsu2CWi8CGylwC7jWSB-LsuPIbtjENP0zZy9KaU2019-10-10_18-59-32.png) 选择项目配置，在项目配置界面选择**API token管理**页签。
 
-![](../../../.gitbook/assets/image%20%28111%29.png)
+![](../../../.gitbook/assets/image%20%28113%29.png)
 
 二. 单击**新建API token**，输入描述后单击确定，弹出复制Token界面。
 
@@ -30,7 +30,7 @@ API Token管理功能可直接由系统利用项目的公钥和私钥自动生�
 
 ### 管理Token
 
-修改描述：单击 ![](../../../.gitbook/assets/image%20%28171%29.png) ，可修改当前Token的描述。
+修改描述：单击 ![](../../../.gitbook/assets/image%20%28173%29.png) ，可修改当前Token的描述。
 
 删除：单击 ![](../../../.gitbook/assets/la-ji-tong.png) ，可以删除当前Token，删除后该Token即失效。
 

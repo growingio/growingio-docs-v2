@@ -4,7 +4,7 @@
 
 一. 在顶部导航栏选择"**看板** &gt; **分析看板**"，进入看板列表下的分析看板列表。
 
-![](../../.gitbook/assets/image%20%28184%29.png)
+![](../../.gitbook/assets/image%20%28186%29.png)
 
 二. 单击列表上方的**新建看板**，弹出新建分析看板界面。
 
@@ -16,7 +16,7 @@
 
 在看板列表：
 
-![](../../.gitbook/assets/image%20%2856%29.png)
+![](../../.gitbook/assets/image%20%2858%29.png)
 
 <table>
   <thead>
@@ -65,7 +65,7 @@
   </tbody>
 </table>在看板列表单击某个看板进入看板。
 
-![](../../.gitbook/assets/image%20%28113%29.png)
+![](../../.gitbook/assets/image%20%28115%29.png)
 
 {% hint style="success" %}
 **个性化看板**

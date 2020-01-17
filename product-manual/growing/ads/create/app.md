@@ -30,7 +30,7 @@
 
 二. 单击左上角的**新建监测链接**，默认进入推广App的新建监测链接页面。
 
-![](../../../../.gitbook/assets/image%20%2855%29.png)
+![](../../../../.gitbook/assets/image%20%2857%29.png)
 
 <table>
   <thead>

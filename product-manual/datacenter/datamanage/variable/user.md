@@ -16,7 +16,7 @@ description: 在GrowingIO平台对用户变量进行声明和管理。
 用户变量分为登录用户变量和访问用户变量，需在各自页签进行配置。
 {% endhint %}
 
-![](../../../../.gitbook/assets/image%20%28152%29.png)
+![](../../../../.gitbook/assets/image%20%28154%29.png)
 
 {% hint style="info" %}
 登录用户ID：当您在代码中上传了登录用户ID时，请在此处打开登录用户ID。 
@@ -24,7 +24,7 @@ description: 在GrowingIO平台对用户变量进行声明和管理。
 
 三. 单击变量列表上方的**创建登录/访问用户变量**，弹出新建登录/访问用户变量页面。
 
-![](../../../../.gitbook/assets/image%20%28196%29.png)
+![](../../../../.gitbook/assets/image%20%28199%29.png)
 
 <table>
   <thead>

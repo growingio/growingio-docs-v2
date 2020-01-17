@@ -7,5 +7,5 @@
 1. 登录GrowingIO 平台。
 2. 单击界面右上用户角头像选择**学习中心**，进入课程学习界面。
 
-![](../../../.gitbook/assets/image%20%28170%29.png)
+![](../../../.gitbook/assets/image%20%28172%29.png)
 

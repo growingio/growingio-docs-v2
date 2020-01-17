@@ -728,11 +728,11 @@ gio('setUser', { id: user.id, name: user.name });
 
 要正常采集微信小程序的数据并发送给 GrowingIO，需要在微信小程序里事先设置一个通讯域名，允许跟 GrowingIO API 服务器进行网络通信。具体步骤如下：
 
-1. 登陆微信小程序后台，进入配置。
+1. 登陆微信小程序后台，进入开发。
 2. 打开开发设置，到服务器域名配置部分。
 3. 在`request合法域名`中添加：https://wxapi.growingio.com
 
-![](../../../.gitbook/assets/image%20%28110%29.png)
+![](../../../.gitbook/assets/image%20%2843%29.png)
 
 ## 4. 无埋点采集事件逻辑和高级配置
 

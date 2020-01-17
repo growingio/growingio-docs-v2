@@ -763,11 +763,11 @@ SDK对通知的采集仅支持 4.4 及以上机型。
 
 ![&#x521B;&#x5EFA;&#x901A;&#x77E5;&#x7684;&#x4E8B;&#x4EF6;&#x7EA7;&#x53D8;&#x91CF;](../../../.gitbook/assets/image%20%2822%29.png)
 
-![&#x521B;&#x5EFA;&#x63A8;&#x9001;&#x4E8B;&#x4EF6;&#x5206;&#x6790;](../../../.gitbook/assets/image%20%28147%29.png)
+![&#x521B;&#x5EFA;&#x63A8;&#x9001;&#x4E8B;&#x4EF6;&#x5206;&#x6790;](../../../.gitbook/assets/image%20%28149%29.png)
 
 创建事件分析，等候片刻即可看到数据。
 
-![](../../../.gitbook/assets/image%20%2897%29.png)
+![](../../../.gitbook/assets/image%20%2899%29.png)
 
 ### 18. 采集OAID
 

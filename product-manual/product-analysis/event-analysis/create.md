@@ -6,7 +6,7 @@
 
 二.  单击**新建事件分析**，进入**新建事件分析**页面。  
 
-![](../../../.gitbook/assets/image%20%2870%29.png)
+![](../../../.gitbook/assets/image%20%2872%29.png)
 
 <table>
   <thead>

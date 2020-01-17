@@ -39,7 +39,7 @@ Universal Links 适用于 iOS 9 及以上的版本，当用户设备系统版本
 
 1、在您的 Xcode 中勾选 **Associated Domains** 功能。
 
-![](../../../../.gitbook/assets/image%20%2887%29.png)
+![](../../../../.gitbook/assets/image%20%2889%29.png)
 
 2. 添加 GrowingIO域名到 Xcode。
 
@@ -55,7 +55,7 @@ GrowingIO的域名：
 
 3. 在苹果开发者网站中找到 Team ID 与 Bundle ID，如下图。
 
-![](../../../../.gitbook/assets/image%20%28198%29.png)
+![](../../../../.gitbook/assets/image%20%28201%29.png)
 
 #### **2.2.2 将 Team ID 配置到 GrowingIO 后台。**
 
@@ -69,7 +69,7 @@ GrowingIO的域名：
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtP41qSBliAk88VA3Xe-LtPKKsn2R69VKrS_DHfimage.png)
 
-![](../../../../.gitbook/assets/image%20%28120%29.png)
+![](../../../../.gitbook/assets/image%20%28122%29.png)
 
 
 
@@ -271,7 +271,7 @@ GrowingIO 提供跳转到应用宝微下载的功能，应用宝微下载为腾�
 
 ## 4 引导中间页配置
 
-![](../../../../.gitbook/assets/image%20%2868%29.png)
+![](../../../../.gitbook/assets/image%20%2870%29.png)
 
 当您认为 GrowingIO 提供的默认下载引导页风格无法满足您的需求时，您可以对 DeepLink 中的下载引导页面进行定制，使其更符合您产品的风格，其中将提供两种方式对下载页面进行定制，简易布局和自由布局。
 

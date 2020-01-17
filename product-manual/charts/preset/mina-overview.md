@@ -2,7 +2,7 @@
 
 当成功集成小程序SDK后，在 GrowingIO 的首页里面会自动出现6个看板个小程序看板提供6个场景的数据。
 
-![](../../../.gitbook/assets/image%20%28203%29.png)
+![](../../../.gitbook/assets/image%20%28206%29.png)
 
 对于进阶分析需求，比如转化分析、自定义事件、更多维度拆分等，可以使用 GrowingIO 的高级分析功能，自行制作单图和看板来分析，并且可以添加到首页做日常监测。
 
@@ -84,7 +84,7 @@ GrowingIO 小程序 SDK 会默认监测用户在页面点击转发按钮，调�
 
 小程序目前支持公众号图文链接、二维码、广告等投放方式；GrowingIO可以通过识别在投放的落地链接中加入UTM参数的方式，来自动跟踪推广数据。具体可以参考渠道跟踪内容。[渠道跟踪/data-analytics/channel-tracking](https://miniprogram/data-analytics/channel-tracking)​
 
-微信支持的小程序入口值请参考全量的微信官方文档[场景值列表](https://developers.weixin.qq.com/miniprogram/dev/reference/scene-list.html)。
+微信支持的小程序场景值请参考全量的微信官方文档[场景值列表](https://developers.weixin.qq.com/miniprogram/dev/reference/scene-list.html)。
 
 {% hint style="info" %}
 由于Android系统限制，目前微信还无法获取到按 Home 键退出到桌面，然后从桌面再次进小程序的场景值，对于这种情况，会保留上一次的场景值
