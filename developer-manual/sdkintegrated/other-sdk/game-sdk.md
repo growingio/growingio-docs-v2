@@ -146,7 +146,9 @@ wx.shareAppMessage(obj)
 
 #### forceLogin
 
-forceLogin 是一个需要特别注意的参数。GrowingIO 默认会在小游戏里面设置用户标识符，存储在微信 Storage 里面。这个用户标识符潜在可能会被 `clearStorage` 清除掉，所以有可能不同的用户标识符对应同一个微信里的 openid。如果你的微信小游戏在用户打开后会去做登陆并且获取 `openid` 和/或 `unionid`，可以设置 `forceLogin` 为 true。当 forceLogin 为 true 的时候，用户标识符会使用 openid，潜在风险是如果用户没有授权，数据不会发送，**所以请特别注意这个参数的设置。**
+forceLogin 是一个需要特别注意的参数。GrowingIO 默认会在小游戏里面设置用户标识符，存储在微信 Storage 里面。这个用户标识符潜在可能会被 `clearStorage` 清除掉，所以有可能不同的用户标识符对应同一个微信里的 openid。
+
+如果你的微信小游戏在用户打开后会去获取 `openID` ，可以设置 `forceLogin` 为 true。当 forceLogin 为 true 的时候，用户标识符会使用 `openID`，潜在风险是如果用户没有获取到`openID`，数据不会发送，**所以请特别注意这个参数的设置。**
 
 集成示例
 
