@@ -18,6 +18,16 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.10</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
+        <ul>
+          <li>sentry&#x521D;&#x59CB;&#x5316;&#x51FA;&#x9519;&#x4E0D;&#x5F71;&#x54CD;&#x91C7;&#x96C6;SDK</li>
+        </ul>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.9</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
