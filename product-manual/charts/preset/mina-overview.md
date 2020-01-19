@@ -82,7 +82,7 @@ GrowingIO 小程序 SDK 会默认监测用户在页面点击转发按钮，调�
 
 推广获客按照GrowingIO预置的广告来源维度统计，预置图中展示**过去7天**中访问用户和新访问用户Top10的广告来源。切换概览右上角时间控件，可以自动切换统计时间。
 
-小程序目前支持公众号图文链接、二维码、广告等投放方式；GrowingIO可以通过识别在投放的落地链接中加入UTM参数的方式，来自动跟踪推广数据。具体可以参考渠道跟踪内容。[渠道跟踪/data-analytics/channel-tracking](https://miniprogram/data-analytics/channel-tracking)​
+小程序目前支持公众号图文链接、二维码、广告等投放方式；GrowingIO可以通过识别在投放的落地链接中加入UTM参数的方式，来自动跟踪推广数据。具体可以参考渠道跟踪内容​[默认的渠道来源跟踪](../../growing/ads/info/default-channel-tracking.md)。
 
 微信支持的小程序场景值请参考全量的微信官方文档[场景值列表](https://developers.weixin.qq.com/miniprogram/dev/reference/scene-list.html)。
 
