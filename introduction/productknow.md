@@ -26,7 +26,7 @@ GrowingIO平台的界面主要分为4个区域，如下图所示。
     </tr>
     <tr>
       <td style="text-align:left">2-&#x9879;&#x76EE;&#x5207;&#x6362;&#x5668;</td>
-      <td style="text-align:left">&#x9879;&#x76EE;&#x662F;&#x591A;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x96C6;&#x5408;&#x3002;&#x4F8B;&#xFF1A;&#x5C0F;&#x7A0B;&#x5E8F;&#x5E94;&#x7528;&#x9700;&#x5355;&#x72EC;&#x96C6;&#x6210;&#x5230;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x60A8;&#x53EF;&#x5728;&#x6B64;&#x5904;&#x8FDB;&#x884C;&#x5207;&#x6362;&#x3002;</td>
+      <td style="text-align:left">&#x9879;&#x76EE;&#x662F;&#x591A;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x96C6;&#x5408;&#x3002;&#x4F8B;&#xFF1A;&#x5982;&#x679C;&#x60A8;&#x5C06;&#x67D0;&#x4E9B;&#x5E94;&#x7528;&#x5355;&#x72EC;&#x96C6;&#x6210;&#x5230;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x60A8;&#x53EF;&#x5728;&#x6B64;&#x5904;&#x8FDB;&#x884C;&#x5207;&#x6362;&#x3002;</td>
     </tr>
     <tr>
       <td style="text-align:left">3-&#x7CFB;&#x7EDF;&#x529F;&#x80FD;&#x533A;</td>
