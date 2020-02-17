@@ -12,6 +12,7 @@ SDK版本要求：iOS 无埋点SDK &gt;=2.x
 ​
 // 手动标识该view不要追踪它的值，默认是NO，特别的UITextView，UITextField，
 //UISearchBar默认是YES
+//对button、label无效
 @property (nonatomic, assign) BOOL growingAttributesDonotTrackValue; 
 ​
 //手动标识该view的取值  比如banner广告条的id 可以放在banner按钮的任意view上
