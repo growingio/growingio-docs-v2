@@ -23,8 +23,8 @@ POST
 | body参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 | name | string | 是 | 监测链接名称。同一个账号下系统会进行链接的同名校验，请勿重复提交同名链接。 |
-| productIdAndroid | string | 是 | Android产品ID。从[查询应用ID](https://app.gitbook.com/@help-1/s/doc/~/edit/drafts/-LpD4UbAD2BQKUq6Kf4L/untitled/api-can-kao/guang-gao-jian-ce-lian-jie-chuang-jian-fu-wu-api/jie-kou-ding-yi/cha-xun-ying-yong-id)获取。 |
-| productIdIos | string | 是 | iOS产品ID。从[查询应用I](https://app.gitbook.com/@help-1/s/doc/~/edit/drafts/-LpD4UbAD2BQKUq6Kf4L/untitled/api-can-kao/guang-gao-jian-ce-lian-jie-chuang-jian-fu-wu-api/jie-kou-ding-yi/cha-xun-ying-yong-id)获取。 |
+| productIdAndroid | string | 是 | Android产品ID。从[查询应用ID](cha-xun-ying-yong-id.md)获取。 |
+| productIdIos | string | 是 | iOS产品ID。从[查询应用ID](cha-xun-ying-yong-id.md)获取。 |
 | channelId | string | 是 | 推广渠道ID。 |
 | campaignIdIos | string  | 是 | iOS广告活动ID。 |
 | campaignIdAndroid | string | 是 | Android广告活动ID。 |
