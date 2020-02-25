@@ -48,7 +48,11 @@ npm install --save https://github.com/growingio/GIORNHook.git#0.0.6
 React Native无埋点SDK是在Android原生SDK上的扩展，请参照Android SDK&gt; [无埋点 SDK集成](../android-sdk/auto-android-sdk.md) 完成添加跟踪代码配置。
 
 {% hint style="warning" %}
-注意将SDK版本号替换成RN版本：RN-autotrack-2.8.7
+注意替换SDK版本号：
+
+请将autotrack-`version`替换成RN版本：RN-autotrack-`version`。
+
+`version`为Android 无埋点SDK版本号，最新版本号请参考原生Android SDK[更新日志](../android-sdk/androidsdk-log.md)。
 {% endhint %}
 
 集成步骤中只有版本号不同，适配RN与原生混合开发场景。
@@ -207,6 +211,7 @@ NativeModules.GrowingIO.onPageShow("pageName");
 | setUserId | \(String userId\) | 设置登录用户ID |
 | clearUserId | 无参数 | 清除登录用户ID |
 | setVisitor | \(Object visitor\) | 设置访问用户变量 |
+| setPageVariable | \(String pageName, JSONObject pageVariable\) | 设置页面级变量 |
 
 {% hint style="warning" %}
 埋点接口其实最终是通过 NativeModules.GrowingIO 调用的原生GrowingIO 无埋点的API，参数限制与其一致。
@@ -241,6 +246,9 @@ NativeModules.GrowingIO.clearUserId();
 ​
 //setVisitor 设置访问用户变量
 NativeModules.GrowingIO.setVisitor({ "age": 20, "gender": "male" });
+
+//setPageVariable 设置页面级变量
+NativeModules.GrowingIO.setPageVariable("HomePage",{ "registered": true, "fee": "200" });
 ```
 
 ## 5. 高级选项设置
