@@ -14,20 +14,6 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">2.8.10</td>
-      <td style="text-align:left">
-        <p></p>
-        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>&#x77ED;&#x94FE;deeplink&#x589E;&#x52A0;&#x5BF9;query&#x7684;&#x7EDF;&#x8BA1;</li>
-          <li>deeplink&#x589E;&#x52A0;&#x624B;&#x52A8;&#x5904;&#x7406;url&#x63A5;&#x53E3;</li>
-        </ul>
-        <p>&#x4F18;&#x5316;:
-          <br />&#x51B7;&#x542F;&#x52A8;app,sessionId&#x4E00;&#x5B9A;&#x53D8;&#x66F4;</p>
-      </td>
-      <td style="text-align:left">2020-02-25</td>
-    </tr>
-    <tr>
       <td style="text-align:left">2.8.9</td>
       <td style="text-align:left">
         <p>&#x4F18;&#x5316;:
