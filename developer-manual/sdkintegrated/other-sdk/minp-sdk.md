@@ -844,7 +844,53 @@ confirm 事件是对于 input 和 textarea 控件，当输入完成后触发的�
 </navigator>
 ```
 
-## 5. 自定义数据上传API
+## 5. 设置半自动采集浏览事件
+
+用户标记一个元素并提供自定义事件和变量，SDK负责监控，当此元素出现在可视区域中时发送用户配置的自定义事件和变量。
+
+半自动浏览事件指：
+
+1. 采集用户主动标记的元素，事件类型使用自定义事件类型cstm，需要用户在代码中埋点并且在官网配置自定义事件和变量。
+2. 半自动：指用户提供元素的自定义事件和变量内容，SDK根据当前元素是否在屏幕上可见，自动发送一个自定义事件。即：需要用户标记元素并且提供自定义事件和变量，SDK在元素出现在屏幕上时自动发送，不同于track接口发送的cstm事件，调用即发送。
+
+{% hint style="info" %}
+注意事项：
+
+* 注意参数是否合法，与埋点 API 一样，eventID 和事件级变量 JSONObject 都有参数限制要求。
+* 在元素展示前调用GIO API，GIO 负责监听元素展示并触发事件，半自动化浏览事件SDK 上传的数据类型为 cstm ，和自定义事件是同种类型，所以**需要您在官网新建对应的事件类型和变量，并且强烈建议使用数据校验工具验证埋点事件。**
+* 触发 SDK 自动采集时机： 元素从当前屏幕上不可见到可见。
+* 对于被追踪元素上方有其它元素遮挡的情况 ，GrowingIO 仍可能发送该元素的展示事件 （适配这种case会消耗巨大性能，暂时不兼容）。
+{% endhint %}
+
+### 标记半自动采集元素
+
+使用此方法标记元素的浏览时，请在console验证cstm事件。
+
+{% hint style="info" %}
+class 中必须加 growing\_collect\_imp 。
+{% endhint %}
+
+```markup
+<view class="page-section growing_collect_imp" data-gio-imp-track='测试imp打点2' data-gio-track-age='18' data-gio-track-name='xxx' id='test_imp'>
+  // ......
+</view>
+```
+
+### 注册监听
+
+在对应的 Page.js 的onShow方法中，低啊用 gio\('collectImp', this\)
+
+```java
+Page({
+  // ...
+  onShow: function () {
+    gio('collectImp', this)
+  },
+  // ...
+})
+```
+
+## 6. 自定义数据上传API
 
 {% hint style="info" %}
 小程序自定义事件和变量的埋点代码，建议放在onShow的生命周期函数中。
@@ -852,11 +898,11 @@ confirm 事件是对于 input 和 textarea 控件，当输入完成后触发的�
 
 自定义数据上传API，请参考[自定义数据上传API](customize-api.md)。
 
-## 6. 创建应用
+## 7. 创建应用
 
 在GrowingIO平台的创建微信小程序应用。创建应用请参考查看[创建应用](../../../product-manual/sysmanage/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
-## 7. 验证SDK是否正常采集数据
+## 8. 验证SDK是否正常采集数据
 
 了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 

@@ -170,17 +170,59 @@ gio('setUserId', user.id);
 gio('setUser', { id: user.id, name: user.name });
 ```
 
-## 3. 自定义数据上传API
+## 3.设置半自动采集浏览事件
+
+用户标记一个元素并提供自定义事件和变量，SDK负责监控，当此元素出现在可视区域中时发送用户配置的自定义事件和变量。
+
+半自动浏览事件指：
+
+1. 采集用户主动标记的元素，事件类型使用自定义事件类型cstm，需要用户在代码中埋点并且在官网配置自定义事件和变量。
+2. 半自动：指用户提供元素的自定义事件和变量内容，SDK根据当前元素是否在屏幕上可见，自动发送一个自定义事件。即：需要用户标记元素并且提供自定义事件和变量，SDK在元素出现在屏幕上时自动发送，不同于track接口发送的cstm事件，调用即发送。
+
+{% hint style="info" %}
+注意事项：
+
+* 注意参数是否合法，与埋点 API 一样，eventID 和事件级变量 JSONObject 都有参数限制要求。
+* 在元素展示前调用GIO API，GIO 负责监听元素展示并触发事件，半自动化浏览事件SDK 上传的数据类型为 cstm ，和自定义事件是同种类型，所以**需要您在官网新建对应的事件类型和变量，并且强烈建议使用数据校验工具验证埋点事件。**
+* 触发 SDK 自动采集时机： 元素从当前屏幕上不可见到可见。
+* 对于被追踪元素上方有其它元素遮挡的情况 ，GrowingIO 仍可能发送该元素的展示事件 （适配这种case会消耗巨大性能，暂时不兼容）。
+{% endhint %}
+
+### 配置半自动采集开关
+
+```c
+gio('init', ' your projectId', 'your appId', {imp: true})
+```
+
+### 标记半自动采集元素
+
+使用此方法标记元素的浏览时，请在console验证cstm事件。
+
+```markup
+<body>
+    <div>
+        <h2 data-gio-imp-track='testImp' data-gio-track-foo='bar' data-gio-track-baz='qux'>标记元素并带上两个事件变量</h2>
+    </div>
+ </body>
+```
+
+以上示例相当于在用户元素出现在可视区域时，我们会对应的执行以下对应的API调用。
+
+```markup
+gio('track', 'testImp', { foo: 'bar', baz: 'qux'})
+```
+
+## 4. 自定义数据上传API
 
 自定义数据上传API，请参考[自定义数据上传API](customize-api.md)。
 
-## 4. 创建应用
+## 5. 创建应用
 
 请在添加了跟踪代码的支付宝小程序重新启动几次，发送数据给 GrowingIO。
 
 在GrowingIO平台的创建微信小游戏应用。创建应用请参考查看[创建应用](../../../product-manual/sysmanage/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
-## 5. 验证SDK是否正常采集数据
+## 6. 验证SDK是否正常采集数据
 
 方式一：[小程序&内嵌页Debugger](../../debugging/minpdebugger.md)
 
