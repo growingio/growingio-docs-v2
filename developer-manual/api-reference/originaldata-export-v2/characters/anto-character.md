@@ -721,7 +721,22 @@ description: 无埋点事件字段共分为4个事件类型。
       </td>
     </tr>
   </tbody>
-</table>
+</table>{% hint style="info" %}
+您可以通过[获取圈选元素定义](../../statistics-api/definition/get-auto.md)接口得到以下rules（圈选元素定义）字段表。
+{% endhint %}
+
+| 名称 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| rule\_id | string\(8\) | 规则ID，匹配事件的规则ID，该ID为GrowingIO平台圈选的标签的唯一ID。该值有字母与数字组成，例如'1ba052a9'。 |
+| name | string\(200） | 规则名称，圈选的标签名称。该名称不可以作为唯一主键，只是便于使用区分。 |
+| ruleType | string\(10\) | 规则类型，规则在定义时可能有不同的类型，例如按钮clck。值包括page、clck、chng、sbmt。 |
+
+1. 在基础部分数据导出（visit, page, action\)之外，提供圈选数据与action级别数据的映射部分。
+2. 通过action数据中的action\_id与action\_tag中的action\_id聚合，绑定对应的rule\_id（映射的规则名称）到action数据上。
+3. rules代表了客户在GrowingIO平台上圈选的标签，rule\_id即其唯一标识符。
+4. 通过rules表将名称绑定到上述的action\_tag表中，便于通过名称进行数据分析，识别导出数据中圈选部分的数据情况。
+5. action\_tag与rules表均是关联信息表，用于更进一步分析导出的部分数据，在导出数据中定位圈选数据。建议规则建立时保持名称的唯一性，GrowingIO平台不保证规则名称唯一性。
+6. 相同的规则名称下可能有多个规则类型，规则名称＋规则类型才能区分，此处的规则类型与基础数据action中的事件类型保持一致。
 {% endtab %}
 {% endtabs %}
 
