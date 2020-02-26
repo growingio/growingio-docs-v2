@@ -34,5 +34,87 @@ GrowingIO Web JS SDK 会在网站用户加载网页后自动启动，并收集�
 
 与「JS SDK」一样，移动端SDK主要采集三类数据：访问数据，内容数据，行为数据。并且，不采集应用文本框里的数据，也就不会主动记录普通用户填写的账户/电话/银行卡等隐私信息，在采集环节保证安全。
 
-### SDK支持明细
+**移动端框架版本兼容**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x6846;&#x67B6;</th>
+      <th style="text-align:left">SDK&#x7C7B;&#x522B;</th>
+      <th style="text-align:left">App&#x9002;&#x914D;&#x7684;&#x7CFB;&#x7EDF;&#x7248;&#x672C;</th>
+      <th style="text-align:left">&#x6846;&#x67B6;&#x7248;&#x672C;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">&#x539F;&#x751F;Android</td>
+      <td style="text-align:left">&#x65E0;&#x57CB;&#x70B9;&#x3001;&#x57CB;&#x70B9;</td>
+      <td style="text-align:left">
+        <p>Android 4.2+</p>
+        <p>iOS 8+</p>
+      </td>
+      <td style="text-align:left">-</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x539F;&#x751F;iOS</td>
+      <td style="text-align:left">&#x65E0;&#x57CB;&#x70B9;&#x3001;&#x57CB;&#x70B9;</td>
+      <td style="text-align:left">iOS 8+</td>
+      <td style="text-align:left">-</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">React Native</td>
+      <td style="text-align:left">&#x65E0;&#x57CB;&#x70B9;&#x3001;&#x57CB;&#x70B9;</td>
+      <td style="text-align:left">
+        <p>Android 4.2+</p>
+        <p>iOS 8+</p>
+      </td>
+      <td style="text-align:left">0.46-0.56&#x3001;0.59.9</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Flutter</td>
+      <td style="text-align:left">&#x57CB;&#x70B9;</td>
+      <td style="text-align:left">
+        <p>Android 4.2+</p>
+        <p>iOS 8+</p>
+      </td>
+      <td style="text-align:left">-</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Cordova</td>
+      <td style="text-align:left">&#x57CB;&#x70B9;</td>
+      <td style="text-align:left">
+        <p>Android 4.2+</p>
+        <p>iOS 8+</p>
+      </td>
+      <td style="text-align:left">5.0.0</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Weex</td>
+      <td style="text-align:left">&#x57CB;&#x70B9;</td>
+      <td style="text-align:left">
+        <p>Android 4.2+</p>
+        <p>iOS 8+</p>
+      </td>
+      <td style="text-align:left">0.16.0</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">API Cloud</td>
+      <td style="text-align:left">&#x57CB;&#x70B9;</td>
+      <td style="text-align:left">
+        <p>Android 4.2+</p>
+        <p>iOS 8+</p>
+      </td>
+      <td style="text-align:left">-</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">APP Can</td>
+      <td style="text-align:left">&#x57CB;&#x70B9;</td>
+      <td style="text-align:left">
+        <p>Android 4.2+</p>
+        <p>iOS 8+</p>
+      </td>
+      <td style="text-align:left">-</td>
+    </tr>
+  </tbody>
+</table>
 
