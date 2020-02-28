@@ -72,11 +72,9 @@ POST
   </tbody>
 </table>attrs字段为事件需要关联的维度属性，以下为attrs对应的字段：
 
-| 名称 | 类型 | 说明 |
-| :--- | :--- | :--- |
-| id | Sring | 事件级变量的UID。 |
-| key | string | 事件级变量标识符。 |
-| name | string | 事件级变量类型，目前有string、int、double三种类型。 |
+| 名称 | 类型 | 是否必传 | 说明 |
+| :--- | :--- | :--- | :--- |
+| id | Sring | 是 | 事件级变量的UID。 |
 {% endtab %}
 
 {% tab title="响应示例" %}
