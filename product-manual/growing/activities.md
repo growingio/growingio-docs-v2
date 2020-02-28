@@ -14,12 +14,27 @@
 
 ![](../../.gitbook/assets/image%20%2885%29.png)
 
-| 参数 | 说明 |
-| :--- | :--- |
-| 输入页面的URL | 输入活动页面的URL。 |
-| 选择页面指标 | 选择页面浏览事件，作为活动页面。 |
-
-三. 输入参数后单击**生成活动报告**，弹出填写活动分析名称对话框。
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x53C2;&#x6570;</th>
+      <th style="text-align:left">&#x8BF4;&#x660E;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">&#x8F93;&#x5165;&#x9875;&#x9762;&#x7684;URL</td>
+      <td style="text-align:left">
+        <p>&#x8F93;&#x5165;&#x6D3B;&#x52A8;&#x9875;&#x9762;&#x7684;URL&#x3002;</p>
+        <p>&#x6B64;&#x65B9;&#x6CD5;&#x9002;&#x7528;&#x4E8E;&#x53EA;&#x5728;Web&#x7AEF;&#x5C55;&#x793A;&#x7684;H5&#x9875;&#x9762;&#x3002;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x9009;&#x62E9;&#x9875;&#x9762;&#x6307;&#x6807;</td>
+      <td style="text-align:left">&#x9009;&#x62E9;&#x9875;&#x9762;&#x6D4F;&#x89C8;&#x4E8B;&#x4EF6;&#xFF0C;&#x4F5C;&#x4E3A;&#x6D3B;&#x52A8;&#x9875;&#x9762;&#x3002;</td>
+    </tr>
+  </tbody>
+</table>三. 输入参数后单击**生成活动报告**，弹出填写活动分析名称对话框。
 
 四. 填写活动分析名称后单击**保存**，默认进入当前活动分析页面。
 
