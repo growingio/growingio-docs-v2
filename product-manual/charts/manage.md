@@ -52,7 +52,7 @@
     </tr>
     <tr>
       <td style="text-align:left">5-&#x6D4F;&#x89C8;&#x91CF;</td>
-      <td style="text-align:left">&#x6700;&#x8FD1;&#x88AB;&#x67E5;&#x770B;&#x6B21;&#x6570;</td>
+      <td style="text-align:left">&#x6700;&#x8FD1;30&#x5929;&#x88AB;&#x67E5;&#x770B;&#x6B21;&#x6570;</td>
     </tr>
     <tr>
       <td style="text-align:left">6-&#x8BA2;&#x9605;&#x53CA;&#x8BA2;&#x9605;&#x91CF;</td>
