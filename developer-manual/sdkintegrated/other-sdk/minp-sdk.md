@@ -834,7 +834,7 @@ confirm 事件是对于 input 和 textarea 控件，当输入完成后触发的�
 
 #### navigator组件
 
-如果您的小程序使用了navigator组件，需要您手动绑定一个空的点击事GrowingIO才能实现跳转点击的采集。
+如果您的小程序使用了navigator组件，需要您手动绑定一个空的点击事件，GrowingIO才能实现跳转点击的采集。
 
 ```java
 <navigator ...>

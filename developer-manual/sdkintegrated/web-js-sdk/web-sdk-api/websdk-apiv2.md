@@ -5,6 +5,7 @@
 ```javascript
 // 初始化参数
 gio('init', projectId, options); 
+gio('send')
 ​
 // 修改系统变量API
 gio('config', options);
@@ -248,7 +249,7 @@ gio('track', 'loanAmount', 800000, {'loanType':'houseMortgage','province':'Zheji
 
 ```javascript
 //sendPage API原型和调用示例
-gio('sendPage'); // 放在send之后
+gio('sendPage'); // 在调用 window.gio('send') 之后调用
 ```
 
 ### 10. GDPR数据采集开关
@@ -258,17 +259,15 @@ gio('sendPage'); // 放在send之后
 
 ```javascript
 // 停止采集数据
-window.gio('config',{"dataCollect": true}); // 全局配置, 可以放到send之后
+window.gio('config',{"dataCollect": true}); // 全局配置, 在调用 window.gio('send') 之前调用
 // 采集数据 (默认)
 window.gio('config',{"dataCollect": false}); 
-// 获取访问用户ID 
-window.gio('getVisitUserId'); // 放在send之后
 ```
 
 ### 11. 获取访问用户ID（getVisitUserId）
 
 ```javascript
-gio('getVisitUserId'); // 放在send之后
+gio('getVisitUserId'); // 在调用 window.gio('send') 之后调用
 ```
 
 

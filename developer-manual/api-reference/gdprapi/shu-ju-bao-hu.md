@@ -13,27 +13,27 @@
 关闭或开启全局数据采集：
 
 ```java
-// 停止采集数据，全局配置, 可以放到send之后
+// 停止采集数据，全局配置, 请在调用gio('send')之前调用
 window.gio('config',{"dataCollect": true}); 
-// 采集数据 (默认)，全局配置, 可以放到send之后
+// 采集数据 (默认)，全局配置, 请在调用gio('send')之前调用
 window.gio('config',{"dataCollect": false}); 
 ```
 
 获取访问用ID：
 
 ```java
-window.gio('getVisitUserId'); // 放在send之后
+window.gio('getVisitUserId'); // 请在调用gio('send')之前调用
 ```
 
 样例：
 
 ```java
-// 停止采集数据，全局配置, 可以放到send之后
+// 停止采集数据
 window.gio('config',{"dataCollect": true}); 
-// 采集数据 (默认)，放在send之后
+// 采集数据 (默认)
 window.gio('config',{"dataCollect": false}); 
-// 获取访问用户ID ，放在send之后
-window.gio('getVisitUserId'); // 放在send之后
+// 获取访问用户ID 
+window.gio('getVisitUserId'); 
 ```
 {% endtab %}
 
@@ -111,16 +111,35 @@ NSString *viId = [Growing getVisitUserId];
 关闭或开启全局数据采集：
 
 ```java
-//停止采集数据，可以放到send之后
+//停止采集数据，在gio('init')之后调用
 gio('setConfig',{"dataCollect": false}); 
-//采集数据 (默认) ，可以放到send之后
+//采集数据 (默认) ，在gio('init')之后调用
 gio('setConfig',{"dataCollect": true});
 ```
 
 获取访问用ID：
 
 ```java
-window.gio('getVisitUserId'); // 放在send之后
+window.gio('getVisitUserId'); // 在gio('init')之后调用
+```
+{% endtab %}
+
+{% tab title="内嵌页" %}
+初始化配置项：无
+
+关闭或开启全局数据采集：
+
+```java
+//停止采集数据，在gio('send')之前调用
+gio('setDataCollect', false)
+//采集数据 (默认) ，在gio('send')之前调用
+gio('setDataCollect', true)
+```
+
+获取访问用ID：
+
+```java
+gio('getVisitUserId'); // 在gio('send')之前调用
 ```
 {% endtab %}
 {% endtabs %}

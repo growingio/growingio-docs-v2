@@ -10,7 +10,7 @@
 
 此时，由于您集成了 web js sdk ，并且移动端无埋点 sdk 会自动注入 hybrid sdk ，则会发两份数据采集信息，web js sdk 发送一份， hybrid sdk 发送一份。
 
-如果您单独期望关闭 web js sdk 的数据采集，请将`window.webViewRequestSend`的值为`false`。
+如果您单独期望关闭 web js sdk 的数据采集，请在Web JS SDK初始化之前调用`window.webViewRequestSend，`值为`false`。
 
 ## 3. H5怎么增加自定义事件和变量？
 
