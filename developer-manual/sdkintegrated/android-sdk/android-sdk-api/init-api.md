@@ -121,7 +121,7 @@ public class TestApplication extends Application {
 | setSessionInterval | 30 \* 1000 | 在后台停留时长超过此值，则产生新的`sessionId`,发送`visit`事件。 | ALL | ALL  |
 | setFlushInterval | 30 \* 1000 | 数据刷新的最长时间间隔，默认30 秒 。如果距离上次发送数据事件超过此时间则发送事件 | ALL | ALL |
 | setThrottle | false | 是否节流发送，节流发送时`imp`不发送，不发送但是采集，`imp`为元素展示事件 | ALL | - |
-| setDisableImpression | false | 是否采集`imp`事件，`imp`为元素展示事件，默认采集`imp` | ALL | - |
+| setDisableImpression | true | 是否采集`imp`事件，`imp`为元素展示事件，默认不采集`imp。需要`setDisableImpression\(false\)，同时服务端返回配置为true时才会采集。 | ALL | - |
 | disableCellularImp | false | 否关闭移动蜂窝网`imp`事件采集，`imp`为元素展示事件 | ALL | - |
 | setCellularDataLimit | 3\* 1024 \*1024 | 一天的时间之内，在移动蜂窝网下的数据最大传输量，默认3M。 | ALL | ALL |
 | setBulkSize | 300 | 如果数据库存储数据条数大于等于`bulkSize`，则马上发送数据。 | ALL | ALL |
