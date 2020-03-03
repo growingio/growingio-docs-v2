@@ -50,7 +50,7 @@ GrowingIO默认使用UUID（随机UUID的方法生成访问用户ID，并将之�
 
 JS：用户使用浏览器的隐身模式、用户手动清空Cookie、同一个用户使用多个浏览器
 
-iOS：当访问用户ID为IDFA或IDFA时，会随着IDFA和IDFV的变化而变化；当访问用户ID为GUID时，用户删除了应用重新安装或者是清除了数据，
+iOS：当访问用户ID为IDFV或IDFA时，会随着IDFA和IDFV的变化而变化；当访问用户ID为GUID时，用户删除了应用重新安装或者是清除了数据，
 
 Android：当访问用户ID为Android或IMEI时，会随着Android和IMEI的变化而变化；当访问用户ID为UUID时，用户删除了应用重新安装或者是清除了数据，
 
