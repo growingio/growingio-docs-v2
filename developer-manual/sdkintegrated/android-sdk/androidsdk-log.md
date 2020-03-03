@@ -18,6 +18,25 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.11</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
+        <ul>
+          <li>&#x534A;&#x81EA;&#x52A8;imp&#x6F5C;&#x5728;&#x7684;ConcurrentModificationException&#x5F02;&#x5E38;</li>
+          <li>&#x70B9;&#x51FB;&#x5708;&#x9009;&#x6309;&#x94AE;&#x65F6;&#x4F4E;&#x6982;&#x7387;NPE</li>
+        </ul>
+        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
+        <ul>
+          <li>&#x589E;&#x52A0;doDeeplinkByUrl &#x548C; isDeeplinkUrl&#x63A5;&#x53E3;</li>
+        </ul>
+        <p>&#x4F18;&#x5316;:</p>
+        <ul>
+          <li>&#x9ED8;&#x8BA4;&#x5173;&#x95ED;Imp&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-03-03</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.10</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
@@ -25,7 +44,7 @@ description: Android SDK更新日志
           <li>sentry&#x521D;&#x59CB;&#x5316;&#x51FA;&#x9519;&#x4E0D;&#x5F71;&#x54CD;&#x91C7;&#x96C6;SDK</li>
         </ul>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">2020-01-17</td>
     </tr>
     <tr>
       <td style="text-align:left">2.8.9</td>
