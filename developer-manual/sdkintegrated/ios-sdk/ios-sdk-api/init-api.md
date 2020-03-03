@@ -215,7 +215,7 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
     </tr>
     <tr>
       <td style="text-align:left">setImp</td>
-      <td style="text-align:left">true</td>
+      <td style="text-align:left">NO</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x53D1;&#x9001;&#x5143;&#x7D20;&#x7684;&#x5C55;&#x73B0;&#x6B21;&#x6570;&#xFF08;&#x6D4F;&#x89C8;&#x91CF;&#x3001;&#x66DD;&#x5149;&#x91CF;&#xFF09;</td>
       <td
       style="text-align:left">&#x2714;&#xFE0F;</td>
