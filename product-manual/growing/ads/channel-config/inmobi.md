@@ -1,4 +1,4 @@
-# Inmobi
+# InMobi
 
 1、在 GIO 广告监测下创建监测链接，渠道选择为“Inmobi”，生成监测链接。
 
@@ -6,5 +6,5 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Lj0JGmvkDChuggEtLGx-Lj0Kzk0RreUCGZ5yVGBA6439143-82DB-467E-A66F-7DA32F17746D.png)
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Lj0JGmvkDChuggEtLGx-Lj0JaJ-sHP6w770KdV6image.png)
+![](../../../../.gitbook/assets/image%20%2889%29.png)
 

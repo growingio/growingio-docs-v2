@@ -20,7 +20,7 @@ GrowingIO 微信应用用户分析，基于目前企业多微信场景应用的�
 
 二. 在**公众号数据概览**页签查看公众号数据概览。
 
-![](../../.gitbook/assets/image%20%2855%29.png)
+![](../../.gitbook/assets/image%20%2856%29.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -33,7 +33,7 @@ GrowingIO 微信应用用户分析，基于目前企业多微信场景应用的�
 
 左侧选择小程序，右侧选择待比较的小程序或公众号。
 
-![](../../.gitbook/assets/image%20%28211%29.png)
+![](../../.gitbook/assets/image%20%28216%29.png)
 
 <table>
   <thead>

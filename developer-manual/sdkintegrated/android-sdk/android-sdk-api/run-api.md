@@ -109,6 +109,21 @@ GrowingIO所有API都需要在主线程调用。
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">isDeeplinkUrl</td>
+      <td style="text-align:left">&#x6821;&#x9A8C;&#x94FE;&#x63A5;URI&#x662F;&#x5426;&#x6EE1;&#x8DB3;GIO&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5982;&quot;gio.ren&quot;&#x6216;&quot;.datayi.cn&quot;&#x7ED3;&#x5C3E;&#x7B49;</td>
+      <td
+      style="text-align:left">&gt;=2.8.11</td>
+        <td style="text-align:left">-</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">doDeeplinkByUrl</td>
+      <td style="text-align:left">true &#x8868;&#x793A;&#x662F;GIO&#x7684;deeplink&#x94FE;&#x63A5;&#xFF0C;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x5224;&#x65AD;&#xFF0C;
+        false &#x8868;&#x793A;&#x975E;GIO&#x76F8;&#x5173;&#x94FE;&#x63A5;.&#x53C2;&#x6570;callback&#x4E0D;&#x586B;&#x5219;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x8BBE;&#x7F6E;&#x7684;callback</td>
+      <td
+      style="text-align:left">&gt;=2.8.11</td>
+        <td style="text-align:left">-</td>
+    </tr>
+    <tr>
       <td style="text-align:left">disableDataCollect</td>
       <td style="text-align:left">&#x9075;&#x5B88;&#x6B27;&#x6D32;&#x8054;&#x76DF;&#x51FA;&#x53F0;&#x7684;&#x901A;&#x7528;&#x6570;&#x636E;&#x4FDD;&#x62A4;&#x6761;&#x4F8B;&#xFF0C;&#x7528;&#x6237;&#x4E0D;&#x6388;&#x6743;&#xFF0C;&#x4E0D;&#x91C7;&#x96C6;&#x7528;&#x6237;&#x6570;&#x636E;</td>
       <td

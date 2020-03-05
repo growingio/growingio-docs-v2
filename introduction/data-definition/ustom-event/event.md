@@ -68,7 +68,7 @@ API 中给出了埋点事件和事件级变量的上传方式。
 
 在开发者工具中查看日志，如下图：
 
-![](../../../.gitbook/assets/image%20%2814%29.png)
+![](../../../.gitbook/assets/image%20%2815%29.png)
 
 {% hint style="info" %}
 其他数据校验方式

@@ -732,7 +732,7 @@ gio('setUser', { id: user.id, name: user.name });
 2. 打开开发设置，到服务器域名配置部分。
 3. 在`request合法域名`中添加：https://wxapi.growingio.com
 
-![](../../../.gitbook/assets/image%20%2843%29.png)
+![](../../../.gitbook/assets/image%20%2844%29.png)
 
 ## 4. 无埋点采集事件逻辑和高级配置
 

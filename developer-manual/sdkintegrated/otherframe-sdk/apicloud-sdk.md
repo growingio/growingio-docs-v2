@@ -55,7 +55,7 @@ API Cloud的debug模式只支持静态配置，不支持动态配置。
 * 在自动定义模块中上传了压缩包，保存成功后。一定要点击添加模块后面的“+”，否则不是真正添加成功。添加成功后，去已添加模块中能看到刚刚添加的模块。
 {% endhint %}
 
-![](../../../.gitbook/assets/image%20%28214%29.png)
+![](../../../.gitbook/assets/image%20%28219%29.png)
 
 ## 3. Android的额外操作
 
@@ -67,11 +67,11 @@ Android云编译Loader为AppLoader， 使用自定义模块时需要编译Androi
 
 在自定义loader页签下勾选**使用升级环境编译**。
 
-![](../../../.gitbook/assets/image%20%28195%29.png)
+![](../../../.gitbook/assets/image%20%28200%29.png)
 
 2. 云编译时，请勾选**使用升级环境编译。**
 
-![](../../../.gitbook/assets/image%20%2877%29.png)
+![](../../../.gitbook/assets/image%20%2879%29.png)
 
 ## 4. 插件API
 

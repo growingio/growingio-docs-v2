@@ -60,13 +60,13 @@ SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在
 
 Object-C：修改main.m文件：
 
-![](../../../.gitbook/assets/image%20%2865%29.png)
+![](../../../.gitbook/assets/image%20%2867%29.png)
 
 Swift：修改AppDelegate.swift，并手动创建main.swift文件。
 
-![](../../../.gitbook/assets/image%20%28194%29.png)
+![](../../../.gitbook/assets/image%20%28199%29.png)
 
-![](../../../.gitbook/assets/image%20%287%29.png)
+![](../../../.gitbook/assets/image%20%288%29.png)
 
 ### 13. 关于苹果隐私政策相关事宜的公告
 

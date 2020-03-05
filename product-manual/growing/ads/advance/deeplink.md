@@ -11,7 +11,7 @@
 
 二. 在左侧导航栏选择“**高级设置 &gt; 深度链接配置”**，进入深度链接配置页面。
 
-![](../../../../.gitbook/assets/image%20%285%29.png)
+![](../../../../.gitbook/assets/image%20%286%29.png)
 
 ## 2 iOS 应用配置
 
@@ -39,11 +39,11 @@ Universal Links 适用于 iOS 9 及以上的版本，当用户设备系统版本
 
 1、在您的 Xcode 中勾选 **Associated Domains** 功能。
 
-![](../../../../.gitbook/assets/image%20%2889%29.png)
+![](../../../../.gitbook/assets/image%20%2892%29.png)
 
 2. 添加 GrowingIO域名到 Xcode。
 
-![](../../../../.gitbook/assets/image%20%2813%29.png)
+![](../../../../.gitbook/assets/image%20%2814%29.png)
 
 {% hint style="info" %}
 GrowingIO的域名：
@@ -55,7 +55,7 @@ GrowingIO的域名：
 
 3. 在苹果开发者网站中找到 Team ID 与 Bundle ID，如下图。
 
-![](../../../../.gitbook/assets/image%20%28201%29.png)
+![](../../../../.gitbook/assets/image%20%28206%29.png)
 
 #### **2.2.2 将 Team ID 配置到 GrowingIO 后台。**
 
@@ -69,7 +69,7 @@ GrowingIO的域名：
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtP41qSBliAk88VA3Xe-LtPKKsn2R69VKrS_DHfimage.png)
 
-![](../../../../.gitbook/assets/image%20%28122%29.png)
+![](../../../../.gitbook/assets/image%20%28125%29.png)
 
 
 
@@ -271,7 +271,7 @@ GrowingIO 提供跳转到应用宝微下载的功能，应用宝微下载为腾�
 
 ## 4 引导中间页配置
 
-![](../../../../.gitbook/assets/image%20%2870%29.png)
+![](../../../../.gitbook/assets/image%20%2872%29.png)
 
 当您认为 GrowingIO 提供的默认下载引导页风格无法满足您的需求时，您可以对 DeepLink 中的下载引导页面进行定制，使其更符合您产品的风格，其中将提供两种方式对下载页面进行定制，简易布局和自由布局。
 
@@ -282,4 +282,6 @@ GrowingIO 提供跳转到应用宝微下载的功能，应用宝微下载为腾�
 **自由布局**
 
 在此布局中，页面将只保留必要的操作按钮在页面底部，其余空间全部开放，您可以通过对背景图的自由设计，来实现任何您想要的关键元素或页面风格设计。
+
+
 

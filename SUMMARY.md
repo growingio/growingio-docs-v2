@@ -44,6 +44,7 @@
       * [Web JS SDK API](developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/README.md)
         * [API 2.x](developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/websdk-apiv2.md)
         * [API 1.x](developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/websdk-apiv1.md)
+      * [Web半自动采集浏览事件](developer-manual/sdkintegrated/web-js-sdk/web-imp.md)
       * [常见问题](developer-manual/sdkintegrated/web-js-sdk/faq/README.md)
         * [为什么我们的网站要允许iframe加载？](developer-manual/sdkintegrated/web-js-sdk/faq/faq-1.md)
         * [为什么我的网站不能复写 window 对象？](developer-manual/sdkintegrated/web-js-sdk/faq/faq-2.md)
@@ -291,7 +292,7 @@
         * [百度原生信息流](product-manual/growing/ads/channel-config/baidu.md)
         * [微博超级粉丝通](product-manual/growing/ads/channel-config/weibo.md)
         * [爱奇艺](product-manual/growing/ads/channel-config/iqiyi.md)
-        * [Inmobi](product-manual/growing/ads/channel-config/inmobi.md)
+        * [InMobi](product-manual/growing/ads/channel-config/inmobi.md)
         * [微信广告平台](product-manual/growing/ads/channel-config/wechat.md)
         * [凤羽广告平台](product-manual/growing/ads/channel-config/fengyu.md)
         * [bilibili（B站）](product-manual/growing/ads/channel-config/bilibili.md)
@@ -363,5 +364,4 @@
     * [数据统计差异](product-manual/product-faq/diffinfo.md)
     * [无效指标清理说明](product-manual/product-faq/cleandata.md)
 * [术语解释](term.md)
-* [付费清单](bill.md)
 

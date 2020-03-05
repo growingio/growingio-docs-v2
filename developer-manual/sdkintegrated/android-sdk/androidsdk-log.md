@@ -31,7 +31,7 @@ description: Android SDK更新日志
         </ul>
         <p>&#x4F18;&#x5316;:</p>
         <ul>
-          <li>&#x9ED8;&#x8BA4;&#x5173;&#x95ED;Imp&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;</li>
+          <li>&#x9ED8;&#x8BA4;&#x5173;&#x95ED;Imp&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;,&#x4E0D;&#x5F71;&#x54CD;&#x534A;&#x81EA;&#x52A8;imp&#x529F;&#x80FD;</li>
         </ul>
       </td>
       <td style="text-align:left">2020-03-03</td>

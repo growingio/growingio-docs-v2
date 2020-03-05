@@ -17,7 +17,7 @@ App适配最低系统版本：iOS 8及以上、Android 4.2-10
 
 在AppCan IDE导航栏中选择”AppCan &gt; 自定义插件 &gt; 添加插件 “，选择对应安装包。
 
-![](../../../.gitbook/assets/image%20%28146%29.png)
+![](../../../.gitbook/assets/image%20%28151%29.png)
 
 ### 2. 集成SDK
 
@@ -102,7 +102,7 @@ function initGio() {
 
 单击“添加param”，输入键为：$uexGrowingIO\_accountId$，输入值为项目ID。
 
-![](../../../.gitbook/assets/image%20%28169%29.png)
+![](../../../.gitbook/assets/image%20%28174%29.png)
 
 ### 2. 添加URL Scheme
 
@@ -112,7 +112,7 @@ function initGio() {
 
 在右侧**UrlScheme配置**下配置URL Scheme。
 
-![](../../../.gitbook/assets/image%20%2840%29.png)
+![](../../../.gitbook/assets/image%20%2841%29.png)
 {% endtab %}
 {% endtabs %}
 

@@ -12,7 +12,7 @@ V3接口目前还在持续补充，很快会覆盖现有的  [统计数据导出
 
 ## V3接口交互方式 <a id="tong-ji-shu-ju-dao-chu-fen-lei"></a>
 
-![](../../../.gitbook/assets/image%20%28124%29.png)
+![](../../../.gitbook/assets/image%20%28127%29.png)
 
 ## 统计数据V3接口导出分类 <a id="tong-ji-shu-ju-dao-chu-fen-lei"></a>
 
