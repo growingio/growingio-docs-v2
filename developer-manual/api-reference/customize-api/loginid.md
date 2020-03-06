@@ -68,6 +68,10 @@ POST
 }
 ```
 {% endtab %}
+
+{% tab title="返回示例" %}
+200：OK
+{% endtab %}
 {% endtabs %}
 
 
