@@ -104,7 +104,7 @@ gio('track', 'testImp', { foo: 'bar', baz: 'qux'})
 默认采集关闭，可以在初始化时打开。
 
 ```markup
-window.gio('init','your projectID','your appID', {
+window.gio('init','your projectID', {
     manualImp: true
  })
 ```

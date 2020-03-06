@@ -878,7 +878,7 @@ class 中必须加 growing\_collect\_imp 。
 
 ### 注册监听
 
-在对应的 Page.js 的onShow方法中，低啊用 gio\('collectImp', this\)
+在对应的 Page.js 的onShow方法中，调用 gio\('collectImp', this\)
 
 ```java
 Page({
