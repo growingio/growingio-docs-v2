@@ -22,7 +22,7 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
 | :--- | :--- | :--- | :--- | :--- |
 | startWithAccountId:_**AccountId**_  | 无 | 初始化方法，_**AccountID**_为项目id，默认采样率为100%。 | ✔️ | ✔️ |
 | startWithAccountId:_**AccountId**_ withSampling:_**sampling**_ | 无 | 初始化方法，_**AccountID**_为项目id；_**sampling**_为采样率。 | ✔️ | ✔️ |
-| handleUrl | 无 | URL Scheme处理方法，通过参数不同区分圈选、MobileDebugger、DeepLink等。 | ✔️ | - |
+| handleUrl | 无 | URL Scheme处理方法，通过参数不同区分圈选、MobileDebugger、DeepLink等。 | ✔️ | ✔️ |
 
 ### SDK功能API
 
@@ -194,10 +194,10 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
     <tr>
       <td style="text-align:left">enableAllWebViews</td>
       <td style="text-align:left">enable</td>
-      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x91C7;&#x96C6; UIWebView / WKWebView
-        &#x4FE1;&#x606F;</td>
-      <td style="text-align:left">&#x2714;&#xFE0F;</td>
-      <td style="text-align:left">-</td>
+      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x91C7;&#x96C6; WKWebView &#x4FE1;&#x606F;</td>
+      <td
+      style="text-align:left">&#x2714;&#xFE0F;</td>
+        <td style="text-align:left">-</td>
     </tr>
     <tr>
       <td style="text-align:left">enableHybridHashTag</td>

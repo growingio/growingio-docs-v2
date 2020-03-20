@@ -173,5 +173,3 @@ Cannot form weak reference to instance (0xXXXXX) of class NSKVONotifying_XXUIWeb
 @end
 ```
 
-备注:  SDK 2.8.12开始去除对UIWebView的支持
-

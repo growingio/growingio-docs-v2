@@ -38,7 +38,7 @@ android {
 }
 dependencies {
     //GrowingIO 埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:track-2.8.12'
+    implementation 'com.growingio.android:vds-android-agent:track-2.8.11'
 }
 ```
 
@@ -160,7 +160,7 @@ R.string.growingio*
 
 ### 5 设置SDK异常上传开关 <a id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
 
-SDK会收集SDK内部异常上报服务端，方便开发更好的追踪SDK的问题，和完善SDK的功能。如果您不想帮助我们产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
+SDK会收集SDK内部异常上报服务端，方便开发更好的追踪弹窗SDK的问题，和完善弹窗SDK的功能。如果您不想帮助我们弹窗产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
 
 #### 5.1 setUploadExceptionEnable <a id="5-1-setuploadexceptionenable"></a>
 
@@ -174,12 +174,12 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 
 | **参数名** | **类型** | **必填** | **默认值** | **说明** |
 | :--- | :--- | :--- | :--- | :--- |
-| uploadExceptionEnable | boolean | 否 | true | 开关SDK异常上传功能，true开启，false关闭 |
+| uploadExceptionEnable | boolean | 是 | true | 开关SDK异常上传功能，true开启，false关闭 |
 
 #### 5.3 代码示例 <a id="53-dai-ma-shi-li"></a>
 
 ```text
-GrowingIO.startWithConfig(this, Configuration()
+GrowingIO.startWithConfig(this, new GTouchConfig()
                 .setUploadExceptionEnable(true)
                 ...
                 );

@@ -139,14 +139,14 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
     <tr>
       <td style="text-align:left">customerVariables</td>
-      <td style="text-align:left">NSDictionary</td>
+      <td style="text-align:left">JSON Object</td>
+      <td style="text-align:left">&#x5426;</td>
       <td style="text-align:left">
         <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x76F8;&#x5173;&#x7684;&#x5206;&#x6790;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;nil&#xFF1B;<code>customerVariables</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
+        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;nil&#xFF1B;<code>customerVariables</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray&#xFF1B;</code>
         </p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
       </td>
-      <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>**示例代码**
@@ -187,11 +187,11 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
   <tbody>
     <tr>
       <td style="text-align:left">variable</td>
-      <td style="text-align:left">NSDctionary</td>
+      <td style="text-align:left">JSON Object</td>
       <td style="text-align:left">&#x662F;</td>
       <td style="text-align:left">
         <p>&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;<code>nil&#xFF1B;variable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
+        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;<code>nil&#xFF1B;variable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray&#xFF1B;</code>
         </p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
       </td>
@@ -252,11 +252,11 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
     <tr>
       <td style="text-align:left">pageLevelVariables</td>
-      <td style="text-align:left">NSDictionary</td>
+      <td style="text-align:left">JSON Object</td>
       <td style="text-align:left">&#x5426;</td>
       <td style="text-align:left">
         <p>&#x9875;&#x9762;&#x7EA7;&#x522B;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A; nil&#xFF1B;<code>pageLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
+        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A; nil&#xFF1B;<code>pageLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray&#xFF1B;</code>
         </p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
       </td>
@@ -322,11 +322,11 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
     <tr>
       <td style="text-align:left">conversionVariables</td>
-      <td style="text-align:left">NSDictionary</td>
+      <td style="text-align:left">JSON Object</td>
       <td style="text-align:left">&#x5426;</td>
       <td style="text-align:left">
         <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x9AD8;&#x7EA7;&#x5F52;&#x56E0;&#x5206;&#x6790;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;nil&#xFF1B;<code>conversinoLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
+        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;nil&#xFF1B;<code>conversinoLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray&#xFF1B;</code>
         </p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
       </td>
@@ -374,11 +374,11 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
     <tr>
       <td style="text-align:left">eventLevelVariable</td>
-      <td style="text-align:left">NSDictionary</td>
+      <td style="text-align:left">JSONObject</td>
       <td style="text-align:left">&#x5426;</td>
       <td style="text-align:left">
         <p>&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6240;&#x4F34;&#x968F;&#x7684;&#x7EF4;&#x5EA6;&#x4FE1;&#x606F;&#x3002;</p>
-        <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;eventLevelVariable.length()&lt;=100&#xFF09;&#xFF1B;eventLevelVariable&#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray</code>&#xFF1B;
+        <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;eventLevelVariable.length()&lt;=100&#xFF09;&#xFF1B;eventLevelVariable&#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;JSONObject&#x6216;&#x8005;JSONArray&#xFF1B;
           key&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;value&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;200&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x201C;&#x201D;&#x3002;</p>
       </td>
     </tr>
