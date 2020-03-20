@@ -28,7 +28,7 @@ SDK 还提供了移动网络下的流量保护功能，对于用户来说，如�
 
 ### 4.元素没有 imp 怎么处理？ <a id="4-yuan-su-mei-you-imp-zen-mo-chu-li"></a>
 
-首先确认这个元素是不是通过 display:none/ 其它 控制显隐的，对于 display 为 none 的元素，我们会只采集 A 和 utton 标签的浏览量，所以如果您想要一个 display 为 none 的元素 &lt;或其子元素&gt; 的浏览量，把元素改为 A 或 button 标签实现。
+首先确认这个元素是不是通过 display:none/ 其它 控制显隐的，对于 display 为 none 的元素，我们会只采集 A 和 button 标签的浏览量，所以如果您想要一个 display 为 none 的元素 &lt;或其子元素&gt; 的浏览量，把元素改为 A 或 button 标签实现。
 
 注意：对于 IE8 及以下的 IE 浏览器版本，GrowingIO 无法统计元素浏览量 ，只会统计点击量。
 
