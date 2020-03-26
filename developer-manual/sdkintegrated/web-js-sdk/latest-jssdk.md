@@ -53,9 +53,9 @@ gio('config', {'imp':false}); //放在init和send之间
 
 > 系统变量也可以在init进行配置，代码示例：
 
-```text
+```javascript
 gio('init', 'your projectId', {
-  'imp':false，
+  'imp':false,
   'hashtag':true
 });
 ```
