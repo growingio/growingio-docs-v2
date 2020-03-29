@@ -41,7 +41,7 @@ gio('clearUserId');
 对于应用级变量，也就是 1.x 版本中的 CS2 - CS10，请使用以下方法：
 
 ```text
-gio(‘app.set’, key, value) // 单个变量
+gio('app.set', key, value) // 单个变量
 gio('app.set', appLevelVariables) // 多个变量，可组合为一个JSON对象appLevelVariables传入
 ```
 
@@ -86,10 +86,10 @@ gio('page.set', pageLevelVariables); //多个变量，可组合为一个对象�
 
 {% tab title="1.x版本方法格式" %}
 ```javascript
-_vds.push([’setPageGroup‘, ‘PageGroup 的名称’];
-_vds.push([‘setPS1’, ‘PS1 的值’]);
-_vds.push([‘setPS2’, ‘PS2 的值’]);
-_vds.push([‘setPS3’, ‘PS1 的值’]);
+_vds.push(['setPageGroup', 'PageGroup 的名称'];
+_vds.push(['setPS1', 'PS1 的值']);
+_vds.push(['setPS2', 'PS2 的值']);
+_vds.push(['setPS3', 'PS1 的值']);
 ```
 {% endtab %}
 {% endtabs %}
