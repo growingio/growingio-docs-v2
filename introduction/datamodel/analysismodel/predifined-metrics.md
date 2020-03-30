@@ -20,7 +20,7 @@ Web：根据cookie
 
 App：根据用户唯一ID区分访问用户
 
-* Android用户唯一ID：Android ID或IMEI
+* Android用户唯一ID：Android ID或IMEI或MSA
 * iOS用户唯一ID：IDFV或IDFA
 
 小程序：默认按照cookie判断访问用户；如果不取关小程序，则cookie不会发生变化；当设置forceLogin后，则会默认按照openid来判断访问用户，且不采用365天的限制。
