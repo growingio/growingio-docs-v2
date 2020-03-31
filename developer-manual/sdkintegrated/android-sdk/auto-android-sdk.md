@@ -36,7 +36,7 @@ buildscript {
         //gradle 建议版本
         classpath 'com.android.tools.build:gradle:3.2.1'
         //GrowingIO 无埋点 SDK
-        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.8.12'
+        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.8.13'
     }
 }
 ```
@@ -57,7 +57,7 @@ android {
 }
 dependencies {
     //GrowingIO 无埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:autotrack-2.8.12'
+    implementation 'com.growingio.android:vds-android-agent:autotrack-2.8.13'
 }
 ```
 
@@ -777,7 +777,7 @@ SDK对通知的采集仅支持 4.4 及以上机型。
 
 {% hint style="info" %}
 * 支持采集：**Android SDK 2.8.5** 及以上， 包含埋点包与无埋点包及对应插件版本；
-* 目前 2.8.5 SDK 测试的 OAID SDK 版本为miit\_mdid\_sdk\_v1.0.10, 在API不变更的情况下支持后续版本；
+* 目前 2.8.5 SDK 测试的 OAID SDK 版本为miit\_mdid\_sdk\_v1.0.10。v2.8.13起支持msa\_mdid\_sdk\_v1.0.13。
 * 目前仅在 **activate** 事件（激活，用户首次安装并打开应用时发送）中包含 OAID。
 {% endhint %}
 
