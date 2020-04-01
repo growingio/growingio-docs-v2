@@ -14,22 +14,6 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">2.8.13</td>
-      <td style="text-align:left">
-        <p>&#x4FEE;&#x590D;:</p>
-        <p>&#x4F18;&#x5316;&#x57CB;&#x70B9;SDK&#x5728;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#x7528;&#x6237;&#x91CF;&#x3001;&#x8BBF;&#x95EE;&#x91CF;&#x3001;&#x8FDB;&#x5165;&#x6B21;&#x6570;&#x9884;&#x5B9A;&#x4E49;&#x6307;&#x6807;&#x4E0D;&#x51C6;&#x786E;&#x7684;&#x95EE;&#x9898;</p>
-      </td>
-      <td style="text-align:left">2020-04-01</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.8.12</td>
-      <td style="text-align:left">
-        <p>&#x4F18;&#x5316;:</p>
-        <p>&#x53BB;&#x9664;&#x5BF9;UIWebView&#x7684;&#x652F;&#x6301;</p>
-      </td>
-      <td style="text-align:left">2020-03-18</td>
-    </tr>
-    <tr>
       <td style="text-align:left">2.8.11</td>
       <td style="text-align:left">
         <p>&#x4F18;&#x5316;:</p>
