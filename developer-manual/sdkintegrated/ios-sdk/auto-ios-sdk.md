@@ -51,7 +51,7 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 
 在工程项目中添加以下库文件。
 
-> 添加项目依赖库的位置在项目设置target -&gt; 选项卡General -&gt; Linked -&gt; Linked Frameworks and Librarie
+> 添加项目依赖库的位置在项目设置target -&gt; 选项卡General -&gt; Linked -&gt; Linked Frameworks and Libraries
 
 | 库名称 | 说明 |
 | :--- | :--- |
