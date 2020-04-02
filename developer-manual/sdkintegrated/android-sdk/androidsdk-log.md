@@ -84,7 +84,7 @@ description: Android SDK更新日志
           <li>&#x5E94;&#x7528;&#x5728;&#x540E;&#x53F0;&#x8C03;&#x7528;setLocation&#x65B9;&#x6CD5;&#x65F6;&#x4E0D;&#x53D1;&#x9001;visit&#xFF0C;&#x5728;&#x4E0B;&#x6B21;&#x6253;&#x5F00;App&#x65F6;&#x53D1;&#x751F;visit</li>
         </ul>
       </td>
-      <td style="text-align:left">2020-01-04</td>
+      <td style="text-align:left">2019-01-04</td>
     </tr>
     <tr>
       <td style="text-align:left">2.8.7</td>
