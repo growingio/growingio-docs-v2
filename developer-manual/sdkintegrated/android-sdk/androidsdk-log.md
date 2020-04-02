@@ -18,6 +18,28 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.13</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
+        <ul>
+          <li>&#x57CB;&#x70B9;SDK&#x7684;vst&#x4E8B;&#x4EF6;&#x9700;&#x8981;&#x8DDF;&#x53D1;GIOFakePage&#x4E8B;&#x4EF6;</li>
+          <li>weakhashmap gc&#x5BFC;&#x81F4;&#x904D;&#x5386;&#x5F02;&#x5E38;</li>
+          <li>oaid&#x91C7;&#x96C6;&#x9002;&#x914D;msa1.0.13</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-04-01</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">2.8.12</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
+        <ul>
+          <li>&#x5B89;&#x5353;10&#x7684;&#x673A;&#x578B;&#x4E0A;&#x6DF1;&#x5EA6;&#x5EF6;&#x8FDF;&#x94FE;&#x63A5;&#x65E0;&#x6CD5;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x7ED9;APP</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-03-18</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.11</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
