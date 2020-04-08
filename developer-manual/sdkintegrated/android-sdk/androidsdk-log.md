@@ -22,8 +22,7 @@ description: Android SDK更新日志
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
         <ul>
-          <li>&#x57CB;&#x70B9;SDK&#x7684;vst&#x4E8B;&#x4EF6;&#x9700;&#x8981;&#x8DDF;&#x53D1;GIOFakePage&#x4E8B;&#x4EF6;</li>
-          <li>weakhashmap gc&#x5BFC;&#x81F4;&#x904D;&#x5386;&#x5F02;&#x5E38;</li>
+          <li>&#x63D0;&#x793A;SDK&#x7A33;&#x5B9A;&#x6027;</li>
           <li>oaid&#x91C7;&#x96C6;&#x9002;&#x914D;msa1.0.13</li>
         </ul>
       </td>
