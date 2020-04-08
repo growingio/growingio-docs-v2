@@ -63,7 +63,8 @@ description: Android SDK更新日志
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
         <ul>
-          <li>sentry&#x521D;&#x59CB;&#x5316;&#x51FA;&#x9519;&#x4E0D;&#x5F71;&#x54CD;&#x91C7;&#x96C6;SDK</li>
+          <li>&#x4FEE;&#x590D;&#x96C6;&#x6210;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;</li>
+          <li>&#x63D0;&#x9AD8;sdk&#x7A33;&#x5B9A;&#x6027;</li>
         </ul>
       </td>
       <td style="text-align:left">2020-01-17</td>
@@ -84,7 +85,7 @@ description: Android SDK更新日志
           <li>&#x5E94;&#x7528;&#x5728;&#x540E;&#x53F0;&#x8C03;&#x7528;setLocation&#x65B9;&#x6CD5;&#x65F6;&#x4E0D;&#x53D1;&#x9001;visit&#xFF0C;&#x5728;&#x4E0B;&#x6B21;&#x6253;&#x5F00;App&#x65F6;&#x53D1;&#x751F;visit</li>
         </ul>
       </td>
-      <td style="text-align:left">2019-01-04</td>
+      <td style="text-align:left">2020-01-04</td>
     </tr>
     <tr>
       <td style="text-align:left">2.8.7</td>
