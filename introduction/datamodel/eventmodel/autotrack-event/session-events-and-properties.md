@@ -62,8 +62,8 @@ GrowingIO 从 SDK 生成和发送的访问事件中提取了很多信息，我�
       <td
       style="text-align:left">
         <ul>
-          <li>&#x7F51;&#x7AD9;/&#x624B;&#x673A;&#x5E94;&#x7528;</li>
-          <li>App&#x7248;&#x672C;</li>
+          <li>&#x5E94;&#x7528;&#x5E73;&#x53F0;</li>
+          <li>App &#x7248;&#x672C;</li>
         </ul>
         </td>
     </tr>
