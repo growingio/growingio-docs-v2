@@ -15,7 +15,7 @@
         <p></p>
         <ol>
           <li>&#x4FEE;&#x590D;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B; SDK &#x901A;&#x4FE1;&#x5931;&#x6548;&#x5BFC;&#x81F4;&#x7F51;&#x7AD9;&#x65E0;&#x6CD5;&#x5708;&#x9009;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x652F;&#x6301;Chrome&#x5708;&#x9009;&#x63D2;&#x4EF6;&#x9002;&#x914D;
+          <li>&#x652F;&#x6301; Chrome &#x5708;&#x9009;&#x63D2;&#x4EF6;&#x9002;&#x914D;
             iframe &#x5D4C;&#x5957;&#x7684;&#x573A;&#x666F;</li>
           <li>&#x91C7;&#x96C6;&#x6570;&#x636E;&#x5B9E;&#x65F6;&#x56DE;&#x6389;&#x63A5;&#x53E3;
             addRealTimeCallback &#x652F;&#x6301;&#x9ED8;&#x8BA4;&#x4E0A;&#x62A5;&#x6240;&#x6709;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;</li>
@@ -30,10 +30,11 @@
         <p></p>
         <ol>
           <li>&#x4F18;&#x5316;sdk&#x5728;&#x5708;&#x9009;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x7684;&#x8FD0;&#x884C;&#x6548;&#x7387;</li>
-          <li>&#x4F18;&#x5316;&#x5206;&#x7FA4;&#x6279;&#x91CF;&#x4E0A;&#x4F20;&#x767B;&#x5F55;&#x7528;&#x6237;ID&#x65F6;&#x90E8;&#x5206;ID&#x6CA1;&#x6709;&#x53D6;&#x5230;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x4FEE;&#x6539;sdk&#x7684;origin&#x5B57;&#x6BB5;&#x540E;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x5708;&#x9009;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;clearUserId&#x63A5;&#x53E3;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;app&#x7248;&#x672C;&#x548C;&#x7F51;&#x7AD9;/&#x624B;&#x673A;&#x5E94;&#x7528;&#x4E24;&#x4E2A;&#x7EF4;&#x5EA6;&#x65E0;&#x6CD5;&#x4E0E;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x5173;&#x8054;&#x7684;&#x95EE;&#x9898;</li>
+          <li>&#x4F18;&#x5316;&#x5206;&#x7FA4;&#x6279;&#x91CF;&#x4E0A;&#x4F20;&#x767B;&#x5F55;&#x7528;&#x6237;
+            ID &#x65F6;&#x90E8;&#x5206; ID &#x6CA1;&#x6709;&#x53D6;&#x5230;&#x7684;&#x95EE;&#x9898;</li>
+          <li>&#x4FEE;&#x590D;&#x4FEE;&#x6539; SDK &#x7684; origin &#x5B57;&#x6BB5;&#x540E;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x5708;&#x9009;&#x7684;&#x95EE;&#x9898;</li>
+          <li>&#x4FEE;&#x590D; clearUserId &#x63A5;&#x53E3;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#x7684;&#x95EE;&#x9898;</li>
+          <li>&#x4FEE;&#x590D;&#x300C;App &#x7248;&#x672C;&#x300D;&#x548C;&#x300C;&#x5E94;&#x7528;&#x5E73;&#x53F0;&#x300D;&#x7528;&#x4E24;&#x4E2A;&#x7EF4;&#x5EA6;&#x65E0;&#x6CD5;&#x4E0E;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x5173;&#x8054;&#x7684;&#x95EE;&#x9898;</li>
         </ol>
       </td>
       <td style="text-align:left">2018-08-08</td>
@@ -65,8 +66,8 @@
       <td style="text-align:left">
         <p></p>
         <ol>
-          <li>&#x4F18;&#x5316;cdn&#x53D1;&#x7248;&#x6548;&#x7387;</li>
-          <li>&#x4F18;&#x5316;cookie&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x5927;&#x5E45;&#x964D;&#x4F4E;SDK&#x6240;&#x9700;&#x5360;&#x7528;&#x7684;&#x6D4F;&#x89C8;&#x5668;cookie</li>
+          <li>&#x4F18;&#x5316; CDN &#x53D1;&#x7248;&#x6548;&#x7387;</li>
+          <li>&#x4F18;&#x5316; cookie &#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x5927;&#x5E45;&#x964D;&#x4F4E;SDK&#x6240;&#x9700;&#x5360;&#x7528;&#x7684;&#x6D4F;&#x89C8;&#x5668;cookie</li>
         </ol>
       </td>
       <td style="text-align:left">2018-07-17</td>

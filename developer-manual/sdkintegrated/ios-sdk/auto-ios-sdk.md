@@ -40,7 +40,7 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 {% endtab %}
 
 {% tab title="手动添加" %}
-1. 下载iOS SDK以下包：[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.8.11.zip) ，[GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.8.11.zip)，[GrowingAutoTrackKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-AutoTrackKit-2.8.11.zip)，并解压。
+1. 下载iOS SDK以下包：[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.8.13.zip) ，[GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.8.13.zip)，[GrowingAutoTrackKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-AutoTrackKit-2.8.13.zip)，并解压。
 2. 将`Growing.h`、`GrowingCoreKit.framework`、`GrowingAutoTrackKit.framework`添加到iOS工程中。
 
 {% hint style="info" %}
@@ -51,7 +51,7 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 
 在工程项目中添加以下库文件。
 
-> 添加项目依赖库的位置在项目设置target -&gt; 选项卡General -&gt; Linked -&gt; Linked Frameworks and Librarie
+> 添加项目依赖库的位置在项目设置target -&gt; 选项卡General -&gt; Linked -&gt; Linked Frameworks and Libraries
 
 | 库名称 | 说明 |
 | :--- | :--- |
