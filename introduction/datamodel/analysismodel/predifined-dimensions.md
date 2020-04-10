@@ -270,7 +270,7 @@ UTM 渠道归因模式为非直接访问的最后一次访问。‌
 
 | 维度 | 说明 |
 | :--- | :--- |
-| 网站/手机应用（Web/App/小程序） | 用于区分该设备是接入了growingIO的是JS SDK还是iOS SDK |
+| 应用平台（Web/App/小程序） | 应用所属平台，包括：Web、iOS、Android、微信小程序、支付宝小程序、微信公众号等。 |
 | 屏幕大小（Wed/App/小程序） | Web 端是窗口大小，移动端是屏幕大小。 |
 | 操作系统（Web/App/小程序） | 用户所使用的操作系统，比如 Windows 8 ，Windows 7 ，Mac OS X ，Android，weixin-iOS，weixin-Android。 |
 | 操作系统版本Web/App/小程序） | 同「浏览器」，但是会按照不同的版本进行区分，比如 Android 4.0 等。 |
