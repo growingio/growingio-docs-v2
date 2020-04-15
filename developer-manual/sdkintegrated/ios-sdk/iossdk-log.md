@@ -14,6 +14,14 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.14</td>
+      <td style="text-align:left">
+        <p>&#x4F18;&#x5316;:</p>
+        <p>&#x5BF9;&#x5E7F;&#x544A;&#x91C7;&#x96C6;&#x654F;&#x611F;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x52A0;&#x5F3A;&#x6570;&#x636E;&#x5B89;&#x5168;</p>
+      </td>
+      <td style="text-align:left">2020-04-15</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.13</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;:</p>
