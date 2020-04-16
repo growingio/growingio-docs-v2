@@ -37,7 +37,7 @@ android {
 }
 dependencies {
     //GrowingIO RN 埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:RN-track-2.8.2@aar'
+    implementation 'com.growingio.android:vds-android-agent:RN-track-2.8.14@aar'
 }
 ```
 
