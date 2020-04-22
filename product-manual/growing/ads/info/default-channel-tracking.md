@@ -84,13 +84,23 @@ GrowingIO直接支持百度统计的参数解析；如果您的自主投放追�
 
 #### 4.4 特殊说明： <a id="44-te-shu-shuo-ming"></a>
 
-目前 GrowingIO 监测链接生成使用了 s.growingio.com 及 gio.ren ，如两域名都在投放使用，在映射时需对二者分别进行配置。
+目前 GrowingIO 监测链接生成使用了如下域名
+
+| 域名 | 备注 |
+| :--- | :--- |
+| s.growingio.com | 历史使用 |
+| gio.ren  | 历史使用 |
+| datayi.cn | 新域名 |
+
+  如上述列表中的域名都在投放使用，在映射时需分别进行配置。
 
 配置举例：
 
 1、s.growingio.com 使用 s.domain.com 替换；
 
 2、gio.ren 使用 tc.domain.com 替换。
+
+3、datayi.cn 使用 lk.domain.com 替换。
 
 ### 5. 自主调用 API 接口创建链接 <a id="5"></a>
 
