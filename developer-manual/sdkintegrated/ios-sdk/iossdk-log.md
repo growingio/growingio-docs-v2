@@ -14,15 +14,6 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">2.8.15</td>
-      <td style="text-align:left">
-        <p>&#x4F18;&#x5316;&#xFF1A;
-          <br />1. &#x65B0;&#x589E; setSessionInterval:(NSTimeInterval)interval &#x63A5;&#x53E3;</p>
-        <p>2. &#x4F18;&#x5316;&#x4EE3;&#x7801;&#x6027;&#x80FD;</p>
-      </td>
-      <td style="text-align:left">2020-04-28</td>
-    </tr>
-    <tr>
       <td style="text-align:left">2.8.14</td>
       <td style="text-align:left">
         <p>&#x4F18;&#x5316;:</p>

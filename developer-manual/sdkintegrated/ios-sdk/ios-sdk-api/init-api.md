@@ -283,5 +283,21 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
       style="text-align:left">&gt;=2.8.6</td>
         <td style="text-align:left">-</td>
     </tr>
+    <tr>
+      <td style="text-align:left">setSessionInterval</td>
+      <td style="text-align:left">30</td>
+      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x4ECE;&#x540E;&#x53F0;&#x8FDB;&#x5165;&#x524D;&#x53F0;&#x91CD;&#x7F6E;sessionID&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;
+        (&#x5355;&#x4F4D;&#x4E3A;&#x79D2;)</td>
+      <td style="text-align:left">&gt;=2.8.15</td>
+      <td style="text-align:left">&gt;=2.8.15</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">getSessionInterval</td>
+      <td style="text-align:left">&#x65E0;</td>
+      <td style="text-align:left">&#x83B7;&#x53D6;&#x4ECE;&#x540E;&#x53F0;&#x8FDB;&#x5165;&#x524D;&#x53F0;&#x91CD;&#x7F6E;sessionID&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;
+        (&#x5355;&#x4F4D;&#x4E3A;&#x79D2;)</td>
+      <td style="text-align:left">&gt;=2.8.15</td>
+      <td style="text-align:left">&gt;=2.8.15</td>
+    </tr>
   </tbody>
 </table>
