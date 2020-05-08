@@ -75,7 +75,7 @@ SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在
 
 修改方法：
 
-Object-C：修改main.m文件：
+Objective-C：修改main.m文件：
 
 ![](../../../.gitbook/assets/image%20%2867%29.png)
 
