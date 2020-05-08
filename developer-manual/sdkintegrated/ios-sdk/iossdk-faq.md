@@ -48,7 +48,7 @@ SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在
 
 ### 11. App做了Button防重复点击，集成SDK后发现按钮无法点击？
 
-如果您的UIButton 防重复方案中， hook了 UIControl 的 originalSelector： @selector\(sendAction:to:forEvent:\) 方法，请确保在您的 swizzledSelector： @selector\(your\_swizzled\_sendAction:to:forEvent:\) 方法前面执行 如下代码：
+如果您的UIButton 防重复方案中， hook了 UIControl 的 originalSelector： `@selector(sendAction:to:forEvent:)` 方法，请确保在您的 swizzledSelector： `@selector(your_swizzled_sendAction:to:forEvent:)` 方法**前面**执行 如下代码：
 
 ```objectivec
 - (void)your_swizzled_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
