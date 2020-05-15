@@ -90,7 +90,7 @@ gio('setPage', properties: object)
 // 推荐在 Page#onShow 处理这个事件
 // 下面假设我在 GrowingIO 后台已经配置了两个页面级变量 pageName 和 type
 Page({
-  onShow() {
+  onReady() {
     getApp().globalData.gio('setPage', { 
       pageName: '电影列表页', 
       type: this.data.type
