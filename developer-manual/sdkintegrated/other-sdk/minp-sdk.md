@@ -893,7 +893,7 @@ Page({
 ## 6. 自定义数据上传API
 
 {% hint style="info" %}
-小程序自定义事件和变量的埋点代码，建议放在onShow的生命周期函数中。
+小程序自定义事件和变量的埋点代码，建议放在onReady的生命周期函数中。
 {% endhint %}
 
 自定义数据上传API，请参考[自定义数据上传API](customize-api.md)。
