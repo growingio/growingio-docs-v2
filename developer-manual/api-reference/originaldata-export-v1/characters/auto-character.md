@@ -177,7 +177,7 @@
       <td style="text-align:left">string&#xFF08;512&#xFF09;</td>
       <td style="text-align:left">
         <p>&#x8BBF;&#x95EE;&#x4E8B;&#x4EF6;&#x7684;query&#x4FE1;&#x606F;</p>
-        <p>&#x8BBF;&#x95EE;&#x65F6;&#x7684;&#x8FDE;&#x63A5;&#x4E2D;&#x7684;query&#xFF0C;&#x4E0E;&#x6390;&#x5E74;&#x7684;domain&#xFF0C;path&#x4E00;&#x8D77;&#x6784;&#x5EFA;&#x5B8C;&#x6574;&#x7684;&#x94FE;&#x63A5;&#x3002;</p>
+        <p>&#x8BBF;&#x95EE;&#x65F6;&#x7684;&#x8FDE;&#x63A5;&#x4E2D;&#x7684;query&#xFF0C;&#x4E0E;domain&#xFF0C;path&#x4E00;&#x8D77;&#x6784;&#x5EFA;&#x5B8C;&#x6574;&#x7684;&#x94FE;&#x63A5;&#x3002;</p>
       </td>
     </tr>
     <tr>
@@ -185,13 +185,13 @@
       <td style="text-align:left">double</td>
       <td style="text-align:left">
         <p>gps&#x7EAC;&#x5EA6;</p>
-        <p>mobile&#x5E73;&#x53F0;&#xFF0C;&#x9700;&#x8981;gps&#x6743;&#x9650;&#x3002;&#xFF1F;&#xFF1F;&#xFF1F;</p>
+        <p>mobile&#x5E73;&#x53F0;&#xFF0C;&#x9700;&#x8981;gps&#x6743;&#x9650;</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">lng</td>
       <td style="text-align:left">double</td>
-      <td style="text-align:left">gps&#x7ECF;&#x5EA6;mobile&#x5E73;&#x53F0;&#x72EC;&#x6709;&#x7684;&#x5B50;&#x5F39;&#xFF0C;&#x7D27;&#x7F3A;&#x5230;&#x5C0F;&#x6570;&#x70B9;&#x540E;5&#x4F4D;&#x3002;</td>
+      <td style="text-align:left">gps&#x7CBE;&#x5EA6;&#xFF0C;mobile&#x5E73;&#x53F0;&#xFF0C;&#x7CBE;&#x786E;&#x5230;&#x5C0F;&#x6570;&#x70B9;&#x540E;5&#x4F4D;&#x3002;</td>
     </tr>
   </tbody>
 </table>
