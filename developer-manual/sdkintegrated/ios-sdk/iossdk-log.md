@@ -14,15 +14,6 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">2.8.17</td>
-      <td style="text-align:left">
-        <p>&#x4F18;&#x5316;</p>
-        <p>1.WKWebView&#x517C;&#x5BB9;&#x6027;&#x63D0;&#x5347;
-          <br />2.&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x5C0F;&#x4F18;&#x5316;</p>
-      </td>
-      <td style="text-align:left">2020-05-27</td>
-    </tr>
-    <tr>
       <td style="text-align:left">2.8.16</td>
       <td style="text-align:left">
         <p>&#x4F18;&#x5316;:</p>
