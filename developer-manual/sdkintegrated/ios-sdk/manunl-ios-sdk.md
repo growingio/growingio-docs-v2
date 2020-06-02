@@ -17,7 +17,7 @@ App适配最低系统版本：iOS 8及以上
 
 **组件化SDK**
 
-GrowingIO iOS SDK 2.8.16 包含以下组件SDK:
+GrowingIO iOS SDK 2.8.18 包含以下组件SDK:
 
 • GrowingCoreKit \(组件基础库,具备分析功能\)
 
@@ -35,7 +35,7 @@ GrowingIO iOS SDK 2.8.16 包含以下组件SDK:
 {% endtab %}
 
 {% tab title="手动添加" %}
-1. 下载iOS SDK以下包：[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.8.16.zip) ，[GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.8.16.zip)，并解压。
+1. 下载iOS SDK以下包：[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.8.17.zip) ，[GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.8.17.zip)，并解压。
 2. 将`Growing.h`、`GrowingCoreKit.framework`、添加到iOS工程中。
 
 {% hint style="info" %}
