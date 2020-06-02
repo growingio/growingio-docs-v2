@@ -18,6 +18,18 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.18</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
+        <ul>
+          <li>&#x4FEE;&#x590D;&#x67D0;&#x4E9B;&#x573A;&#x666F;&#x4E0B;click&#x4E8B;&#x4EF6;&#x91C7;&#x96C6;&#x4E0D;&#x5230;</li>
+          <li>&#x6781;&#x5149;&#x5C0F;&#x7C73;&#x63A8;&#x9001;click&#x4E8B;&#x4EF6;&#x91C7;&#x96C6;&#x5931;&#x8D25;</li>
+          <li>&#x4FEE;&#x590D;&#x4ECE;app&#x5524;&#x8D77;&#x7535;&#x8BDD;&#x9875;&#x9762;&#x65F6;&#x591A;&#x53D1;page&#x4E8B;&#x4EF6;&#x7684;&#x95EE;&#x9898;</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-06-02</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.14</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
@@ -725,6 +737,8 @@ description: Android SDK更新日志
     </tr>
   </tbody>
 </table>
+
+
 
 ## 
 
