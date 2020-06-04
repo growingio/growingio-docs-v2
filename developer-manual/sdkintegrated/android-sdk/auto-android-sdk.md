@@ -36,7 +36,7 @@ buildscript {
         //gradle 建议版本
         classpath 'com.android.tools.build:gradle:3.2.1'
         //GrowingIO 无埋点 SDK
-        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.8.14'
+        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.8.18'
     }
 }
 ```
@@ -57,7 +57,7 @@ android {
 }
 dependencies {
     //GrowingIO 无埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:autotrack-2.8.14'
+    implementation 'com.growingio.android:vds-android-agent:autotrack-2.8.18'
 }
 ```
 
@@ -655,7 +655,9 @@ GrowingIO.startWithConfiguration(this, new Configuration()
       </td>
     </tr>
   </tbody>
-</table>示例代码
+</table>
+
+示例代码
 
 ```java
 //sdk >= 2.3.2 && sdk < 2.8.4
@@ -755,7 +757,9 @@ SDK对通知的采集仅支持 4.4 及以上机型。
       </td>
     </tr>
   </tbody>
-</table>![&#x534E;&#x4E3A;&#x5E73;&#x53F0;&#x63A8;&#x9001;&#x65F6;&#xFF0C;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;](../../../.gitbook/assets/hua-wei.png)
+</table>
+
+![&#x534E;&#x4E3A;&#x5E73;&#x53F0;&#x63A8;&#x9001;&#x65F6;&#xFF0C;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;](../../../.gitbook/assets/hua-wei.png)
 
 查看通知采集数据
 
