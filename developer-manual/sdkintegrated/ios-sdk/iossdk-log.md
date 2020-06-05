@@ -14,13 +14,13 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">2.8.19</td>
+      <td style="text-align:left">2.8.18</td>
       <td style="text-align:left">
-        <p><b> </b>1. &#x4F18;&#x5316;&#x65E5;&#x5FD7;&#x6027;&#x80FD;</p>
-        <p>2. &#x89E3;&#x51B3;&#x4E2A;&#x522B;&#x7528;&#x6237;&#x7B26;&#x53F7;&#x91CD;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;</p>
-        <p>&#x1F4D4;&#x5982;&#x679C;&#x60A8;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x57CB;&#x70B9;SDK&#x548C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#xFF0C;&#x5F53;&#x60A8;&#x5347;&#x7EA7;&#x5230;&#x6B64;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#x7248;&#x672C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x5347;&#x7EA7;&#x5230;1.4.0&#x53CA;&#x4EE5;&#x4E0A;&#x3002;</p>
+        <p>&#x4F18;&#x5316;:</p>
+        <p>&#x4F18;&#x5316;&#x65E5;&#x5FD7;&#x6027;&#x80FD;</p>
+        <p>&#x1F4D4;&#x5982;&#x679C;&#x60A8;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x65E0;&#x57CB;&#x70B9;SDK&#x548C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#xFF0C;&#x5F53;&#x60A8;&#x5347;&#x7EA7;&#x5230;&#x6B64;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#x7248;&#x672C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x5347;&#x7EA7;&#x5230;1.4.0&#x53CA;&#x4EE5;&#x4E0A;&#x3002;</p>
       </td>
-      <td style="text-align:left">2020-06-05</td>
+      <td style="text-align:left">2020-06-02</td>
     </tr>
     <tr>
       <td style="text-align:left">2.8.17</td>
