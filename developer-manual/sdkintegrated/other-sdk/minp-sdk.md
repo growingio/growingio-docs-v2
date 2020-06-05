@@ -583,7 +583,9 @@ SDK中提供了以下几个参数可以用来进行配置。
       <td style="text-align:left">&#x4F60;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E2D;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x4E86;&#x7B2C;&#x4E09;&#x65B9;&#x63D2;&#x4EF6;&#x3002;&#x9ED8;&#x8BA4;false</td>
     </tr>
   </tbody>
-</table>#### version
+</table>
+
+#### version
 
 每次发布小程序新版本的时候，需要更新一下版本号 version, 与线上发布小程序保持一致; 可以在 GrowingIO 平台使用 “App 版本”维度，分析不同版本的数据。
 

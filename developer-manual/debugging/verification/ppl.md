@@ -73,7 +73,9 @@ description: 验证“用户变量”数据
       </td>
     </tr>
   </tbody>
-</table>**数据验证方法**
+</table>
+
+**数据验证方法**
 
 在对应的应用（网站、Android 或者 iOS App）中的进行登录、退出登录、切换账号登录的操作，通过 Debugger 工具验证数据准确性
 
@@ -151,7 +153,9 @@ description: 验证“用户变量”数据
         @&quot;age_ppl&quot;:@25}];</td>
     </tr>
   </tbody>
-</table>**数据验证方法**
+</table>
+
+**数据验证方法**
 
 在对应的应用（网站、Android 或者 iOS App）中触发对应的用户变量，通过 Debugger 工具验证数据准确性
 

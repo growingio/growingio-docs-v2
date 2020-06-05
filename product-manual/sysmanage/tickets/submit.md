@@ -56,7 +56,9 @@
       <td style="text-align:left">&#x62D6;&#x52A8;&#x6216;&#x70B9;&#x51FB;&#x4E0A;&#x4F20;&#x9644;&#x4EF6;&#x3002;</td>
     </tr>
   </tbody>
-</table>### 问题描述样例
+</table>
+
+### 问题描述样例
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LmsBDO4OyOVHF-1m4UY-LmsC6kA7hgkiEiAhGZM3.png)
 

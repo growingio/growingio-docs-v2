@@ -81,7 +81,9 @@
       <td style="text-align:left">[Growing track:@&quot;loginSuccess&quot; withVariable: @{@&quot;loginWay_var&quot;:@&quot;QQ&quot;}];</td>
     </tr>
   </tbody>
-</table>**数据验证方法**
+</table>
+
+**数据验证方法**
 
 在对应的应用（网站、Android 或者 iOS App）中触发登录成功事件，通过 Debugger 工具验证数据准确性。
 

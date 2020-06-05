@@ -101,7 +101,9 @@ public class TestApplication extends Application {
         <td style="text-align:left">-</td>
     </tr>
   </tbody>
-</table>### SDK功能API
+</table>
+
+### SDK功能API
 
 | API | 默认值                    | 说明 | 无埋点SDK版本支持 | 埋点SDK版本支持 |
 | :--- | :--- | :--- | :--- | :--- |

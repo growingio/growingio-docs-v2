@@ -103,7 +103,9 @@ SDK中提供了以下几个参数可以用来进行配置。
       </td>
     </tr>
   </tbody>
-</table>即微信小游戏项目根目录的 game.js 文件设置参数如下：
+</table>
+
+即微信小游戏项目根目录的 game.js 文件设置参数如下：
 
 ```java
 var gio = require("utils/gio-ming.js");

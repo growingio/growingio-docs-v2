@@ -53,7 +53,9 @@
       <td style="text-align:left">&#x9F20;&#x6807;&#x60AC;&#x505C;&#x5728;&#x9875;&#x9762;&#x5143;&#x7D20;&#x4E0A;&#x65F6;&#xFF0C;&#x53EF;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x7684;&#x70B9;&#x51FB;&#x91CF;&#xFF08;&#x4EBA;&#x548C;&#x6B21;&#xFF09;&#x3001;&#x53CA;&#x70B9;&#x51FB;&#x91CF;&#x3002;</td>
     </tr>
   </tbody>
-</table>## 热图规则
+</table>
+
+## 热图规则
 
 ### 绘制规则
 

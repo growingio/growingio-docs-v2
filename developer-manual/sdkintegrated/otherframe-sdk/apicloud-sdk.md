@@ -155,7 +155,9 @@ gio.track(event, callback);
       </td>
     </tr>
   </tbody>
-</table>调用示例：
+</table>
+
+调用示例：
 
 ```javascript
 var gio = api.require('GrowingIO');  //引用模块
@@ -209,7 +211,9 @@ gio.setEvar(conversionVariables,callback);
       </td>
     </tr>
   </tbody>
-</table>调用示例：
+</table>
+
+调用示例：
 
 ```javascript
 var gio = api.require('GrowingIO');  //引用模块
@@ -263,7 +267,9 @@ gio.setPeopleVariable(peopleVariables,callback);
       </td>
     </tr>
   </tbody>
-</table>调用示例：
+</table>
+
+调用示例：
 
 ```javascript
 var gio = api.require('GrowingIO');  //引用模块
@@ -312,7 +318,9 @@ gio.setUserId(userIdObject,callback);
       </td>
     </tr>
   </tbody>
-</table>调用示例：
+</table>
+
+调用示例：
 
 ```javascript
 var gio = api.require('GrowingIO');  //引用模块
@@ -351,7 +359,9 @@ gio.clearUserId(callback);
       </td>
     </tr>
   </tbody>
-</table>调用示例：
+</table>
+
+调用示例：
 
 ```javascript
 var gio = api.require('GrowingIO');  //引用模块
@@ -388,7 +398,9 @@ gio.setVisitor(visitorVar);
       </td>
     </tr>
   </tbody>
-</table>调用示例：
+</table>
+
+调用示例：
 
 ```javascript
 var gio = api.require('GrowingIO');  //引用模块

@@ -163,7 +163,9 @@ uexGrowingIO.track(eventId, eventLevelVariable)
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 // track API调用示例一
@@ -239,7 +241,9 @@ uexGrowingIO.setEvar(conversionVariables)
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 uexGrowingIO.setEvar({ "evarTest":111,"campaignId":"1234567890","campaignOwner":"Li Si" });
@@ -307,7 +311,9 @@ uexGrowingIO.setPeopleVariable(peopleVariables)
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 uexGrowingIO.setPeopleVariable({ 'name': '玎玎', 'email': 'dingding@growingio.com' })
@@ -370,7 +376,9 @@ uexGrowingIO.setUserId(userId);
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 uexGrowingIO.setUserId('xiaoming');
@@ -423,7 +431,9 @@ uexGrowingIO.setVisitor(visitorVar)
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 uexGrowingIO.setVisitor({"gender":"male","age":21});

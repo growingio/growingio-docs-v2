@@ -94,7 +94,9 @@ track(eventId, eventLevelVariable, onSuccess, onFail)
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 var gio = window.cordova.require('cordova-plugin-growingio.GrowingIO');
@@ -182,7 +184,9 @@ setEvar(conversionVariables, onSuccess, onFail)
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 gio.setEvar({ "evarTest":111,
@@ -254,7 +258,9 @@ setPeopleVariable(peopleVariables, onSuccess, onFail)
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 gio.setPeopleVariable({ 'name': '玎玎', 'email': 'dingding@growingio.com' })
@@ -319,7 +325,9 @@ setUserId(userId, onSuccess, onFail)
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 gio.setUserId('xiaoming');
@@ -393,7 +401,9 @@ setVisitor(visitorVar,onSucc,onFail)
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x5931;&#x8D25;&#x540E;&#x89E6;&#x53D1;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 gio.setVisitor({"gender":"male","age":21});

@@ -70,7 +70,9 @@ GrowingIO 微信应用用户分析，基于目前企业多微信场景应用的�
       <td style="text-align:left">&#x5C55;&#x793A;&#x5404;&#x5E94;&#x7528;&#x6B21;&#x65E5;&#x3001;7&#x65E5;&#x3001;30&#x65E5;&#x7559;&#x5B58;&#x7387;&#x3002;</td>
     </tr>
   </tbody>
-</table>## 常见问题 <a id="chang-jian-wen-ti"></a>
+</table>
+
+## 常见问题 <a id="chang-jian-wen-ti"></a>
 
 **1. 公众号的数据同步频次是怎样的？**
 

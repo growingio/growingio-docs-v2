@@ -70,7 +70,9 @@ POST
       <td style="text-align:left">&#x4E8B;&#x4EF6;&#x5173;&#x8054;&#x7684;&#x7EF4;&#x5EA6;&#x5C5E;&#x6027;&#x3002;</td>
     </tr>
   </tbody>
-</table>attrs字段为事件需要关联的维度属性，以下为attrs对应的字段：
+</table>
+
+attrs字段为事件需要关联的维度属性，以下为attrs对应的字段：
 
 | 名称 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |

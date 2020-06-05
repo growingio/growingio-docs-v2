@@ -88,7 +88,9 @@ GrowingIO.getInstance().setUserId(String userId);
       </td>
     </tr>
   </tbody>
-</table>**示例代码**
+</table>
+
+**示例代码**
 
 ```java
 //setUserId API调用示例
@@ -163,7 +165,9 @@ gio.setPeopleVariable(JSONObject peopleVariables);
       </td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 推荐您使用[Mobile Debugger](../../../debugging/mobile-debugger.md)，我们为您列举了应用场景和验证示例，请参考：[验证埋点事件](../../../debugging/verification/)&gt;[**ppl（用户变量）事件**](../../../debugging/verification/ppl.md)。
 {% endhint %}
 
@@ -241,7 +245,9 @@ GrowingIO.getInstance().setVisitor(JSONObject visitorVar)
       </td>
     </tr>
   </tbody>
-</table>**示例代码**
+</table>
+
+**示例代码**
 
 ```java
 //setVisitor API调用示例
@@ -359,7 +365,9 @@ gio.setPageVariableX(Fragment fragment, JSONObject pageLevelVariables);
       </td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 **`SDK 2.4.0`** 以上能够在 Log 日志中查看对应报错，之下版本无提示信息。调用后请关注日志，查看数据发送是否成功，事件类型`t`为`pvar`。
 
 **`SDK 2.6.7`** 将页面级变量**`pageLevelVariables`**与该页面对象绑定，设置不同的值将会合并，如果想要清空，需要传 null 。
@@ -457,7 +465,9 @@ gio.setEvar(JSONObject conversionVariables);
       </td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 推荐您使用[Mobile Debugger](../../../debugging/mobile-debugger.md)，我们为您列举了应用场景和验证示例，请参考：[验证埋点事件](../../../debugging/verification/)&gt;[evar（转化变量）事件](../../../debugging/verification/evar.md)。
 {% endhint %}
 
@@ -539,7 +549,9 @@ gio.track(String eventId, JSONObject eventLevelVariables);
       </td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 SDK 2.4.0以上能够在Log日志中查看对应报错，之下版本无提示信息。调用后请关注日志，查看数据发送是否成功，事件类型t为cstm。
 
 推荐您使用[Mobile Debugger](../../../debugging/mobile-debugger.md)，我们为您列举了应用场景和验证示例，请参考：[验证埋点事件](../../../debugging/verification/)&gt;[cstm（事件以及关联的事件级变量）事件](../../../debugging/verification/cstm.md)。

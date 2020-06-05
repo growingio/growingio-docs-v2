@@ -36,7 +36,9 @@ Android 无埋点 SDK 支持 `com.android.tools.build:gradle` **2.3.3** 及其�
       </td>
     </tr>
   </tbody>
-</table>## **2. 升级 2.8.4 编译报错**
+</table>
+
+## **2. 升级 2.8.4 编译报错**
 
 升级无埋点 SDK 2.8.4如果报错如下：
 

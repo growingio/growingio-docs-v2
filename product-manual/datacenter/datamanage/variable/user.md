@@ -80,7 +80,9 @@ description: 在GrowingIO平台对用户变量进行声明和管理。
         <td style="text-align:left">&#x2714;&#xFE0F;</td>
     </tr>
   </tbody>
-</table>四. 填写完成后，单击确定，完成一个用户变量的创建。
+</table>
+
+四. 填写完成后，单击确定，完成一个用户变量的创建。
 
 ## 管理事件变量
 

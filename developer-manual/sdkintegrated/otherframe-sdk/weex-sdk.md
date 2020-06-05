@@ -132,7 +132,9 @@ track(event);
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 //获取 gio
@@ -210,7 +212,9 @@ setEvar(conversionVariables);
       </td>
     </tr>
   </tbody>
-</table>**示例**
+</table>
+
+**示例**
 
 ```javascript
 //获取 gio
@@ -285,7 +289,9 @@ setPeopleVariable(peopleVariables);
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 //获取 gio
@@ -346,7 +352,9 @@ setUserId(userId);
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 //获取 gio
@@ -403,7 +411,9 @@ setVisitor(visitorVar);
       </td>
     </tr>
   </tbody>
-</table>**示例代码：**
+</table>
+
+**示例代码：**
 
 ```java
 //获取 gio

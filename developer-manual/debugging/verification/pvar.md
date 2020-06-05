@@ -60,7 +60,9 @@ description: 验证“页面级变量”数据。
         @&quot;skuCategory_pvar&quot;:@&quot;&#x978B;&#x9774;&quot;} toViewController:GoodsDetailViewController];</td>
     </tr>
   </tbody>
-</table>**数据验证方法**
+</table>
+
+**数据验证方法**
 
 在对应的应用（网站、Android 或者 iOS App）中打开设置了页面级变量的商品详情页，通过 Debugger 工具验证数据准确性
 

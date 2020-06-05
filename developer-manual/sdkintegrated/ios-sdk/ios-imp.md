@@ -144,7 +144,9 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
       </td>
     </tr>
   </tbody>
-</table>### ​停止半自动采集View的浏览事件
+</table>
+
+### ​停止半自动采集View的浏览事件
 
 **growingStopImpTrack**
 

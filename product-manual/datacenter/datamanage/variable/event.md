@@ -69,7 +69,9 @@ description: 在GrowingIO平台对埋点事件变量进行声明和管理。
         <td style="text-align:left">&#x2714;&#xFE0F;</td>
     </tr>
   </tbody>
-</table>四. 填写完成后，单击确定，完成一个变量的创建。
+</table>
+
+四. 填写完成后，单击确定，完成一个变量的创建。
 
 {% hint style="info" %}
 在GrowingIO平台对变量标识进行创建后，即可在代码中进行部署，具体的说就是调用GrowingIO提供的API接口，上传数据。

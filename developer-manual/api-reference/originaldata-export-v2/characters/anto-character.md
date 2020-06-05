@@ -675,7 +675,9 @@ description: 无埋点事件字段共分为4个事件类型。
       </td>
     </tr>
   </tbody>
-</table>         
+</table>
+
+         
 {% endtab %}
 
 {% tab title="action\_tag（元素圈选动作事件）" %}
@@ -721,7 +723,9 @@ description: 无埋点事件字段共分为4个事件类型。
       </td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 您可以通过[获取圈选元素定义](../../statistics-api/definition/get-auto.md)接口得到以下rules（圈选元素定义）字段表。
 {% endhint %}
 

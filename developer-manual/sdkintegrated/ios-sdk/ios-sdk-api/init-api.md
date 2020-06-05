@@ -151,7 +151,9 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
         <td style="text-align:left">-</td>
     </tr>
   </tbody>
-</table>### 数据采集发送API
+</table>
+
+### 数据采集发送API
 
 <table>
   <thead>
@@ -301,3 +303,4 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
     </tr>
   </tbody>
 </table>
+

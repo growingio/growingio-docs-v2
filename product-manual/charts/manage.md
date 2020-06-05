@@ -63,7 +63,9 @@
       <td style="text-align:left">&#x7F16;&#x8F91;&#x3001;&#x5206;&#x4EAB;&#x94FE;&#x63A5;&#x3001;&#x8BBE;&#x7F6E;&#x6743;&#x9650;&#x3001;&#x5220;&#x9664;&#x3002;</td>
     </tr>
   </tbody>
-</table>在看板列表单击某个看板进入看板。
+</table>
+
+在看板列表单击某个看板进入看板。
 
 ![](../../.gitbook/assets/image%20%28118%29.png)
 
@@ -134,7 +136,9 @@
       </td>
     </tr>
   </tbody>
-</table>## 常见问题 <a id="3-chang-jian-wen-ti"></a>
+</table>
+
+## 常见问题 <a id="3-chang-jian-wen-ti"></a>
 
 #### **1.为什么我 hover 到图表上时没有出现角标？** <a id="1-wei-shi-mo-wo-hover-dao-tu-biao-shang-shi-mei-you-chu-xian-jiao-biao"></a>
 

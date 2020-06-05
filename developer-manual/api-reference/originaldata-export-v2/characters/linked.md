@@ -85,7 +85,9 @@ ads\_track\_click和ads\_track\_activation两张表分别代表GIO定义的2种�
       </td>
     </tr>
   </tbody>
-</table>### 通用字段说明
+</table>
+
+### 通用字段说明
 
 {% tabs %}
 {% tab title="时间字段" %}

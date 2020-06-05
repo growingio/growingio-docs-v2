@@ -112,7 +112,9 @@
         <td style="text-align:left">-</td>
     </tr>
   </tbody>
-</table>三. 配置参数后单击确定，展示创建好的监测链接或二维码。
+</table>
+
+三. 配置参数后单击确定，展示创建好的监测链接或二维码。
 
 {% hint style="success" %}
 **直达 App 内落地页的技术原理：**

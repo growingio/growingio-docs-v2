@@ -134,7 +134,9 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
       </td>
     </tr>
   </tbody>
-</table>**ImpressionMark 对象说明**
+</table>
+
+**ImpressionMark 对象说明**
 
 <table>
   <thead>
@@ -199,7 +201,9 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
       </td>
     </tr>
   </tbody>
-</table>**GlobalId 字段说明:**
+</table>
+
+**GlobalId 字段说明:**
 
 GlobalId 字段的提供主要是为了适配 RecyclerView 这类的可复用 View 对浏览定义的影响。 GIO对View的可见性跟踪默认是对象级别的跟踪，所以默认情况下用户notifyDataSetChange时\(即使内容并没有改变\)， 由于所有View被重新Bind， 而且由于RecyclerView的复用机制， 并不能保证复用顺序有序, 可能触发多条浏览事件发出， 这显然是不符合预期的。
 
@@ -302,7 +306,9 @@ Android 无埋点 **SDK 2.8.4** 及以上支持。
       </td>
     </tr>
   </tbody>
-</table>代码示例
+</table>
+
+代码示例
 
 ```javascript
 //自动采集元素内容并发送埋点事件，默认值为 true 采集元素内容。
@@ -342,7 +348,9 @@ Android 无埋点 **SDK 2.8.5** 及以上支持。
       </td>
     </tr>
   </tbody>
-</table>**代码示例**
+</table>
+
+**代码示例**
 
 ```javascript
 //当元素大于等于一半可见时，自动采集元素内容并发送埋点事件。

@@ -70,7 +70,9 @@ description: 在GrowingIO平台对转化变量进行声明和管理。
       <td style="text-align:left">&#x53D8;&#x91CF;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x53EF;&#x586B;&#x5199;&#x5BF9;&#x5E94;&#x89E6;&#x53D1;&#x65F6;&#x673A;&#x548C;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF0C;&#x540C;&#x65F6;&#x5BF9;&#x53D8;&#x91CF;&#x503C;&#x8FDB;&#x884C;&#x4E3E;&#x4F8B;&#x3002;</td>
     </tr>
   </tbody>
-</table>四. 填写完成后，单击确定，完成一个转化变量的创建。
+</table>
+
+四. 填写完成后，单击确定，完成一个转化变量的创建。
 
 ## 管理转化变量
 

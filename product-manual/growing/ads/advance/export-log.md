@@ -48,7 +48,9 @@ description: 导出移动端应用监测链接的日志。
       <td style="text-align:left">&#x4ECE;&#x6E20;&#x9053;&#x3001;&#x6D3B;&#x52A8;&#x3001;&#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#x4E09;&#x4E2A;&#x7EF4;&#x5EA6;&#x8FC7;&#x6EE4;&#x5BFC;&#x51FA;&#x8303;&#x56F4;&#x3002;</td>
     </tr>
   </tbody>
-</table>四. 配置导出参数，单击保存。
+</table>
+
+四. 配置导出参数，单击保存。
 
 **日志下载：**任务创建成功后，4 小时内系统会给出结果文件，单击单条任务右侧的 ![](../../../../.gitbook/assets/xia-zai.png) 下载该文件即可。
 

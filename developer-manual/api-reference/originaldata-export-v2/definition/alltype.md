@@ -55,7 +55,9 @@ GET
       </td>
     </tr>
   </tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x67E5;&#x8BE2;&#x53C2;&#x6570;</th>

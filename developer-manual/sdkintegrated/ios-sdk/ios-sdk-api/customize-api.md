@@ -70,7 +70,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
       </td>
     </tr>
   </tbody>
-</table>**示例代码**
+</table>
+
+**示例代码**
 
 ```java
 // setuserId API调用示例
@@ -149,7 +151,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>**示例代码**
+</table>
+
+**示例代码**
 
 ```java
 // setPeopleVariable API调用示例一
@@ -197,7 +201,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
       </td>
     </tr>
   </tbody>
-</table>代码示例
+</table>
+
+代码示例
 
 ```java
 // setVisitor API调用示例
@@ -262,7 +268,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
       </td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 **`SDK 2.6.7`** 将页面级变量**`pageLevelVariables`**与该页面对象绑定，设置不同的值将会合并，如果想要清空，需要传 null 。
 {% endhint %}
 
@@ -332,7 +340,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
       </td>
     </tr>
   </tbody>
-</table>**代码示例**
+</table>
+
+**代码示例**
 
 ```java
 // setEvar API调用示例一
@@ -383,7 +393,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
       </td>
     </tr>
   </tbody>
-</table>代码示例
+</table>
+
+代码示例
 
 ```java
 // track API调用示例一

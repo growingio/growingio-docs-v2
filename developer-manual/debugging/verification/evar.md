@@ -61,7 +61,9 @@ description: 验证“转化变量”数据。
       </td>
     </tr>
   </tbody>
-</table>**数据验证方法**
+</table>
+
+**数据验证方法**
 
 在对应的应用（网站、Android 或者 iOS App）中触发设置了转化变量的时机，通过 Debugger 工具验证数据准确性
 
