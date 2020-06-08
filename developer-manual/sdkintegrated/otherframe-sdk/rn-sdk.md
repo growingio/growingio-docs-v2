@@ -8,6 +8,7 @@ React Native 埋点 SDK 仅自动采集设备信息和埋点数据，如果想�
 版本支持：
 
 * App适配最低系统版本：iOS 8及以上、Android 4.2-10
+* 兼容 React Native 版本：0.62.2及以前版本
 {% endhint %}
 
 ## 1. 集成SDK
