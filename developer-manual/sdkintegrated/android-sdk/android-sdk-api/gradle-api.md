@@ -52,7 +52,7 @@ SDK支持限制：只支持**Android 无埋点 SDK**
     </tr>
     <tr>
       <td style="text-align:left">oaidEnable</td>
-      <td style="text-align:left">ture</td>
+      <td style="text-align:left">true</td>
       <td style="text-align:left">
         <p>&#x56FD;&#x5185;<a href="http://www.msa-alliance.cn/col.jsp?id=120">&#x79FB;&#x52A8;&#x5B89;&#x5168;&#x8054;&#x76DF;MSA</a> &#x8054;&#x5408;&#x5404;&#x5927;&#x624B;&#x673A;&#x5236;&#x9020;&#x5546;&#x63A8;&#x51FA;&#x4E86;
           OAID &#xFF0C; &#x4F5C;&#x4E3A;&#x552F;&#x4E00;&#x5E7F;&#x544A;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
