@@ -18,6 +18,16 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.19</td>
+      <td style="text-align:left">
+        <p>&#x4F18;&#x5316;&#xFF1A;</p>
+        <ul>
+          <li>&#x589E;&#x5F3A;SDK&#x7684;&#x65E5;&#x5FD7;&#x663E;&#x793A;&#x529F;&#x80FD;</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-06-18</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.18</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;Bugs&#xFF1A;</p>
