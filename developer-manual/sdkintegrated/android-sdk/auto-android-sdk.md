@@ -461,7 +461,7 @@ GrowingIO.getInstance().setGeoLocation(39.9046900000,116.4071700000);
 ```
 
 {% hint style="info" %}
-对应的清楚地理位置的方法为 clearGeoLocation（）；
+对应的清楚地理位置的方法为 clearGeoLocation\(\)；
 {% endhint %}
 
 ### 12. 采集输入框数据
