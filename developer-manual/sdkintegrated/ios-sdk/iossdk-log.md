@@ -14,6 +14,13 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">&#x65B0;&#x7248;&#x5E2E;&#x52A9;&#x6587;&#x6863;&#x5730;&#x5740;</td>
+      <td
+      style="text-align:left"><a href="https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/iossdk-log">https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/iossdk-log</a>
+        </td>
+        <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.19</td>
       <td style="text-align:left">
         <p><b> </b>1. &#x4F18;&#x5316;&#x65E5;&#x5FD7;&#x6027;&#x80FD;</p>
